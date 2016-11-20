@@ -1,0 +1,30 @@
+html {
+  background: white center no-repeat;
+  align: center;
+}
+
+body  {
+	font-family: -apple-system-font, sans-serif;
+	line-height: 1.55em;
+	font-size: 24px;
+  width: 100%;
+  weight: 100%;
+	background: white;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}	
+a:link {
+	color: rgba(70, 140, 220, 1.0);
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+  color: rgba(70, 140, 220, 1.0);
+  text-decoration: none;
+}
