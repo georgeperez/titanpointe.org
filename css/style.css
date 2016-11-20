@@ -7,9 +7,11 @@ body  {
 	font-family: -apple-system-font, sans-serif;
 	line-height: 1.55em;
 	font-size: 24px;
-  width: 100%;
+  margin: 60px auto;
+  width: 70%;
   weight: 100%;
 	background: white;
+  
 }
 a {
 	text-decoration: none;
