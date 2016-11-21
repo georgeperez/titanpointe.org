@@ -2,9 +2,7 @@ html {
   background: white center no-repeat;
   align: center;
 }
-
 body  {
-	font-family: -apple-system-font, sans-serif;
 	line-height: 1.55em;
 	font-size: 24px;
   margin: 60px auto;
@@ -13,8 +11,17 @@ body  {
 	background: white;
   
 }
+nav ul, footer ul {
+  font-family: -apple-system-font, sans-serif;
+  padding: 0px;
+  list-style: none;
+}
+nav ul li, footer ul li {
+  display: inline;
+  margin-right: 20px;
+}
 a {
-	text-decoration: none;
+	text-decoration: underline;
 }	
 a:link {
 	color: rgba(70, 140, 220, 1.0);
