@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Blog
 ---
+  <title>Blog</title>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date:"%Y-%m-%d" }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{  post.title }}</a></li>
