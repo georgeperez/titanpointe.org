@@ -33,3 +33,17 @@ a:visited {
   color: rgba(70, 140, 220, 1.0);
   text-decoration: none;
 }
+p {
+  font-size: 1.5em;
+  line-height: 1.4em;
+}
+footer {
+  border-top: 1px solid #d5d5d5;
+  font-size: .8em;
+}
+ul.posts {
+  list-style: none;
+}
+ul.posts li {
+  list-style: none;
+}
