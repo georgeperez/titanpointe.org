@@ -21,12 +21,9 @@ header cite,
 nav,
 footer,
 b,
-.centrelink,
 th,
 time,
 figcaption,
-.search input,
-.navigation,
 aside{
 	text-rendering: optimizeLegibility;
 	font-family: -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
