@@ -2,8 +2,7 @@
 layout: default
 title: George Perez Marrero
 ---
-### Contact 
-You can contact me in a few different ways:
+Want to contact me? You can do it in a few ways:
 
 * [Email](mailto:george@georgeperezmarrero.com)
 * [Twitter](https://twitter.com/georgeperez/)
