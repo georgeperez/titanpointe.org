@@ -5,7 +5,7 @@ title: My recommended iOS and Mac software for new users
 
 To get the blog started and familiarize myself with Jekyll, I'll list out a few app recommendations for macOS and iOS. Let's start with macOS:
 
-* [1Password - Password Manager and Secure Wallet](https://geo.itunes.apple.com/us/app/1password-password-manager/id443987910?mt=12&uo=4&at=1010lbam)
+* [1Password](https://geo.itunes.apple.com/us/app/1password-password-manager/id443987910?mt=12&uo=4&at=1010lbam)
 * [Homebrew](http://brew.sh/) (and with it [youtube-dl](https://rg3.github.io/youtube-dl/))
 * [The Unarchiver](https://geo.itunes.apple.com/us/app/the-unarchiver/id425424353?mt=12&uo=4&at=1010lbam)
 * AppCleaner
