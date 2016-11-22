@@ -13,7 +13,6 @@ To get the blog started and familiarize myself with Jekyll, I'll list out a few 
 * TextMate
 * Terminal
 * Transmit
-* Macs Fan Control
 
 And for iOS:
 
