@@ -2,7 +2,6 @@
 layout: post
 title: My recommended iOS and Mac software for new users
 ---
-
 To get the blog started and familiarize myself with Jekyll, I'll list out a few app recommendations for macOS and iOS. Let's start with macOS:
 
 * [1Password](https://geo.itunes.apple.com/us/app/1password-password-manager/id443987910?mt=12&uo=4&at=1010lbam)

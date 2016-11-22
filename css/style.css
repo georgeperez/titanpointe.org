@@ -1,112 +1,92 @@
 html {
   background: white center no-repeat;
-  align: center;
+  align: center
 }
+
 body  {
-  font-family: -apple-system, sans-serif;
-	line-height: 1.55em;
-	font-size: 24px;
-  margin: 60px auto;
-  width: 70%;
-	background: white;
-  
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header cite,
-nav,
-footer,
-b,
-th,
-time,
-figcaption,
-aside{
-	text-rendering: optimizeLegibility;
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+	line-height: 1.5em;
+	font-size: 20px;
+  margin: 20px auto;
+  width: 50%;
+	background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
 }
 
-pre,
-code{
+h1, h2, h3, h4, h5, h6, nav, footer {
+	text-rendering: optimizeLegibility
+}
+
+pre, code {
 	font-family: 'SF Mono', 'Menlo', 'Source Code Pro', Monaco, 'Courier Prime', Courier, monospace;
-	font-size: 85%;
+	font-size: 85%
 }
-
-h3{
+h1, h2 {
+  font-weight: normal;
+  margin-bottom: 18px
+}
+h3 {
 	font-size: 1.5em;
 	font-weight: normal;
 	margin-top: 1px;
-	margin-bottom: 0;
+	margin-bottom: 0
 }
 
-h4{
+h4 {
 	font-size: 1em;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	line-height: 1.5em;
-	margin: 3em 0 .5em;
+	margin: 3em 0 .5em
 }
 
-h4,
-h4 strong{
-	font-weight: normal;
+h4, h4 strong {
+	font-weight: normal
 }
 
-h5{
+h5 {
 	margin: 3em 0 .5em;
 	font-size: 1em;
 	text-transform: none;
 	font-weight: bold;
-	line-height: 20px;
+	line-height: 20px
 }
 
-h6{
-	font-size: .8em;
+h6 {
+	font-size: .9em;
 	text-transform: uppercase;
 	font-weight: normal;
 	letter-spacing: 0.125em;
 	margin-top: 3em 0 .5em;
-	color: #90909f;
+	color: #90909f
 }
 
-blockquote{
+blockquote {
 	width: 80%;
-	padding: 10px 0;
-	margin: 20px 40px;
-	font-size: .9em;
-	color: #70707f;
+	font-size: 1em;
+	color: #70707f
 }
 
 nav ul, footer ul {
   padding: 0px;
-  list-style: none;
+  list-style: none
 }
 nav ul li, footer ul li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 20px
 }
-a {
-	text-decoration: underline;
-}	
-a:link {
-	color: rgba(70, 140, 220, 1.0);
-}
-a:hover {
-	text-decoration: underline;
-}
-a:visited {
-  color: rgba(70, 140, 220, 1.0);
-  text-decoration: none;
+a, a:link, a:visited, a:hover {
+	text-decoration: none;
+	color: #08c
 }
 footer {
-  border-top: 1px solid #d5d5d5;
-  font-size: .8em;
+  border-top: 1px solid #70707f;
+  font-size: .8em
 }
 ul.posts {
-  list-style: none;
+  list-style: none
 }
 ul.posts li {
-  list-style: none;
+  list-style: none
 }
