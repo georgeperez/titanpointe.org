@@ -82,7 +82,8 @@ a, a:link, a:visited, a:hover {
 }
 footer {
   border-top: 1px solid #70707f;
-  font-size: .8em
+  font-size: .8em;
+  color: #90909f
 }
 ul.posts {
   list-style: none
