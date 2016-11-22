@@ -3,7 +3,7 @@ html {
   align: center;
 }
 body  {
-  font-family: -apple-system-font, sans-serif;
+  font-family: -apple-system, sans-serif;
 	line-height: 1.55em;
 	font-size: 24px;
   margin: 60px auto;
@@ -11,6 +11,86 @@ body  {
 	background: white;
   
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header cite,
+nav,
+footer,
+b,
+.centrelink,
+th,
+time,
+figcaption,
+.search input,
+.navigation,
+aside{
+	text-rendering: optimizeLegibility;
+	font-family: -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+pre,
+code{
+	font-family: 'SF Mono', 'Menlo', 'Source Code Pro', Monaco, 'Courier Prime', Courier, monospace;
+	font-size: 85%;
+}
+
+h3{
+	font-size: 1.5em;
+	font-weight: normal;
+	margin-top: 100px;
+	margin-bottom: 0;
+}
+
+h4{
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	line-height: 1.5em;
+	margin: 3em 0 .5em;
+}
+
+h4,
+h4 strong{
+	font-weight: normal;
+}
+
+h5{
+	margin: 3em 0 .5em;
+	font-size: 1em;
+	text-transform: none;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+h6{
+	font-size: .8em;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 0.125em;
+	margin-top: 3em 0 .5em;
+	color: #90909f;
+}
+
+h2 + h3,
+h2 + h4,
+h3 + h4,
+h4 + h5{
+	margin-top: 0;
+	padding-top: 10px;
+}
+
+blockquote{
+	width: 80%;
+	padding: 10px 0;
+	margin: 20px 40px;
+	font-size: .9em;
+	color: #70707f;
+}
+
 nav ul, footer ul {
   padding: 0px;
   list-style: none;
