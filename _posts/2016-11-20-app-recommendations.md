@@ -3,6 +3,7 @@ layout: post
 title: My recommended iOS and Mac software for new users
 ---
 <p class="meta">{{ page.date | date:"%b %-d, %Y" }} - Mayagüez <a class="permalink" title="Permalink" href="{{ page.url }}">∞</a></p>
+
 To get the blog started and familiarize myself with Jekyll, I'll list out a few app recommendations for macOS and iOS. Let's start with macOS:
 
 * [1Password](https://geo.itunes.apple.com/us/app/1password-password-manager/id443987910?mt=12&uo=4&at=1010lbam)
