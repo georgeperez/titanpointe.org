@@ -8,22 +8,20 @@
 	  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="https://github.com/georgeperez">GitHub</a></li>
-      </ul>
-    </nav>
+    <div class="site">
+      <div class="title">
+        <a href="/">George Perez Marrero</a>
+        <a class="extra" href="/about">About</a>
+        <a class="extra" href="https://github.com/georgeperez/">GitHub</a>
+      </div><!-- /.title> -->
+      
+        {{ content }}
         
-    <div class="container">
-      {{ content }}
-  </div><!-- /.container -->
-  <footer>
-    <ul>
-      <li><p>Powered by <a href="https://jekyllrb.com">Jekyll</a>.</p>
-      </ul>
-    </footer>
+    <div class="footer">
+      <div class="about">
+      <p>George Perez Marrero. Programmer. Powered by <a href="https://jekyllrb.com">Jekyll</a></p>
+    </div><!-- /.about -->
+    </div><!-- /.footer -->
+  </div><!-- /.site -->
   </body>
 </html>
