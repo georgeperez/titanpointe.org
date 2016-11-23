@@ -21,9 +21,12 @@
         
     <div class="footer">
       <div class="about">
-      <p>Made in Puerto Rico, USA. Built with <a href="https://jekyllrb.com">Jekyll</a>.</p>
+      <p>Made in Puerto Rico, USA. Built with <a href="https://jekyllrb.com">Jekyll</a>. Subscribe via <a href="/atom.xml">RSS</a>.</p>
     </div><!-- /.about -->
     </div><!-- /.footer -->
   </div><!-- /.site -->
+  {% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
   </body>
 </html>
