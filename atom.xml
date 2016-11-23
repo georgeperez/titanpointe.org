@@ -3,14 +3,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>George Pere-Marrero</title>
+ <title>George Perez-Marrero</title>
  <link href="http://georgeperezmarrero.com/atom.xml" rel="self"/>
  <link href="http://georgeperezmarrero.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://georgeperezmarrero.com/</id>
  <author>
    <name>George Perez-Marrero</name>
-   <email>tom@georgeperezmarrero.com</email>
+   <email>george@georgeperezmarrero.com</email>
  </author>
 
  {% for post in site.posts %}
