@@ -8,13 +8,20 @@ html, body {
   height: 100%
 }
 body  {
-  border-top: 4px solid #4a525a;
+  border-top: 3px solid #4a525a;
   background-color: white;
   font-family: -apple-system, 'Helvetica Neue', sans-serif;
   text-align: center;
 	font-size: 19px;
   margin: 0;
   padding: 0;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
+}
+body #mastheadbg {
+  background-color: #2e3338;
+  margin-bottom: -110px;
+  height: 60px;
 }
 h1, h2, h3, h4, h5, h6 {
 	text-rendering: optimizeLegibility
@@ -64,14 +71,12 @@ blockquote {
 	font-size: 1em;
 	color: #70707f
 }
-a {
-	color: #08c
+a, a:visited {
+	color: #4a525a;
+  text-decoration: none
 }
 a:hover {
   color: black
-}
-a:visited {
-  color: #a0a
 }
 table {
   font-size: inherit;
@@ -99,22 +104,25 @@ ul.posts a {
 
 .site {
   font-size: 110%;
-  text-align: justify;
+  text-align: left;
   width: 42em;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
+.site .header a {
+  color: black;
+}
 .title {
-  color: #4a525a;
+  color: #e6e6e6;
   font-weight: bold;
   margin-bottom: 2em;
 }
 .site .title a {
-  color: #4a525a;
+  color: #e6e6e6;
   text-decoration: none;
 }
 .site .title a:hover {
-  color: black;
+  color: white;
 }
 .site .title a.extra {
   color: #aaa;
@@ -122,7 +130,7 @@ ul.posts a {
   margin-left: 1em;
 }
 .site .title a.extra:hover {
-  color: black;
+  color: white;
 }
 .site .meta {
   color: #aaa;
@@ -130,7 +138,7 @@ ul.posts a {
 .site .footer {
   font-size: 80%;
   color: #666;
-  border-top: 4px solid #4a525a;
+  border-top: 3px solid #4a525a;
   margin-top: 2em;
   overflow: hidden;
 }
@@ -147,12 +155,15 @@ ul.posts a {
 #post {
 
 }
+#post a {
+  text-decoration: underline;
+}
 #post pre {
   border: 1px solid #ddd;
   background-color: #eef;
   padding: 0 .4em
 }
-#post ul, #post ol {
+#post ul, #post ol, #post li {
   margin-left: 1.35em
 }
 #post code {
