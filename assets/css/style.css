@@ -8,7 +8,7 @@ html, body {
   height: 100%
 }
 body  {
-  border-top: 3px solid #4a525a;
+  border-top: 4px solid #4a525a;
   background-color: white;
   font-family: -apple-system, 'Helvetica Neue', sans-serif;
   text-align: center;
@@ -26,8 +26,14 @@ body #mastheadbg {
 h1, h2, h3, h4, h5, h6 {
 	text-rendering: optimizeLegibility
 }
+article {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 20px;
+  width: 800px;
+}
 p {
-  margin: 1em 0
+  margin: 0.6em 0
 }
 pre, code {
 	font-family: 'SF Mono', 'Menlo', 'Source Code Pro', Monaco, 'Courier Prime', Courier, monospace;
@@ -112,7 +118,7 @@ ul.posts a {
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
-.site .header a {
+.site .posttitle a {
   color: black;
   text-decoration: none;
 }
@@ -143,7 +149,7 @@ ul.posts a {
 .site .footer {
   font-size: 80%;
   color: #666;
-  border-top: 3px solid #4a525a;
+  border-top: 1px solid #4a525a;
   margin-top: 2em;
   overflow: hidden;
 }
@@ -171,6 +177,11 @@ ul.posts a {
 }
 #post ul, #post ol, #post li {
   margin-left: 1.35em
+}
+
+#post .meta .permalink {
+  color: navy;
+  text-decoration: none;
 }
 #post code {
   border: 1px solid #ddd;
