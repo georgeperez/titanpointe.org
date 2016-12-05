@@ -2,7 +2,7 @@
 layout: post
 title: Puerto Rico is in mourning (Spanish)
 ---
-<p class="meta">{{ page.date | date:"%b %-d, %Y" }} - Mayagüez <a class="permalink" title="Permalink" href="{{ page.url }}">∞</a></p>
+<p class="meta">{{ page.date | date:"%b %-d, %Y" }} <a class="permalink" title="Permalink" href="{{ page.url }}">∞</a></p>
 
 En el 5 de julio del 2016, puertorriqueños se levantaron con las noticias que la Puerta Bandera, uno de los lugares más amados y visitados en el Viejo San Juan, fue pintada blanca y negra sobre los colores tradicionales del rojo, blanco, y azul.
 

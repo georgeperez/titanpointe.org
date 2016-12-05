@@ -2,7 +2,7 @@
 layout: post
 title: My recommended iOS and Mac software for new users
 ---
-<p class="meta">{{ page.date | date:"%b %-d, %Y" }} - Mayagüez <a class="permalink" title="Permalink" href="{{ page.url }}">∞</a></p>
+<p class="meta">{{ page.date | date:"%b %-d, %Y" }} <a class="permalink" title="Permalink" href="{{ page.url }}">∞</a></p>
 
 To get the blog started and familiarize myself with Jekyll, I'll list out a few app recommendations for macOS and iOS. Let's start with macOS:
 
