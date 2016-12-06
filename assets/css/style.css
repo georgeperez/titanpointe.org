@@ -98,9 +98,6 @@ ul.posts li {
   line-height: 1.75em;
   list-style: none
 }
-ul.posts span {
-  font-family: 'SF Mono', 'Menlo', 'Source Code Pro', Monaco, 'Courier Prime', Courier, monospace
-}
 ul.posts a {
   text-decoration: underline
 }
@@ -146,18 +143,18 @@ ul.posts a {
 .site .meta {
   color: #aaa;
 }
-.site .footer {
+.site footer {
   font-size: 80%;
   color: #666;
   border-top: 1px solid #4a525a;
   margin-top: 2em;
   overflow: hidden;
 }
-.site .footer .about {
+.site footer.about {
   float: center;
   margin-right: 3em;
 }
-.site .footer .about a {
+.site footer.about a {
   color: #4a525a;
   text-decoration: none;
 }
