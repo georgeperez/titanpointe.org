@@ -1,6 +1,7 @@
-name: George Perez
+title: George Perez Marrero
 markdown: kramdown
 permalink: pretty
+highligther: rouge
 timezone: America/Puerto_Rico
 email: george@georgeperezmarrero.com
 google_analytics_id: UA-40381065-2
