@@ -1,36 +1,32 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="author" content="George Perez-Marrero">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/assets/css/syntax.css">
-	  <link rel="stylesheet" type="text/css" href="/assets/css/style.css" media="screen, projection">
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="George Perez-Marrero">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/syntax.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css" media="screen, projection">
 
-    <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/assets/images/favicon-16x16.png" sizes="16x16">
-    <link rel="shortcut icon" href="/assets/images/favicon.ico">
-    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/images/apple-touch-icon-precomposed.png">
-  </head>
-  <body>
-  
-    <div id="mastheadbg"></div>
-    <div class="site">
-      <header>
-        <a href="/">George Perez-Marrero</a>
-        <a class="extra" href="/about">About</a>
-        <a class="extra" href="https://github.com/georgeperez/">GitHub</a>
+  <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/images/favicon-16x16.png" sizes="16x16">
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/images/apple-touch-icon-precomposed.png">
+</head>
+<body>
+  <div id="mastheadbg"></div>
+  <div class="site">
+    <header>
+      <a href="/">George Perez-Marrero</a>
+      <a class="extra" href="/about">About</a>
+      <a class="extra" href="https://github.com/georgeperez/">GitHub</a>
     </header>
-      
-        {{ content }}
-        
-    <footer>
-      <div class="about">
-      <p>Made in Puerto Rico, USA. Built with <a href="https://jekyllrb.com">Jekyll</a>. Subscribe via <a href="/atom.xml">RSS</a>.</p>
-    </div><!-- /.about -->
-    </footer>
+
+    {{ content }}
+
+    {% include footer.html %}
+
   </div><!-- /.site -->
   {% include analytics.html %}
-  </body>
+</body>
 </html>
