@@ -43,34 +43,21 @@ h1, h2 {
   font-weight: normal;
 }
 h3 {
-	font-size: 1.5em;
 	font-weight: normal;
-	margin-top: 1px;
-	margin-bottom: 0
 }
 h4 {
-	font-size: 1em;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	line-height: 1.5em;
-	margin: 1em 0 .5em
+	text-transform: uppercase
 }
 h4, h4 strong {
 	font-weight: normal
 }
 h5 {
-	margin: 3em 0 .5em;
-	font-size: 1em;
 	text-transform: none;
-	font-weight: bold;
-	line-height: 20px
+	font-weight: bold
 }
 h6 {
-	font-size: .9em;
 	text-transform: uppercase;
-	font-weight: normal;
-	letter-spacing: 0.115em;
-	margin-top: 3em 0 .5em;
+	font-weight: normal
 }
 blockquote {
 	width: 80%;
@@ -109,7 +96,6 @@ footer {
   border-top: 1px solid #4a525a;
   margin-top: 2em;
   overflow: hidden;
-  float: center;
   margin-right: 3em;
 }
 footer a {
