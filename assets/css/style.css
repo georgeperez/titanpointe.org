@@ -1,169 +1,252 @@
-/* Global Reset */
-
-* {
-  margin: 0;
-  padding: 0;
-}
-html, body {
-  height: 100%
-}
-body  {
-  border-top: 4px solid #4a525a;
-  background-color: white;
-  font-family: -apple-system, 'Helvetica Neue', sans-serif;
-  text-align: center;
-	font-size: 19px;
-  margin: 0;
-  padding: 0;
-  word-wrap: break-word;
-  -webkit-text-size-adjust: 100%;
-}
-body #mastheadbg {
-  background-color: #2e3338;
-  margin-bottom: -110px;
-  height: 60px;
-}
-h1, h2, h3, h4, h5, h6 {
-	text-rendering: optimizeLegibility
-}
-article {
-  display: block;
-  margin: 0 auto;
-  padding: 20px 20px;
-  width: 800px;
-}
-p {
-  margin: 0.6em 0
-}
-pre, code {
-	font-family: 'SF Mono', 'Menlo', 'Source Code Pro', Monaco;
-	font-size: 85%
-}
-h1, h2 {
-  font-weight: normal;
-}
-h3 {
-	font-weight: normal;
-}
-h4 {
-	text-transform: uppercase
-}
-h4, h4 strong {
-	font-weight: normal
-}
-h5 {
-	text-transform: none;
-	font-weight: bold
-}
-h6 {
-	text-transform: uppercase;
-	font-weight: normal
-}
-blockquote {
-	width: 80%;
-	font-size: 1em;
-	color: #70707f
-}
-a, a:visited {
-	color: #4a525a;
-}
-a:hover {
-  color: black
-}
-header {
-  font-weight: bold;
-  margin-bottom: 2em
-}
-header a, header a:visited {
-  color: #e6e6e6;
-  text-decoration: none;
-}
-header a:hover {
-  color: white;
-}
-header a.extra {
-  color: #aaa;
-  text-transform: lowercase;
-  text-decoration: none;
-  margin-left: 1em;
-}
-header a.extra:hover {
-  color: white;
-}
-footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 1px solid #4a525a;
-  margin-top: 2em;
-  overflow: hidden;
-  margin-right: 3em;
-}
-footer a {
-  color: #4a525a;
-  text-decoration: none;
-}
-table {
-  font-size: inherit;
-  font: 100%;
-}
-
 /* START HOME */ 
 
-ul.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: 'Source Sans Pro', -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', sans-serif;
+  font-size: 1.125em;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: 100%
 }
-ul.posts li {
-  line-height: 1.75em;
-  list-style: none
+#mastheadbg {
+  height: 145px;
+  background-color: #2e3338;
+  margin-bottom: -145px;
 }
-ul.posts a {
-  text-decoration: underline
+a, a:active, a:visited {
+  color: #2e3338;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
 }
 
-/* START SITE */
+/* SITE TITLE */
 
-.site {
-  font-size: 110%;
-  text-align: left;
-  width: 42em;
-  margin: 3em auto 2em auto;
-  line-height: 1.5em;
+#masthead {
+  width: 500px;
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 0.9em;
+  color: #ffffff;
 }
-.site .posttitle a {
-  color: black;
+#masthead h1 {
+  font-weight: normal;
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0.5em;
+  margin-bottom: 0.25em;
+}
+#masthead a, #masthead a:active, #masthead a:visited { 
+  color: #ffffff
+}
+#masthead h1 a, #masthead h1 a:active, #masthead h1 a:visited {
+  color: #ffffff;
   text-decoration: none;
 }
-.site .meta {
-  color: #aaa;
+#masthead p { 
+  margin: 0;
+  padding: 0; 
+}
+#masthead nav { 
+  display: block;
+  margin: 0;
+  padding: 1em 0;
+  color: #4a525a;
 }
 
 /* POSTS */ 
 
-#post {
+article {
+  display: block;
+  line-height: 1.6;
+  margin-top: 3em
+}
+article header { 
+  color: #888
+}
+article header p { 
+  margin: 0
+}
+article header a { 
+  text-decoration: none
+}
+article a, article a:active, article a:visited {
+  color: teal;
+}
+footer {
+  font-size: 13px;
+  margin: 2em 0;
+  color: #666;
+  border-top: 1px solid #2e3338;
+  overflow: hidden;
+  text-align: center
+}
+footer a {
+  color: teal;
+  text-decoration: none;
+}
+footer p {
+  margin: 0.5em;
+}
+section#posts {
+  position: relative;
+  display: block;
+  width: 620px;
+  margin: 0 auto;
+}
 
+/* POSTS - TITLE */ 
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  line-height: 1.25;
+  font-weight: 500;
 }
-#post a {
-  text-decoration: underline;
+h2 a, h2 a:active, h2 a:visited {
+  color: #000000;
+  text-decoration: none;
 }
-#post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em
+
+/* POSTS - CONTENT */
+
+.theend {
+  text-align: center;
+  font-size: 1.5em;
+  color: #cccccc;
+  margin-top: 1em;
 }
-#post ul, #post ol, #post li {
-  margin-left: 1.35em
+h3 {
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
-#post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  font-size: 85%;
-  padding: 0 .2em
+b, strong {
+  font-weight: 700;
 }
-#post pre code {
-  border: none
+blockquote {
+  margin: 0 18px 18px 18px;
+  color: #666;
+  padding-left: 10px;
+  border-left: 4px solid #eee
 }
-#post img {
-  max-width: 42em;
-  padding: 1em 0
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto
+}
+li {
+  margin: 1em 0;
+}
+pre, code {
+  font-family: 'SF Mono', 'Menlo', 'Source Code Pro', Monaco;
+  background-color: #eee;
+  overflow: auto;
+  font-size: 11px;
+  padding: 1em;
+}
+@media (max-width: 680px) {
+  section#posts {
+    width: calc(100vw - 30px);
+  }
+
+  #mastheadbg {
+    height: 190px;
+    margin-bottom: -190px;
+  }
+  #masthead {
+    height: 190px;
+  }
+}
+@media (max-width: 520px) {
+  body {
+    font-size: 1em;
+  }
+
+  #masthead {
+    width: 100%;
+    font-size: 1.1em;
+  }
+
+  #masthead h1 {
+    padding-top: 0.25em;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  #mastheadbg {
+    height: 165px;
+    margin-bottom: -165px;
+  }
+
+  #masthead {
+    height: 165px;
+  }
+}
+@media (max-width: 360px) {
+  #masthead {
+    font-size: 1em;
+  }
+}
+@media print {
+  a {
+    color: #888;
+  }
+
+  #masthead {
+    color: #888;
+  }
+
+  #mastheadbg, nav, #masthead nav, {
+    display: none;
+  }
+
+  #masthead {
+    width: 100%;
+    height: auto;
+  }
+
+  #masthead h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #444
+  }
+
+  #description {
+    font-size: 10pt
+  }
+
+  body {
+    width: auto;
+    max-width: 125em;
+    padding: 0;
+    margin: 0 auto;
+    color: #000;
+    border: 0
+  }
+
+  section#posts {
+    position: static;
+    margin: 0;
+    width: 100%
+  }
+
+  article {
+    margin-top: 2em
+  }
+
+  #masthead a, #masthead a:active, #masthead a:visited, #masthead h1 a, #masthead h1 a:active, #masthead h1 a:visited, a, a:active, a:visted {
+    color: #888
+  }
+
+  footer p {
+    display: none
+  }
+
+  footer p:nth-child(2) {
+    display: block
+  }
 }
