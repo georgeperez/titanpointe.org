@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
-<article>
-<h2 class="posttitle"><a href="{{ page.url }}">{{ page.title }}</a></h2>
-<div id="post">
+  <header>
+    <h2>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </h2>
+    <p class="meta">{{ page.date | date:"%B %-d, %Y" }}</p>
+  </header>
   {{ content }}
-</div>
-</article>
+  <div class="theend">&#8523;</div>
