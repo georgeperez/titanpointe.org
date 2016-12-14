@@ -2,8 +2,13 @@
 layout: default
 title: George Perez-Marrero
 ---
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date:"%b %-d, %Y" }}</span>: <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
+{% for post in site.posts %}
+    <header>
+      <h2>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      </h2>
+      <p class="meta">{{ post.date | date:"%B %-d, %Y" }}</p>
+    </header>
+    {{ post.content }}
+    <div class="theend">&#8523;</div>
+{% endfor %}
