@@ -89,6 +89,9 @@ footer a {
 footer p {
   margin: 0.5em;
 }
+footer nav a, footer nav a:active, footer nav a:visited {
+  color: teal;
+}
 section#posts {
   position: relative;
   display: block;

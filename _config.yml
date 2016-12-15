@@ -7,4 +7,5 @@ highligther: rouge
 timezone: America/Puerto_Rico
 google_analytics_id: UA-40381065-2
 email: george@georgeperezmarrero.com
-excerpt_separator: <!--more-->
+github: [metadata]
+repository: georgeperez/georgeperez.github.io

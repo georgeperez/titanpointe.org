@@ -14,6 +14,15 @@
  </author>
 
  {% for post in site.posts %}
+ {% if post.external-url %}
+ <entry>
+  <title>{{ post.title }}</title>
+ <link href="{{ post.external-url }}"/>
+ <updated>{{ post.date | date_to_xmlschema }}</updated>
+ <id>http://georgeperezmarrero.com{{ post.id }}</id>
+ <content type="html">{{ post.content | xml_escape }}</content>
+</entry>
+{% else %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="http://georgeperezmarrero.com{{ post.url }}"/>
@@ -21,6 +30,7 @@
    <id>http://georgeperezmarrero.com{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
+ {% endif %}
  {% endfor %}
 
 </feed>
