@@ -72,7 +72,7 @@ article header a {
   text-decoration: none
 }
 article a, article a:active, article a:visited {
-  color: teal;
+  color: #06477c;
 }
 footer {
   font-size: 13px;
@@ -83,14 +83,17 @@ footer {
   text-align: center
 }
 footer a {
-  color: teal;
+  color: #06477c;
   text-decoration: none;
 }
 footer p {
   margin: 0.5em;
 }
+footer p a, footer p a:active, footer p a:visited {
+  color: #06477c;
+}
 footer nav a, footer nav a:active, footer nav a:visited {
-  color: teal;
+  color: #06477c;
 }
 section#posts {
   position: relative;
@@ -112,7 +115,7 @@ h2 a, h2 a:active, h2 a:visited {
   text-decoration: none;
 }
 p a.anchor, p a:active.anchor, p a:visited.anchor {
-  color: teal;
+  color: #06477c;
 }
 p.meta span.postdate {
   color: #888;
@@ -121,7 +124,7 @@ p.meta span.postdate {
 /* LINK POSTS */
 
 h2 a.linkpost, h2 a:active.linkpost, h2 a:visited.linkpost {
-  color: teal;
+  color: #06477c;
   text-decoration: underline;
 }
 
