@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Recommended Mac and iOS apps
+title: "Recommended Mac and iOS apps"
 ---
 
 I'm very picky when it comes to software. I am not one of those people who routinely goes to the App Store, looks at the "New Apps We Love" section, and downloads new apps. Usually, for me to try out an app, it has to be recommended or acclaimed as a good app. I've found apps like [Working Copy](https://workingcopyapp.com), [Narwhal](http://getnarwhal.com), [Textastic](https://textasticapp.com), and [Infuse](https://firecore.com/infuse) this way. These apps and utilities are used daily on my devices. Without them, my enjoyment (and thus my productivity) would grind to a halt. 

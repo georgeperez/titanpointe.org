@@ -22,7 +22,7 @@
       <h1><a href="/">George Perez-Marrero</a></h1>
         <div>
           <p id="description">
-            Believe it or not, I'm not the comic book artist. Programmer.
+            {{ site.description }}
           </p>
           <nav>
             <a href="/about">About</a>
@@ -35,9 +35,8 @@
           </nav>
         </div>
     </div><!--masthead-->
-    <article>
+
       {{ content }}
-    </article>
 
     {% include footer.html %}
   </section><!--posts-->

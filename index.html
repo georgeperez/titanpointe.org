@@ -3,12 +3,27 @@ layout: default
 title: George Perez-Marrero
 ---
 {% for post in site.posts %}
+<article>
+{% if post.external-url %}
+    <header>
+      <h2>
+        <a class="linkpost" href="{{ post.external-url }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a>
+      </h2>
+      <p class="meta"><span class="postdate">{{ post.date | date:"%B %-d, %Y" }}</span> &bull; <a class="anchor" href="{{ post.url }}" title="Permalink">&sect;</a></p>
+    </header>
+{% else %}
     <header>
       <h2>
         <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
       </h2>
-      <p class="meta">{{ post.date | date:"%B %-d, %Y" }}</p>
+      <p class="meta"><span class="postdate">{{ post.date | date:"%B %-d, %Y" }}</span> &bull; <a class="anchor" href="{{ post.url }}" title="Permalink">&sect;</a></p>
     </header>
-    {{ post.content }}
-    <div class="theend">&#8523;</div>
+{% endif %}
+
+{{ post.content }}
+
+  </article>
+
+  <div class="theend">&#8523;</div>
+
 {% endfor %}

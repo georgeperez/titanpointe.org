@@ -108,6 +108,19 @@ h2 a, h2 a:active, h2 a:visited {
   color: #000000;
   text-decoration: none;
 }
+p a.anchor, p a:active.anchor, p a:visited.anchor {
+  color: teal;
+}
+p.meta span.postdate {
+  color: #888;
+}
+
+/* LINK POSTS */
+
+h2 a.linkpost, h2 a:active.linkpost, h2 a:visited.linkpost {
+  color: teal;
+  text-decoration: underline;
+}
 
 /* POSTS - CONTENT */
 

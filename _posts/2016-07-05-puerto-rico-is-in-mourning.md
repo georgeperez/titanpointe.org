@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Puerto Rico is in mourning (Spanish)
+title: "Puerto Rico is in mourning (Spanish)"
 ---
 En el 5 de julio del 2016, puertorriqueños se levantaron con las noticias que la Puerta Bandera, uno de los lugares más amados y visitados en el Viejo San Juan, fue pintada blanca y negra sobre los colores tradicionales del rojo, blanco, y azul.
 
