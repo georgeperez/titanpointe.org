@@ -12,3 +12,5 @@ github: [metadata]
 repository: georgeperez/georgeperez.github.io
 gems: 
   - jekyll-feed
+  - jekyll-sitemap
+  
