@@ -4,10 +4,4 @@ This is the source code for [georgeperezmarrero.com](http://georgeperezmarrero.c
 
 ## License and Usage
 
-The following directories are under Copyright George Perez-Marrero. You may not reuse anything therein without my permission: 
-
-* `_posts`
-
-* `/assets/images/`
-
-All other directories and files are released under the MIT License.
+The fact that there's no license file is no oversight. All confent is under Copyright George Perez-Marrero. If you fork this project, please contact me to work out any legal work.
