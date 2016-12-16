@@ -19,12 +19,12 @@ layout: default
 {% else %}
     <header>
       <h2>
-        <a href="{{ relative.url }}">{{ page.title }}</a>
+        <a href="{{ page.url }}">{{ page.title }}</a>
       </h2>
       <p>
         <time datetime="{{ page.date }}" pubdate="pubdate">{{ page.date | date:"%B %-d, %Y" }}</time>
         <span>&bull;</span> 
-        <a class="permalink" title="Permalink" href="{{ relative.url }}">
+        <a class="permalink" title="Permalink" href="{{ page.url }}">
           <span class="noprint">&sect;</span>
           <span class="printonly">{{ site.url }}{{ page.url }}</span>
         </a>
