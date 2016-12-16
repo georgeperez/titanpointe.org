@@ -1,11 +1,14 @@
 ---
 title: George Perez-Marrero
 markdown: kramdown
+url: http://georgeperezmarrero.com
 permalink: pretty
-description: Believe it or not, I'm not the comic book artist. Programmer.
+description: "Believe it or not, I'm not the comic book artist. Programmer."
 highligther: rouge
 timezone: America/Puerto_Rico
 google_analytics_id: UA-40381065-2
 email: george@georgeperezmarrero.com
 github: [metadata]
 repository: georgeperez/georgeperez.github.io
+gems: 
+  - jekyll-feed

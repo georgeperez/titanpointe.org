@@ -1,8 +1,8 @@
-## Repository Information
+## georgeperezmarrero.com
 
-This is the source code for my website [georgeperezmarrero.com](http://georgeperezmarrero.com/).
+This is the source code for [georgeperezmarrero.com](http://georgeperezmarrero.com/).
 
-## License
+## License and Usage
 
 The following directories are under Copyright George Perez-Marrero. You may not reuse anything therein without my permission: 
 

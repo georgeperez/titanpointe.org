@@ -5,21 +5,33 @@ layout: default
 {% if page.external-url %}
     <header>
       <h2>
-        <a class="linkpost" href="{{ page.external-url }}">{{ page.title }}</a>
+        <a class="link" href="{{ page.external-url }}">{{ page.title }}</a>
       </h2>
-      <p class="meta"><span class="postdate">{{ page.date | date:"%B %-d, %Y" }}</span> &bull; <a class="anchor" href="{{ page.url }}" title="Permalink">&sect;</a></p>
+      <p>
+        <time datetime="{{ page.date }}" pubdate="pubdate">{{ page.date | date:"%B %-d, %Y" }}</time>
+        <span>&bull;</span> 
+        <a class="permalink" title="Permalink" href="{{ relative.url }}">
+          <span class="noprint">&sect;</span>
+          <span class="printonly">{{ site.url }}{{ page.url }}</span>
+        </a>
+      </p>
     </header>
 {% else %}
     <header>
       <h2>
-        <a href="{{ page.url }}">{{ page.title }}</a>
+        <a href="{{ relative.url }}">{{ page.title }}</a>
       </h2>
-      <p class="meta"><span class="postdate">{{ page.date | date:"%B %-d, %Y" }}</span> &bull; <a class="anchor" href="{{ page.url }}" title="Permalink">&sect;</a></p>
+      <p>
+        <time datetime="{{ page.date }}" pubdate="pubdate">{{ page.date | date:"%B %-d, %Y" }}</time>
+        <span>&bull;</span> 
+        <a class="permalink" title="Permalink" href="{{ relative.url }}">
+          <span class="noprint">&sect;</span>
+          <span class="printonly">{{ site.url }}{{ page.url }}</span>
+        </a>
+      </p>
     </header>
 {% endif %}
 
   {{ content }}
 
   </article>
-
-  <div class="theend">&#8523;</div>
