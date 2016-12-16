@@ -48,7 +48,7 @@ Other apps that I use a lot:
 
 * [Overcast](https://geo.itunes.apple.com/us/app/overcast-podcast-player/id888422857?mt=8&uo=4&at=1010lbam) (iOS, limited web app)  
 
-* [Darkroom](https://geo.itunes.apple.com/us/app/darkroom-photo-editor/id953286746?mt=8&uo=4&at=1010lbam)(iOS)  
+* [Darkroom](https://geo.itunes.apple.com/us/app/darkroom-photo-editor/id953286746?mt=8&uo=4&at=1010lbam) (iOS)  
 
 * [VSCO](https://geo.itunes.apple.com/us/app/vsco/id588013838?mt=8&uo=4&at=1010lbam) (iOS)  
 
