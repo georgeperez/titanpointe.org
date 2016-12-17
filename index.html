@@ -5,39 +5,39 @@ title: George Perez-Marrero
 {% for post in site.posts %}
 <article>
 {% if post.external-url %}
-    <header>
-      <h2>
-        <a class="link" href="{{ post.external-url }}">{{ post.title }}</a>
-      </h2>
-      <p>
-        <time datetime="{{ post.date }}" pubdate="pubdate">{{ post.date | date:"%B %-d, %Y" }}</time>
-        <span>&bull;</span>
-        <a class="permalink" title="Permalink" href="{{ post.url }}">
-          <span class="noprint">&sect;</span>
-          <span class="printonly">{{ site.url }}{{ post.url }}</span>
-        </a>
-      </p>
-    </header>
+  <header>
+    <h2>
+      <a class="link" href="{{ post.external-url }}">{{ post.title }}</a>
+    </h2>
+    <p>
+      <time datetime="{{ post.date }}" pubdate="pubdate">{{ post.date | date:"%B %-d, %Y" }}</time>
+      <span>&bull;</span>
+      <a class="permalink" title="Permalink" href="{{ post.url }}">
+        <span class="noprint">&sect;</span>
+        <span class="printonly">{{ site.url }}{{ post.url }}</span>
+      </a>
+    </p>
+  </header>
 {% else %}
-    <header>
-      <h2>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h2>
-      <p>
-        <time datetime="{{ post.date }}" pubdate="pubdate">{{ post.date | date:"%B %-d, %Y" }}</time> 
-        <span>&bull;</span> 
-        <a class="permalink" title="Permalink" href="{{ post.url }}">
-          <span class="noprint">&sect;</span>
-          <span class="printonly">{{ site.url }}{{ post.url }}</span>
-        </a>
-      </p>
-    </header>
+  <header>
+    <h2>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h2>
+    <p>
+      <time datetime="{{ post.date }}" pubdate="pubdate">{{ post.date | date:"%B %-d, %Y" }}</time> 
+      <span>&bull;</span> 
+      <a class="permalink" title="Permalink" href="{{ post.url }}">
+        <span class="noprint">&sect;</span>
+        <span class="printonly">{{ site.url }}{{ post.url }}</span>
+      </a>
+    </p>
+  </header>
 {% endif %}
 
 {{ post.content }}
 
-  </article>
+</article>
 
-  <div class="divider"></div>
+<div class="divider"></div>
 
 {% endfor %}
