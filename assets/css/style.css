@@ -1,18 +1,19 @@
-/* START HOME */ 
+/* GLOBAL RESETS */
 
 body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
+  border-top: 1px solid #4a525a;
   font-family: 'Source Sans Pro', -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', sans-serif;
   font-size: 1.125em;
   word-wrap: break-word;
   -webkit-text-size-adjust: 100%
 }
 #mastheadbg {
-  height: 145px;
+  height: 165px;
   background-color: #2e3338;
-  margin-bottom: -145px;
+  margin-bottom: -165px;
 }
 a, a:active, a:visited {
   color: #06477c;
@@ -20,11 +21,26 @@ a, a:active, a:visited {
 h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
+footer {
+  font-size: 14px;
+  margin: 2em 0;
+  color: #888;
+  border-top: 1px solid #2e3338;
+  overflow: hidden;
+  text-align: center
+}
+footer a {
+  color: #06477c;
+  text-decoration: none;
+}
+footer p {
+  margin: 0.5em;
+}
 .printonly {
   display: none
 }
 
-/* SITE TITLE */
+/* MASTHEAD */
 
 #masthead {
   width: 500px;
@@ -74,21 +90,6 @@ article header p {
 article header a { 
   text-decoration: none
 }
-footer {
-  font-size: 14px;
-  margin: 2em 0;
-  color: #888;
-  border-top: 1px solid #2e3338;
-  overflow: hidden;
-  text-align: center
-}
-footer a {
-  color: #06477c;
-  text-decoration: none;
-}
-footer p {
-  margin: 0.5em;
-}
 section#posts {
   position: relative;
   display: block;
@@ -114,7 +115,7 @@ h2 a, h2 a:active, h2 a:visited {
   text-decoration: none;
 }
 
-/* LINK POSTS */
+/* POSTS - EXTERNAL LINKS */
 
 h2 a.link, h2 a:active.link, h2 a:visited.link {
   color: #06477c;
@@ -122,7 +123,6 @@ h2 a.link, h2 a:active.link, h2 a:visited.link {
 }
 
 /* POSTS - CONTENT */
-
 
 h3 {
   font-size: 1.25em;
@@ -256,7 +256,7 @@ pre, code {
   }
 
   #masthead a, #masthead a:active, #masthead a:visited, #masthead h1 a, #masthead h1 a:active, #masthead h1 a:visited, a, a:active, a:visted {
-    color: #888
+    color: #ffffff
   }
 
   footer p {
