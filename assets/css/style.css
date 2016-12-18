@@ -11,9 +11,9 @@ body {
   -webkit-text-size-adjust: 100%
 }
 #mastheadbg {
-  height: 165px;
+  height: 145px;
   background-color: #2e3338;
-  margin-bottom: -165px;
+  margin-bottom: -145px;
 }
 a, a:active, a:visited {
   color: #06477c;
@@ -191,12 +191,12 @@ pre, code {
   }
 
   #mastheadbg {
-    height: 165px;
-    margin-bottom: -165px;
+    height: 145px;
+    margin-bottom: -145px;
   }
 
   #masthead {
-    height: 165px;
+    height: 145px;
   }
 }
 @media (max-width: 360px) {
