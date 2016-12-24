@@ -191,12 +191,12 @@ pre, code {
   }
 
   #mastheadbg {
-    height: 145px;
-    margin-bottom: -145px;
+    height: 165px;
+    margin-bottom: -165px;
   }
 
   #masthead {
-    height: 145px;
+    height: 165px;
   }
 }
 @media (max-width: 360px) {
