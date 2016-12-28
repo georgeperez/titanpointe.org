@@ -9,7 +9,7 @@
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://georgeperezmarrero.com/</id>
  <author>
-   <name>George Perez-Marrero</name>
+   <name>{{ site.author }}</name>
    <email>george@georgeperezmarrero.com</email>
  </author>
 
