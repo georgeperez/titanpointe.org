@@ -1,4 +1,6 @@
+User-agent: Googlebot
+Allow: /
 User-agent: *
-Disallow: 
+Disallow: /
 
 Sitemap: http://georgeperezmarrero.com/sitemap.xml
