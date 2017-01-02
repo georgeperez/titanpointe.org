@@ -1,5 +1,4 @@
 ---
-title: George Perez-Marrero
 markdown: kramdown
 author: George Perez-Marrero
 url: http://georgeperezmarrero.com
@@ -10,7 +9,7 @@ timezone: America/Puerto_Rico
 google_analytics_id: UA-40381065-2
 email: george.perez.marrero@gmail.com
 github: [metadata]
-repository: georgeperez/georgeperez.github.io
+repository: https://github.com/georgeperez/georgeperez.github.io
 gems: 
   - jekyll-sitemap
   
