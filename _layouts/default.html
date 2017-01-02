@@ -16,29 +16,10 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
 </head>
 <body>
-  <div id="mastheadbg">&nbsp;</div>
-  <section id="posts">
-    <div id="masthead">
-      <h1><a href="/">George Perez-Marrero</a></h1>
-        <div>
-          <p id="description">
-            {{ site.description }}
-          </p>
-          <nav>
-            <a href="/about">About</a>
-            &bull;
-            <a href="https://github.com/georgeperez/">GitHub</a>
-            &bull;
-            <a href="https://twitter.com/georgeperez">Twitter</a>
-            &bull;
-            <a href="mailto:{{ site.email }}">Email</a>
-          </nav>
-        </div>
-    </div><!--masthead-->
-
-    <div class="content">
-      {{ content }}
-    </div>
+  {% include header.html %}
+  <div class="content">
+    {{ content }}
+  </div>
 
     {% include footer.html %}
   </section><!--posts-->
