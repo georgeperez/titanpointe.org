@@ -12,4 +12,15 @@ github: [metadata]
 repository: https://github.com/georgeperez/georgeperez.github.io
 gems: 
   - jekyll-sitemap
-  
+  - jekyll-seo-tag
+
+twitter: 
+  username: georgeperez
+
+social: 
+  name: George Perez-Marrero
+  links: 
+    - https://twitter.com/georgeperez
+    - https://facebook.com/georgeperezmarrero
+    - https://linkedin.com/in/georgeperezmarrero
+    - https://github.com/georgeperez
