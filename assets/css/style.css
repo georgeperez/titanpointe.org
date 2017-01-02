@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  border-top: 1px solid #4a525a;
+  border-top: 3px solid #4a525a;
   font-family: 'Source Sans Pro', -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', sans-serif;
   font-size: 1.125em;
   word-wrap: break-word;
@@ -43,7 +43,7 @@ footer p {
 /* MASTHEAD */
 
 #masthead {
-  width: 500px;
+  width: 620px;
   padding-top: 0;
   margin-top: 0;
   font-size: 0.9em;
@@ -78,8 +78,8 @@ footer p {
 
 article {
   display: block;
-  line-height: 1.6;
-  margin-top: 3em
+  line-height: 1.5;
+  margin-top: 1.7em
 }
 article header { 
   color: #888
@@ -167,11 +167,11 @@ pre, code {
   }
 
   #mastheadbg {
-    height: 190px;
-    margin-bottom: -190px;
+    height: 145px;
+    margin-bottom: -145px;
   }
   #masthead {
-    height: 190px;
+    height: 145px;
   }
 }
 @media (max-width: 520px) {
@@ -191,12 +191,12 @@ pre, code {
   }
 
   #mastheadbg {
-    height: 165px;
-    margin-bottom: -165px;
+    height: 145px;
+    margin-bottom: -145px;
   }
 
   #masthead {
-    height: 165px;
+    height: 145px;
   }
 }
 @media (max-width: 360px) {
