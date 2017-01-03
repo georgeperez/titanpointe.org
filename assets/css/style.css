@@ -16,7 +16,8 @@ body {
   margin-bottom: -145px;
 }
 a, a:active, a:visited {
-  color: #06477c;
+  color: #326891;
+  curso: auto;
 }
 h1, h2, h3, h4, h5, h6 {
   color: #000000;
@@ -30,7 +31,7 @@ footer {
   text-align: center
 }
 footer a {
-  color: #06477c;
+  color: #326891;
   text-decoration: none;
 }
 footer p {
@@ -118,7 +119,7 @@ h2 a, h2 a:active, h2 a:visited {
 /* POSTS - EXTERNAL LINKS */
 
 h2 a.link, h2 a:active.link, h2 a:visited.link {
-  color: #06477c;
+  color: #326891;
   text-decoration: underline;
 }
 
@@ -150,13 +151,13 @@ li {
 }
 pre, code {
   font-family: 'SF Mono', 'Menlo', 'Source Code Pro', Monaco;
-  background-color: #eee;
   overflow: auto;
   font-size: 11px;
   padding: 1em;
+
 }
 .permalink {
-  color: #06477c;
+  color: #326891;
 }
 
 /* Responsive design stuff */ 
@@ -178,23 +179,19 @@ pre, code {
   body {
     font-size: 1em;
   }
-
   #masthead {
     width: 100%;
     font-size: 1.1em;
   }
-
   #masthead h1 {
     padding-top: 0.25em;
     font-size: 1.5em;
     margin-bottom: 0.5em;
   }
-
   #mastheadbg {
     height: 145px;
     margin-bottom: -145px;
   }
-
   #masthead {
     height: 145px;
   }
@@ -202,6 +199,9 @@ pre, code {
 @media (max-width: 360px) {
   #masthead {
     font-size: 1em;
+  }
+  pre, code {
+    font-size: 5px
   }
 }
 @media print {
