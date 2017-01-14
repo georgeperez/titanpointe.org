@@ -5,25 +5,25 @@ body {
   padding: 0;
   background-color: #ffffff;
   border-top: 3px solid #4a525a;
-  font-family: 'Source Sans Pro', -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', sans-serif;
   font-size: 1.125em;
   word-wrap: break-word;
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
 }
-#mastheadbg {
-  height: 145px;
-  background-color: #2e3338;
-  margin-bottom: -145px;
-}
+
 a, a:active, a:visited {
   color: #326891;
-  curso: auto;
+  text-decoration: none
+}
+a:hover {
+  color: #538fbc
 }
 h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
 footer {
-  font-size: 14px;
+  font-size: 1em;
   margin: 2em 0;
   color: #888;
   border-top: 1px solid #2e3338;
@@ -32,7 +32,6 @@ footer {
 }
 footer a {
   color: #326891;
-  text-decoration: none;
 }
 footer p {
   margin: 0.5em;
@@ -44,35 +43,35 @@ footer p {
 /* MASTHEAD */
 
 #masthead {
-  width: 620px;
+  width: 650px;
   padding-top: 0;
   margin-top: 0;
-  font-size: 0.9em;
-  color: #ffffff;
+  font-size: 1.4em;
+  color: #000000;
+}
+#mastheadtext {
+  font-size: .9em
 }
 #masthead h1 {
-  font-weight: normal;
+  font-weight: bold;
   font-size: 2em;
   margin-top: 0;
   padding-top: 0.5em;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.05em;
 }
-#masthead a, #masthead a:active, #masthead a:visited { 
-  color: #ffffff
-}
+/*#masthead a, #masthead a:active, #masthead a:visited { 
+  color: #326891
+}*/
 #masthead h1 a, #masthead h1 a:active, #masthead h1 a:visited {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
+}
+#masthead h1 a:hover {
+  color: #326891;
 }
 #masthead p { 
   margin: 0;
-  padding: 0; 
-}
-#masthead nav { 
-  display: block;
-  margin: 0;
-  padding: 1em 0;
-  color: #4a525a;
+  padding: 0;
 }
 
 /* POSTS */ 
@@ -94,7 +93,7 @@ article header a {
 section#posts {
   position: relative;
   display: block;
-  width: 620px;
+  width: 650px;
   margin: 0 auto;
 }
 .divider {
@@ -127,12 +126,12 @@ h2 a.link, h2 a:active.link, h2 a:visited.link {
 
 h3 {
   font-size: 1.25em;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 2em;
   margin-bottom: 1em;
 }
 b, strong {
-  font-weight: 700;
+  font-weight: 600;
 }
 blockquote {
   margin: 0 18px 18px 18px;
@@ -166,13 +165,8 @@ pre, code {
   section#posts {
     width: calc(100vw - 30px);
   }
-
-  #mastheadbg {
-    height: 145px;
-    margin-bottom: -145px;
-  }
   #masthead {
-    height: 145px;
+    height: 110px;
   }
 }
 @media (max-width: 520px) {
@@ -184,21 +178,16 @@ pre, code {
     font-size: 1.1em;
   }
   #masthead h1 {
-    padding-top: 0.25em;
+    padding-top: 0.50em;
     font-size: 1.5em;
-    margin-bottom: 0.5em;
-  }
-  #mastheadbg {
-    height: 145px;
-    margin-bottom: -145px;
   }
   #masthead {
-    height: 145px;
+    height: 60px;
   }
 }
 @media (max-width: 360px) {
   #masthead {
-    font-size: 1em;
+    font-size: .9em;
   }
   pre, code {
     font-size: 5px
@@ -213,7 +202,7 @@ pre, code {
     color: #888;
   }
 
-  #mastheadbg, nav, #masthead nav, .noprint {
+  .noprint {
     display: none;
   }
 
@@ -233,7 +222,7 @@ pre, code {
   }
 
   #mastheadtext {
-    font-size: 10pt
+    font-size: 10pt;
   }
 
   body {
@@ -256,7 +245,7 @@ pre, code {
   }
 
   #masthead a, #masthead a:active, #masthead a:visited, #masthead h1 a, #masthead h1 a:active, #masthead h1 a:visited, a, a:active, a:visted {
-    color: #ffffff
+    color: #0000000
   }
 
   footer p {
