@@ -2,40 +2,29 @@
 layout: default
 title: George Perez-Marrero
 ---
-{% for post in site.posts %}
-<article>
-{% if post.external-url %}
+
+  <img src="/assets/george.jpg" title="Yep, that's me">
+  <p>My name is George Perez-Marrero. I&rsquo;m an undergrad at the <a href="https://uprm.edu/">University of Puerto Rico, Mayagüez</a>. Some of my interests include macOS, iOS, programming, and photography. I write over at <a href="http://blog.georgeperezmarrero.com/">Tumblr</a>.</p>
+
   <header>
-    <h2>
-      <a class="link" href="{{ post.external-url }}">{{ post.title }}</a>
-    </h2>
-    <p>
-      <time datetime="{{ post.date }}" pubdate="pubdate">{{ post.date | date:"%B %-d, %Y" }}</time>
-      <span>&bull;</span>
-      <a class="permalink" title="Permalink" href="{{ post.url }}">
-        <span class="noprint">Permalink</span>
-        <span class="printonly">{{ site.url }}{{ post.url }}</span>
-      </a>
-    </p>
+    <h2>Projects</h2>
   </header>
-{% else %}
+  <p>My main project for the moment is this website. Check out the <a href="{{ site.repository }}">source code</a>.<p>
+
   <header>
-    <h2>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    <p>
-      <time datetime="{{ post.date }}" pubdate="pubdate">{{ post.date | date:"%B %-d, %Y" }}</time> 
-      <span>&bull;</span> 
-      <a class="permalink" title="Permalink" href="{{ post.url }}">
-        <span class="noprint">Permalink</span>
-        <span class="printonly">{{ site.url }}{{ post.url }}</span>
-      </a>
-    </p>
+    <h2>Contact</h2>
   </header>
-{% endif %}
+  <p>Email me at <a href="mailto:george.perez.marrero@gmail.com">george.perez.marrero@gmail.com</a> or send me a message on Twitter at <a href="https://twitter.com/georgeperez/">@georgeperez</a>.</p>
 
-{{ post.content }}
+  <header>
+    <h2>Online</h2>
+  </header>
+    <p>You can find me at these places, too: 
+    <ul>
+      <li><a href="https://github.com/georgeperez/">GitHub</a></li>
+      <li><a href="https://linkedin.com/in/georgeperezmarrero/">LinkedIn</a></li>
+      <li><a href="https://facebook.com/georgeperezmarrero/">Facebook</a></li>
+      <li><a href="https://instagram.com/georgeperez/">Instagram</a></li>
+    </ul>
+    </p>
 
-</article>
-
-{% endfor %}
