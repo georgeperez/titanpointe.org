@@ -1,9 +1,8 @@
 ---
 markdown: kramdown
-author: George Perez-Marrero
 url: http://georgeperezmarrero.com
 permalink: pretty
-description: "Not the comic book artist. Ranting since 1996."
+description: "Not the comic book artist. CS undergrad at UPRM."
 highligther: rouge
 timezone: America/Puerto_Rico
 google_analytics_id: UA-40381065-2
@@ -18,7 +17,7 @@ twitter:
   username: georgeperez
 
 social: 
-  name: George Perez-Marrero
+  name: George Perez
   links: 
     - https://twitter.com/georgeperez
     - https://facebook.com/georgeperezmarrero
