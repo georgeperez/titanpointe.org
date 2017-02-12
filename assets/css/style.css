@@ -135,6 +135,7 @@ blockquote {
   border-left: 4px solid #eee
 }
 img {
+  box-shadow: .5px .5px 5px 1px #888;
   max-width: 100%;
   height: auto;
   display: block;
