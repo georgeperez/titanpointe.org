@@ -6,20 +6,27 @@ body {
   background-color: #ffffff;
   border-top: 3px solid #4a525a;
   font-family: -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', sans-serif;
-  font-size: 1.125em;
+  font-size: 1.135em;
   word-wrap: break-word;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
 
-a, a:active, a:visited {
+a, 
+a:active, 
+a:visited {
   color: #326891;
   text-decoration: none
 }
 a:hover {
-  color: #538fbc
+  color: #538fbc;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
   color: #000000;
 }
 footer {
@@ -36,40 +43,30 @@ footer a {
 footer p {
   margin: 0.5em;
 }
-.printonly {
-  display: none
-}
 
 /* MASTHEAD */
 
-#masthead {
+#title {
   width: 650px;
   padding-top: 0;
   margin-top: 0;
   font-size: 1.4em;
   color: #000000;
+
 }
-#mastheadtext {
-  font-size: .9em
-}
-#masthead h1 {
+#title h1 {
   font-weight: bold;
   font-size: 2em;
-  margin-top: 0;
+  margin-top: 0.05em;
   padding-top: 0.15em;
   margin-bottom: 0.05em;
 }
-/*#masthead a, #masthead a:active, #masthead a:visited { 
-  color: #326891
-}*/
-#masthead h1 a, #masthead h1 a:active, #masthead h1 a:visited {
+#title h1 a, 
+#title h1 a:active, 
+#title h1 a:visited {
   color: #000000;
-  text-decoration: none;
 }
-#masthead h1 a:hover {
-  color: #326891;
-}
-#masthead p { 
+#title p { 
   margin: 0;
   padding: 0;
 }
@@ -90,14 +87,12 @@ article header p {
 article header a { 
   text-decoration: none
 }
-section#posts {
+section#container {
   position: relative;
   display: block;
   width: 650px;
   margin: 0 auto;
 }
-
-/* POSTS - TITLE */ 
 
 h2 {
   font-size: 1.5em;
@@ -105,19 +100,13 @@ h2 {
   line-height: 1.25;
   font-weight: 500;
 }
-h2 a, h2 a:active, h2 a:visited {
+
+h2 a, 
+h2 a:active, 
+h2 a:visited {
   color: #000000;
   text-decoration: none;
 }
-
-/* POSTS - EXTERNAL LINKS */
-
-h2 a.link, h2 a:active.link, h2 a:visited.link {
-  color: #326891;
-  text-decoration: underline;
-}
-
-/* POSTS - CONTENT */
 
 h3 {
   font-size: 1.25em;
@@ -125,15 +114,7 @@ h3 {
   margin-top: 2em;
   margin-bottom: 1em;
 }
-b, strong {
-  font-weight: 600;
-}
-blockquote {
-  margin: 0 18px 18px 18px;
-  color: #666;
-  padding-left: 10px;
-  border-left: 4px solid #eee
-}
+
 img {
   box-shadow: .5px .5px 5px 1px #888;
   max-width: 100%;
@@ -141,27 +122,14 @@ img {
   display: block;
   margin: 10px auto
 }
-li {
-  margin: 1em 0;
-}
-pre, code {
-  font-family: 'SF Mono', 'Menlo', 'Source Code Pro', Monaco;
-  overflow: auto;
-  font-size: 11px;
-  padding: 1em;
-
-}
-.permalink {
-  color: #326891;
-}
 
 /* Responsive design stuff */ 
 
 @media (max-width: 680px) {
-  section#posts {
+  section#container {
     width: calc(100vw - 30px);
   }
-  #masthead {
+  #title {
     height: 110px;
   }
 }
@@ -169,24 +137,21 @@ pre, code {
   body {
     font-size: 1em;
   }
-  #masthead {
+  #title {
     width: 100%;
     font-size: 1.1em;
   }
-  #masthead h1 {
+  #title h1 {
     padding-top: 0.50em;
     font-size: 1.5em;
   }
-  #masthead {
+  #title {
     height: 60px;
   }
 }
 @media (max-width: 360px) {
-  #masthead {
-    font-size: 1.120em;
-  }
-  pre, code {
-    font-size: 5px
+  #title {
+    font-size: 1em;
   }
 }
 @media print {
@@ -194,30 +159,22 @@ pre, code {
     color: #888;
   }
 
-  #masthead {
+  #title {
     color: #888;
   }
 
-  .noprint {
-    display: none;
-  }
-
-  .printonly {
-    display: inline
-  }
-
-  #masthead {
+  #title {
     width: 100%;
     height: auto;
   }
 
-  #masthead h1 {
+  #title h1 {
     margin: 0;
     font-size: 0.5em;
     color: #444
   }
 
-  #mastheadtext {
+  #titletext {
     font-size: 10pt;
   }
 
@@ -230,7 +187,7 @@ pre, code {
     border: 0
   }
 
-  section#posts {
+  section#container {
     position: static;
     margin: 0;
     width: 100%
@@ -240,7 +197,15 @@ pre, code {
     margin-top: 2em
   }
 
-  #masthead a, #masthead a:active, #masthead a:visited, #masthead h1 a, #masthead h1 a:active, #masthead h1 a:visited, a, a:active, a:visted {
+  #title a, 
+  #title a:active, 
+  #title a:visited, 
+  #title h1 a, 
+  #title h1 a:active, 
+  #title h1 a:visited, 
+  a, 
+  a:active, 
+  a:visted {
     color: #0000000
   }
 
