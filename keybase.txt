@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/georgeperezm
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://george.perez-marrero.com
+  * I am georgeperezm (https://keybase.io/georgeperezm) on keybase.
+  * I have a public key with fingerprint 5E4E EEDD D17F 611E A377  25EF F226 6826 623A 1F97
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120120529cebd62528a6a7018b3831dfd8da6c20a66306ec0caa848c8627e7df6f60a",
+            "fingerprint": "5e4eeeddd17f611ea37725eff2266826623a1f97",
+            "host": "keybase.io",
+            "key_id": "f2266826623a1f97",
+            "kid": "010147c58e8afc742851363016362432ef4a5cb5f3eba32cd8e3aca94272c69f0f780a",
+            "uid": "2b80da7e45602143af47e4653a142a19",
+            "username": "georgeperezm"
+        },
+        "service": {
+            "hostname": "george.perez-marrero.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1490205220,
+    "expire_in": 157680000,
+    "prev": "2c2978a7b2d6a02dafd36bc0062e73569b6e50c97e24ffd3d1b7d7bd2b042b4d",
+    "seqno": 18,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.66
+Comment: https://keybase.io/crypto
+
+yMN2AnicbVJ9UBVVFH98NuCgROkAEh8bEfHx2L27e3f3IdHIjNiQM5BpiHx0d/fu
+exvw9rHvQYCgjlCBAhowOEaiNCMIJVnKZMiMA+MfJAgN0Rc2/aFQijVqiSk00S6T
+fzTTnXvnzrnnd37nd849l4N8LIFev8c54kRb1FGv8ZHeckvu9FDsHkLU5CrCtoco
+xqsXLpGx21NUrMqEjSApYG4WCBIWZQhYwCOIOJLiRZqnKVmReRlBCZAIQpqEWCIl
+hHiGl3gIOMzJClQgiYgkQlGddqy7dNXpMWhZzGCMZVmmOAVSFEY0xwEWKwoAEPLG
+ATSiFIEzAh2a24wwxInIja2qZrwZRtGqvP/BP9ZNUgwnsTzmkSJxDOBZijYUUpCG
+gKEBVhjESiKr0FhENJBkHtNIQgIDOCBBQSEVjl/VXb5KB0SelBGHGRaSgGJopDCG
+AVkjKwMQJZhAN9adqBQbaDvWdDt2YR1XlxK1SYThqVAlbDbXrOY/KOsqLLkU6TrW
+NauklRpcLl3zaJJWYqAcHo/LZpJ4qlxm1FtYLPqXr0hUnbLRViOgAutuVXMSNspA
+Sh7VTEAxAmn+HCCTCFzpUnVcpJoIloM8aSwzDa4wi5OAwPGIE4EMEQlkpMg0FCWS
+hABzNAsFEWKWlAQOA0YxfDIlcjInykAkGSAyMmFWWObUDG7e0InsBqdbtTuRp1zH
+RO3oSL6vxSvQ4u/nbc6bJTAg+PEUxjeuW8m9E1x3abo15rcHby66N79f05omF86u
+ecFte5RxYXn2zzP+L8Vl1SXMfZ3kG90Z+Wv1e8OdQqe9rb6vJ4O/dqN9aGq8qt6S
+FxGyECmdTrP0Lg9suFcp4NbjZLZz02sNSsvOwvxv3w27nxF0djo2ZbarbfDgxVcc
+L/Zd/5wfOOhrfYIiDwhdao3+xmhzX0kuftCbWJfRYs9Rdj9X27Uy+PYPWxPemZjK
+hDHuqLqAmfItV6Lnak9cCSnRN9YuX1yyN+ZZc6bw7n5n3gebhxMcJ+Psw4d3zWx5
+uS2ktzV4bGL+eHhihHffOfXAjai7S5dGDu2LO5oSbov+ZschnF4mxPY8NdQc9kv1
+Ge9Jrawp9NTpj79fyUz3+vSzJxtwfdKHAY+Kk88R5TdvnbS1LJ/a39OqjcV8lNrf
+ON+Wl+lXMLCMn5a3pRYG3Llds5i9oMR8aVvktrZcC/lrw1zBbXbtZPvr422ha9MD
+Zx66l+8esXYMfgF+or4r6B/JTvNlHccSi7OuMukJf9zruH+2etIetmt7df76H9WN
+4wnPJPqMuf37K/dXJ2XOB61f9Gm4db5jNOXEmlRLYbOauO/V9IVj4d0d4WrWpp93
+fvJ8TiRYSQvhepval2Yd8cHxMev4iIfdM3tnBmInRC9r3s3rpX8P7ti2/chCX+jE
+ZbWle69fcfL55K8u5I41PRvLX/0HZdq46A==
+=DgYI
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/georgeperezm
+
+==================================================================
