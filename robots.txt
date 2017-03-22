@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://georgeperezmarrero.com/sitemap.xml
+Sitemap: http://george.perez-marrero.com/sitemap.xml
