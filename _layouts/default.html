@@ -29,11 +29,20 @@
   <meta name="twitter:image" content="http://george.perez-marrero.com/assets/images/hero.png" />
 </head>
 <body>
-  <div id="wrapper">
-    <section id="about">
-      {{ content }}
-    </div>
-  </div><!--wrapper-->
+    <div id="wrapper">
+        <header class="heading">
+            <div class="inner">
+                <h2>george's online site</h2>
+            </div><!--inner-->
+        </header><!--heading-->
+        <section id="main">
+            <section id="about">
+                <div class="inner">
+                    {{ content }}
+                </div> <!--/inner-->
+            </section> <!--about-->
+        </section><!--main-->
+    </div><!--wrapper-->
   {% include analytics.html %}
 </body>
 </html>

@@ -1,11 +1,11 @@
 /* GLOBAL RESETS */
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: rgb(0,0,0);
-  font-family: "Lato", -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', sans-serif;
-  font-size: 1.135em;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0,0,0);
+    font-family: "Lato", -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', sans-serif;
+    font-size: 1.135em;
 }
 
 a, 
@@ -42,11 +42,22 @@ article header a {
   text-decoration: none
 }
 
+/* Adapted from Zackary Corbett */
+
 #wrapper {
-  position: relative;
-  display: block;
-  width: 450px;
-  margin: 0 auto;
+  position: absolute;
+  width: 500px;
+  height: 335px;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -167.5px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -79,47 +90,37 @@ img {
 
 /* Responsive design stuff */ 
 
-@media (max-width: 680px) {
-  #wrapper {
-    width: calc(100vw - 30px);
+/*@media (max-width: 680px) {
+  #outer {
+    width: calc(100vw - 50px);
   }
-}
+}*/
 @media (max-width: 520px) {
   body {
     font-size: 1em;
   }
-}
-@media (max-width: 360px) {
-
-}
-@media print {
-  a {
-    color: #888;
-  }
-
-  body {
-    width: auto;
-    max-width: 125em;
-    padding: 0;
-    margin: 0 auto;
-    color: rgb(255,255,255);
-    border: 0
-  }
 
   #wrapper {
-    position: static;
-    margin: 0;
-    width: 100%
-  }
+    left: 0;
+    margin-left: 0;
+    max-width: 500px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 0;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%
 
-  article {
-    margin-top: 2em
   }
-
-  a, 
-  a:active, 
-  a:visted {
-    color: rgb(0,0,0);
+}
+@media (max-width: 360px) {
+  #wrapper {
+      top: 0;
+      margin-top: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      height: 100%
   }
-
 }
