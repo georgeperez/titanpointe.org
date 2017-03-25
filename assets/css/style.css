@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: rgb(0,0,0);
     font-family: "Lato", -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', sans-serif;
-    font-size: 1.135em;
+    font-size: 1.15em;
 }
 
 a, 
@@ -47,11 +47,11 @@ article header a {
 #wrapper {
   position: absolute;
   width: 500px;
-  height: 335px;
+  height: 450px;
   left: 50%;
   top: 50%;
   margin-left: -250px;
-  margin-top: -167.5px;
+  margin-top: -250px;
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
