@@ -4,18 +4,21 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(255,255,255);
-    font-family: -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', sans-serif;
+    font-family: sans-serif;
     font-size: 1.15em;
 }
 
 a,
 a:visited {
-  color: rgb(0,0,0);
+  color: #182536;
   text-decoration: none
 }
-a:active {
-  color: rgb(0,122,255);
+
+a:hover {
+    color: #FFFFFF;
+    background-color: #182536
 }
+
 p,
 h1, 
 h2, 
@@ -23,7 +26,7 @@ h3,
 h4, 
 h5, 
 h6 {
-  color: rgb(000,000,000);
+  color: #000000;
 }
  
 article {
@@ -41,33 +44,91 @@ article header a {
   text-decoration: none
 }
 
+#gpg p{
+    font-family: Menlo;
+    text-align: center
+}
+
 /* External Links */
 
-a.uprm, a:active.uprm, a:visited.uprm {
+a.uprm, 
+a:visited.uprm {
     color: #3AA21F;
 }
 
-a.medium, a:active.medium, a:visited.medium {
+a:hover.uprm {
+    color: #FFFFFF;
+    background-color: #3AA21F
+}
+
+a.medium, 
+a:visited.medium {
     color: #00ab6c;
 }
 
-a.twitter, a:active.twitter, a:visited.twitter {
+a:hover.medium {
+    color: #FFFFFF;
+    background-color: #00ab6c
+}
+
+a.twitter, 
+a:visited.twitter {
     color: #1da1f2;
 }
 
-a.facebook, a:active.facebook, a:visited.facebook {
+a:hover.twitter {
+    color: #FFFFFF;
+    background-color: #1da1f2
+}
+
+a.facebook, 
+a:visited.facebook {
     color: #3b5998;
 }
 
-a.instagram, a:active.instagram, a:visited.instagram {
+a:hover.facebook {
+    color: #FFFFFF;
+    background-color: #3b5998
+}
+
+a.instagram, 
+a:visited.instagram {
     color: #c13584;
 }
 
-a.github, a:active.github, a:visited.github {
+a:hover.instagram {
+    color: #FFFFFF;
+    background-color: #c13584
+}
+
+a.letterboxd, 
+a:visited.letterboxd {
+    color: #5e5e5e;
+}
+
+a:hover.letterboxd {
+    color: #FFFFFF;
+    background-color: #5e5e5e
+}
+
+a.github, 
+a:visited.github {
     color: #6e5494;
 }
-a.linkedin, a:active.linkedin, a:visited.linkedin {
+
+a:hover.github {
+    color: #FFFFFF;
+    background-color: #6e5494
+}
+
+a.linkedin, 
+a:visited.linkedin {
     color: #0077b5;
+}
+
+a:hover.linkedin {
+    color: #FFFFFF;
+    background-color: #0077b5
 }
 
 /* Adapted from Zackary Corbett */
