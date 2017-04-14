@@ -10,13 +10,15 @@ body {
 
 a,
 a:visited {
-  color: #182536;
+  color: #9b9b9b;
+  /*color: #182536*/
   text-decoration: none
 }
 
 a:hover {
     color: #FFFFFF;
-    background-color: #182536
+    background-color: #9b9b9b
+    /*background-color: #182536*/
 }
 
 p,
@@ -51,7 +53,7 @@ article header a {
 
 /* External Links */
 
-a.uprm, 
+/*a.uprm, 
 a:visited.uprm {
     color: #3AA21F;
 }
@@ -129,7 +131,7 @@ a:visited.linkedin {
 a:hover.linkedin {
     color: #FFFFFF;
     background-color: #0077b5
-}
+}*/
 
 /* Adapted from Zackary Corbett */
 
