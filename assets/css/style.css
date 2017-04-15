@@ -10,15 +10,15 @@ body {
 
 a,
 a:visited {
-  color: #9b9b9b;
-  /*color: #182536*/
+  /*color: #9b9b9b;*/
+  color: #182536
   text-decoration: none
 }
 
 a:hover {
     color: #FFFFFF;
-    background-color: #9b9b9b
-    /*background-color: #182536*/
+    /*background-color: #9b9b9b*/
+    background-color: #182536
 }
 
 p,
