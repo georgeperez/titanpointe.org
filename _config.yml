@@ -1,13 +1,15 @@
 ---
 markdown: kramdown
-url: https://george.perez-marrero.com
-permalink: pretty
+author: George Perez-Marrero
+url: https://george.perez-marrero.com/
+email: george.perez.marrero@gmail.com
+permalink: /:year/:month/:title
 description: "Not the comic book artist. CS undergrad at UPRM."
 highligther: rouge
 timezone: America/Puerto_Rico
 google_analytics_id: UA-40381065-2
-email: george.perez.marrero@gmail.com
 github: [metadata]
-repository: https://github.com/georgeperez/georgeperez.github.io
+repository: https://github.com/georgeperez/george.perez-marrero/
 gems: 
   - jekyll-sitemap
+  - jekyll-email-protect

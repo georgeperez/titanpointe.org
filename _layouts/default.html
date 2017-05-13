@@ -28,20 +28,13 @@
   <meta name="twitter:image" content="https://george.perez-marrero.com/assets/images/hero.png" />
 </head>
 <body>
-    <div id="wrapper">
-        <header class="heading">
-            <div class="inner">
-                <h3><a href="/">George Perez-Marrero</a></h3>
-            </div><!--inner-->
-        </header><!--heading-->
-        <section id="main">
-            <section id="about">
-                <div class="inner">
-                    {{ content }}
-                </div> <!--/inner-->
-            </section> <!--about-->
-        </section><!--main-->
-    </div><!--wrapper-->
+  <section id="posts">
+  {% include header.html %}
+  <div class="content">
+    {{ content }}
+  </div>
+  {% include footer.html %}
+  </section><!--posts-->
   {% include analytics.html %}
 </body>
 </html>

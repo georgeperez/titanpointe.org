@@ -2,10 +2,40 @@
 layout: default
 title: George Perez-Marrero
 ---
+{% for post in site.posts %}
 <article>
+{% if post.external-url %}
+  <header>
+    <h2>
+      <a class="link" href="{{ post.external-url }}">{{ post.title }}</a>
+    </h2>
+    <p>
+      <time datetime="{{ post.date }}" pubdate="pubdate">{{ post.date | date:"%B %-d, %Y" }}</time>
+      <span>&bull;</span>
+      <a class="permalink" title="Permalink" href="{{ post.url }}">
+        <span class="noprint">Permalink</span>
+        <span class="printonly">{{ site.url }}{{ post.url }}</span>
+      </a>
+    </p>
+  </header>
+{% else %}
+  <header>
+    <h2>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h2>
+    <p>
+      <time datetime="{{ post.date }}" pubdate="pubdate">{{ post.date | date:"%B %-d, %Y" }}</time> 
+      <span>&bull;</span> 
+      <a class="permalink" title="Permalink" href="{{ post.url }}">
+        <span class="noprint">Permalink</span>
+        <span class="printonly">{{ site.url }}{{ post.url }}</span>
+      </a>
+    </p>
+  </header>
+{% endif %}
 
-  <p>I&rsquo;m a computer science undergrad at the <a class="uprm" href="http://math.uprm.edu/">University of Puerto Rico, Mayagüez</a>. Some of my interests include macOS, iOS, programming, and photography. I have a <a class="medium" href="https://medium.com/@george.perez.marrero">"blog"</a> that doesn't get any new content whatsoever.</p>
-
-  <p>You can find me on <a class="twitter" href="https://twitter.com/georgeperez/">Twitter</a>, <a class="facebook" href="https://facebook.com/georgeperezmarrero/">Facebook</a>, <a class="instagram" href="https://instagram.com/georgeperez/">Instagram</a>, <a class="letterboxd" href="https://letterboxd.com/georgeperez/">Letterboxd</a>, <a class="github" href="https://github.com/georgeperez/">GitHub</a>, and <a class="linkedin" href="https://linkedin.com/in/georgeperezmarrero/">LinkedIn</a>.</p>
+{{ post.content }}
 
 </article>
+
+{% endfor %}

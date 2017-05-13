@@ -1,27 +1,25 @@
 /* GLOBAL RESETS */
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #FFFFFF;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 1.15em;
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.125em;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  word-wrap: break-word;
 }
 
-a,
+a, 
+a:active, 
 a:visited {
-  /*color: #9b9b9b;*/
   color: #182536;
   text-decoration: none
 }
 
 a:hover {
-    color: #FFFFFF;
-    /*background-color: #9b9b9b*/
-    background-color: #182536
+  color: #FFFFFF;
+  background-color: #182536;
 }
-
-p,
 h1, 
 h2, 
 h3, 
@@ -30,14 +28,69 @@ h5,
 h6 {
   color: #000000;
 }
- 
+footer {
+  font-size: 1em;
+  margin: 2em 0;
+  color: #888;
+  border-top: 1px solid #2e3338;
+  overflow: auto;
+  text-align: center
+}
+footer a {
+  color: #182536;
+}
+footer p {
+  margin: 0.5em;
+}
+.printonly {
+  display: none
+}
+
+/* MASTHEAD */
+
+#masthead {
+  width: 550px;
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 1.4em;
+  color: #000000;
+}
+#mastheadtext {
+  font-size: 1em
+}
+#masthead h1 {
+
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0.05em;
+  margin-bottom: 0.05em;
+}
+
+#masthead h1 a, 
+#masthead h1 a:active, 
+#masthead h1 a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+#masthead h1 a:hover {
+  color: #FFFFFF;
+  background-color: #182536;
+
+}
+#masthead p { 
+  margin: 0;
+  padding: 0;
+}
+
+/* POSTS */ 
+
 article {
   display: block;
-  line-height: 1.5;
-  margin-top: 1.5em
+  line-height: 1.5em;
+  margin-top: 2em
 }
 article header { 
-  color: #000000;
+  color: #888
 }
 article header p { 
   margin: 0
@@ -45,106 +98,14 @@ article header p {
 article header a { 
   text-decoration: none
 }
-
-/* External Links */
-
-/*a.uprm, 
-a:visited.uprm {
-    color: #3AA21F;
+section#posts {
+  position: relative;
+  display: block;
+  width: 650px;
+  margin: 0 auto;
 }
 
-a:hover.uprm {
-    color: #FFFFFF;
-    background-color: #3AA21F
-}
-
-a.medium, 
-a:visited.medium {
-    color: #00ab6c;
-}
-
-a:hover.medium {
-    color: #FFFFFF;
-    background-color: #00ab6c
-}
-
-a.twitter, 
-a:visited.twitter {
-    color: #1da1f2;
-}
-
-a:hover.twitter {
-    color: #FFFFFF;
-    background-color: #1da1f2
-}
-
-a.facebook, 
-a:visited.facebook {
-    color: #3b5998;
-}
-
-a:hover.facebook {
-    color: #FFFFFF;
-    background-color: #3b5998
-}
-
-a.instagram, 
-a:visited.instagram {
-    color: #c13584;
-}
-
-a:hover.instagram {
-    color: #FFFFFF;
-    background-color: #c13584
-}
-
-a.letterboxd, 
-a:visited.letterboxd {
-    color: #5e5e5e;
-}
-
-a:hover.letterboxd {
-    color: #FFFFFF;
-    background-color: #5e5e5e
-}
-
-a.github, 
-a:visited.github {
-    color: #6e5494;
-}
-
-a:hover.github {
-    color: #FFFFFF;
-    background-color: #6e5494
-}
-
-a.linkedin, 
-a:visited.linkedin {
-    color: #0077b5;
-}
-
-a:hover.linkedin {
-    color: #FFFFFF;
-    background-color: #0077b5
-}*/
-
-/* Adapted from Zackary Corbett */
-
-#wrapper {
-  position: absolute;
-  width: 500px;
-  height: 450px;
-  left: 50%;
-  top: 50%;
-  margin-left: -250px;
-  margin-top: -250px;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-}
+/* POSTS - TITLE */ 
 
 h2 {
   font-size: 1.5em;
@@ -152,13 +113,33 @@ h2 {
   line-height: 1.25;
   font-weight: 500;
 }
-
 h2 a, 
 h2 a:active, 
 h2 a:visited {
-  color: rgb(0,0,0);
+  color: #000000;
   text-decoration: none;
 }
+
+h2 a:hover {
+  color: #FFFFFF;
+  background-color: #182536;
+}
+
+/* POSTS - EXTERNAL LINKS */
+
+h2 a.link, 
+h2 a:active.link, 
+h2 a:visited.link {
+  color: #182536;
+  text-decoration: underline;
+}
+
+h2 a:hover.link {
+  color: #FFFFFF;
+  background-color: #182536
+}
+
+/* POSTS - CONTENT */
 
 h3 {
   font-size: 1.25em;
@@ -166,48 +147,131 @@ h3 {
   margin-top: 2em;
   margin-bottom: 1em;
 }
-
+b, 
+strong {
+  font-weight: 600;
+}
+blockquote {
+  margin: 0 18px 18px 18px;
+  color: #666;
+  padding-left: 10px;
+  border-left: 4px solid #eee
+}
 img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 10px auto
 }
+li {
+  margin: 1em 0;
+}
+pre, 
+code {
+  font-family: 'SF Mono', Menlo, Monaco;
+  overflow: auto;
+  font-size: 11px;
+  padding: 1em;
+
+}
+.permalink {
+  color: #182536;
+}
 
 /* Responsive design stuff */ 
 
-/*@media (max-width: 680px) {
-  #outer {
-    width: calc(100vw - 50px);
+@media (max-width: 680px) {
+  section#posts {
+    width: calc(90vw - 30px);
   }
-}*/
-
+  #masthead {
+    height: 90px;
+  }
+}
 @media (max-width: 520px) {
   body {
     font-size: 1em;
   }
-
-  #wrapper {
-    left: 0;
-    margin-left: 0;
-    max-width: 500px;
+  #masthead {
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    top: 0;
-    margin-top: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 100%
-
+    font-size: 1em;
+  }
+  #masthead h1 {
+    padding-top: 0.50em;
+    font-size: 1.5em;
+  }
+  #masthead {
+    height: 60px;
   }
 }
 @media (max-width: 360px) {
-  #wrapper {
-      top: 0;
-      margin-top: 0;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      height: 100%
+  #masthead {
+    font-size: 0.9em;
+  }
+  pre, code {
+    font-size: 5px
+  }
+}
+@media print {
+  a {
+    color: #888;
+  }
+
+  #masthead {
+    color: #888;
+  }
+
+  .noprint {
+    display: none;
+  }
+
+  .printonly {
+    display: inline
+  }
+
+  #masthead {
+    width: 100%;
+    height: auto;
+  }
+
+  #masthead h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #444
+  }
+
+  #mastheadtext {
+    font-size: 10pt;
+  }
+
+  body {
+    width: auto;
+    max-width: 125em;
+    padding: 0;
+    margin: 0 auto;
+    color: #000;
+    border: 0
+  }
+
+  section#posts {
+    position: static;
+    margin: 0;
+    width: 100%
+  }
+
+  article {
+    margin-top: 2em
+  }
+
+  #masthead a, 
+  #masthead a:active, 
+  #masthead a:visited, 
+  #masthead h1 a, 
+  #masthead h1 a:active, 
+  #masthead h1 a:visited, 
+  a, 
+  a:active, 
+  a:visted {
+    color: #0000000
   }
 }
