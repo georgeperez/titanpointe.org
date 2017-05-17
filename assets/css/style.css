@@ -183,95 +183,95 @@ code {
 @media (max-width: 680px) {
   section#posts {
     width: calc(90vw - 30px);
-  }
-  #masthead {
+}
+#masthead {
     height: 90px;
-  }
+}
 }
 @media (max-width: 520px) {
-  body {
+  html {
     font-size: 1em;
-  }
-  #masthead {
+}
+#masthead {
     width: 100%;
     font-size: 1em;
-  }
-  #masthead h1 {
+}
+#masthead h1 {
     padding-top: 0.50em;
     font-size: 1.5em;
-  }
-  #masthead {
+}
+#masthead {
     height: 60px;
-  }
+}
 }
 @media (max-width: 360px) {
   #masthead {
     font-size: 0.9em;
-  }
-  pre, code {
+}
+pre, code {
     font-size: 5px
-  }
+}
 }
 @media print {
   a {
     color: #888;
-  }
+}
 
-  #masthead {
+#masthead {
     color: #888;
-  }
+}
 
-  .noprint {
+.noprint {
     display: none;
-  }
+}
 
-  .printonly {
+.printonly {
     display: inline
-  }
+}
 
-  #masthead {
+#masthead {
     width: 100%;
     height: auto;
-  }
+}
 
-  #masthead h1 {
+#masthead h1 {
     margin: 0;
     font-size: 1.5em;
     color: #444
-  }
+}
 
-  #mastheadtext {
+#mastheadtext {
     font-size: 10pt;
-  }
+}
 
-  body {
+html {
     width: auto;
     max-width: 125em;
     padding: 0;
     margin: 0 auto;
     color: #000;
     border: 0
-  }
+}
 
-  section#posts {
+section#posts {
     position: static;
     margin: 0;
     width: 100%
-  }
+}
 
-  article {
+article {
     margin-top: 2em
-  }
+}
 
-  #masthead a, 
-  #masthead a:active, 
-  #masthead a:visited, 
-  #masthead h1 a, 
-  #masthead h1 a:active, 
-  #masthead h1 a:visited, 
-  a, 
-  a:active, 
-  a:visted {
+#masthead a, 
+#masthead a:active, 
+#masthead a:visited, 
+#masthead h1 a, 
+#masthead h1 a:active, 
+#masthead h1 a:visited, 
+a, 
+a:active, 
+a:visted {
     color: #0000000
-  }
+}
 }
