@@ -1,0 +1,36 @@
+---
+permalink: /feed.json
+---
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": {{ site.name | smartify | jsonify }},
+    "description": {{ site.description | smartify | jsonify }},
+    "home_page_url": "{{ site.url }}/",
+    "feed_url": "{{ site.url }}/feed.json",
+    "icon": "{{ site.url }}/assets/images/apple-touch-icon-precomposed.png",
+    "favicon": "{{ site.url }}/assets/images/favicon-32x32.png",
+    "expired": false,
+    "items": [
+        {% for post in site.posts %}
+            {% if post.external-url %}
+                {
+                    "id": "{{ post.id }}",
+                    "title": {{ post.title | smartify | jsonify }},
+                    "content_html": {{ post.content | jsonify }},
+                    "url": "{{ post.external-url }}",
+                    "summary": {{ post.excerpt | smartify | jsonify }},
+                    "date_published": "{{ post.date }}"
+                }
+            {% else %} 
+                {
+                    "id": "{{ post.id }}",
+                    "title": {{ post.title | smartify | jsonify }},
+                    "content_html": {{ post.content | jsonify }},
+                    "url": "{{ site.url }}{{ post.url }}",
+                    "summary": {{ post.excerpt | smartify | jsonify }},
+                    "date_published": "{{ post.date }}"   
+                }
+            {% endif %}
+        {% endfor %}
+    ]
+}
