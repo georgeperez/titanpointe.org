@@ -1,5 +1,5 @@
 ---
-permalink: /feed.json
+permalink: /feed.json 
 ---
 {
     "version": "https://jsonfeed.org/version/1",
@@ -17,12 +17,12 @@ permalink: /feed.json
                     "id": "{{ post.id }}",
                     "title": {{ post.title | smartify | jsonify }},
                     "content_html": {{ post.content | jsonify }},
-                    "url": "{{ post.external-url }}",
+                    "url": "{{ site.url }}{{ post.url }}",
+                    "external_url": "{{ post.external-url }}",
                     "summary": {{ post.excerpt | smartify | jsonify }},
                     "date_published": "{{ post.date }}"
                 }
             {% else %} 
-            ,
                 {
                     "id": "{{ post.id }}",
                     "title": {{ post.title | smartify | jsonify }},
@@ -32,6 +32,7 @@ permalink: /feed.json
                     "date_published": "{{ post.date }}"   
                 }
             {% endif %}
+            {% unless forloop.last == true %},{% endunless %}
         {% endfor %}
     ]
 }
