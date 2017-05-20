@@ -22,6 +22,7 @@ permalink: /feed.json
                     "date_published": "{{ post.date }}"
                 }
             {% else %} 
+            ,
                 {
                     "id": "{{ post.id }}",
                     "title": {{ post.title | smartify | jsonify }},
