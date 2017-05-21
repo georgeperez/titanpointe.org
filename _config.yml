@@ -13,3 +13,5 @@ repository: https://github.com/georgeperez/george.perez-marrero/
 gems: 
   - jekyll-sitemap
   - jekyll-email-protect
+  - jekyll-minifier:
+    exclude: 'feed.json'
