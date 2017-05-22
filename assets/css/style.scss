@@ -94,7 +94,7 @@ article header p {
 article header a { 
     text-decoration: none
 }
-#posts {
+#content, #posts {
     position: relative;
     display: block;
     width: 650px;
@@ -173,7 +173,7 @@ code {
 /* Responsive design stuff */ 
 
 @media (max-width: 680px) {
-    #posts {
+    #content, #posts {
         width: calc(100vw - 40px)
     }
     #masthead {
@@ -253,7 +253,7 @@ code {
         border: 0
     }
 
-    #posts {
+    #content, #posts {
         position: static;
         margin: 0;
         width: 100%
