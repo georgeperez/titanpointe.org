@@ -6,10 +6,13 @@ permalink: /feed.json
     "title": {{ site.name | smartify | jsonify }},
     "description": {{ site.description | smartify | jsonify }},
     "home_page_url": "{{ site.url }}/",
+    "author": {
+        "name": "George Perez-Marrero",
+        "url": "https://twitter.com/georgeperez"
+    },
     "feed_url": "{{ site.url }}/feed.json",
     "icon": "{{ site.url }}/assets/images/apple-touch-icon-precomposed.png",
-    "favicon": "{{ site.url }}/assets/images/favicon-32x32.png",
-    "expired": false,
+    "favicon": "{{ site.url }}/assets/images/favicon-96x96.png",
     "items": [
         {% for post in site.posts %}
             {% if post.external-url %}
@@ -20,7 +23,11 @@ permalink: /feed.json
                     "url": "{{ site.url }}{{ post.url }}",
                     "external_url": "{{ post.external-url }}",
                     "summary": {{ post.excerpt | smartify | jsonify }},
-                    "date_published": "{{ post.date }}"
+                    "date_published": "{{ post.date }}",
+                    "author": {
+                        "name": "George Perez-Marrero",
+                        "url": "https://twitter.com/georgeperez"
+                    }
                 }
             {% else %} 
                 {
@@ -29,7 +36,11 @@ permalink: /feed.json
                     "content_html": {{ post.content | jsonify }},
                     "url": "{{ site.url }}{{ post.url }}",
                     "summary": {{ post.excerpt | smartify | jsonify }},
-                    "date_published": "{{ post.date }}"   
+                    "date_published": "{{ post.date }}",
+                    "author": {
+                        "name": "George Perez-Marrero",
+                        "url": "https://twitter.com/georgeperez"
+                    }   
                 }
             {% endif %}
             {% unless forloop.last == true %},{% endunless %}
