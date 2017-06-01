@@ -10,6 +10,7 @@ highligther: rouge
 timezone: America/Puerto_Rico
 github: [metadata]
 repository: https://github.com/georgeperez/george.perez-marrero/
+include: [".well-known"]
 gems: 
   - jekyll-sitemap
   - jekyll-email-protect
