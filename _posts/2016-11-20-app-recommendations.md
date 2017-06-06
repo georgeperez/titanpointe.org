@@ -1,7 +1,7 @@
 ---
+title: Recommended Mac and iPhone apps
+date: 2016-11-20 22:46:00 -04:00
 layout: post
-title: "Recommended Mac and iPhone apps"
-date: 2016-11-20 10:46:00PM TZ
 ---
 
 I&#8217;m very picky when it comes to software. I am not one of those people who routinely goes to the App Store, looks at the "New Apps We Love" section, and downloads new apps. Usually, for me to try out an app, it has to be recommended to me or be acclaimed as a great app. I&#8217;ve found apps like [Working Copy](https://workingcopyapp.com) and [Narwhal](http://getnarwhal.com) this way. These apps are used daily on my devices. Without them, my enjoyment (and thus my productivity) would grind to a halt. 

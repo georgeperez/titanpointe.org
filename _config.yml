@@ -1,19 +1,28 @@
 ---
+title: George.Perez Marrero.Com
+timezone: America/Puerto_Rico
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 markdown: kramdown
 name: George Perez-Marrero
 author: George Perez-Marrero
 url: https://george.perez-marrero.com
 email: george@perez-marrero.com
 permalink: :year/:month/:title
-description: "Not the comic book artist. CS undergrad at UPRM."
+description: Not the comic book artist. CS undergrad at UPRM.
 highligther: rouge
-timezone: America/Puerto_Rico
-github: [metadata]
+github:
+- metadata
 repository: https://github.com/georgeperez/george.perez-marrero/
-include: [".well-known"]
-gems: 
-  - jekyll-sitemap
-  - jekyll-email-protect
-
+include:
+- ".well-known"
+gems:
+- jekyll-sitemap
+- jekyll-email-protect
 sass:
   style: compressed
