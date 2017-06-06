@@ -1,6 +1,6 @@
 ---
-title: Recommended Mac and iPhone apps
-date: 2016-11-20 22:46:00 -04:00
+title: "Recommended Mac and iPhone apps"
+date: 2016-11-20 22:46:00 TZ
 layout: post
 ---
 
