@@ -9,6 +9,22 @@ $gray: #888;
 $black: #000000;
 $links: rgb(0,122,255);
 
+/* body {
+    outline: red solid;
+}
+
+article {
+    outline: green solid;
+}
+
+#content, #posts {
+    outline: blue solid;
+}
+
+img {
+    outline: yellow solid;
+} */
+
 /* GLOBAL RESETS */
 
 html {
@@ -157,10 +173,10 @@ blockquote {
 }
 
 img {
-    max-width: 100%;
+    max-width: 110%;
     height: auto;
     display: block;
-    margin: 50px auto
+    margin: auto auto auto -35px
 }
 
 pre, 
@@ -173,16 +189,24 @@ code {
 
 /* Responsive design stuff */ 
 
-@media (max-width: 680px) {
+@media (max-width: 780px) {
     #content, #posts {
         width: calc(100vw - 40px)
     }
+
     #masthead {
         height: 90px
     }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto -10px
+    }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 560px) {
     body {
         font-size: 1em
     }
