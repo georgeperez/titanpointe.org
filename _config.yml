@@ -13,4 +13,5 @@ gems:
     - jekyll-sitemap
     - jekyll-email-protect
 sass:
+    sass_dir: _sass
     style: compressed

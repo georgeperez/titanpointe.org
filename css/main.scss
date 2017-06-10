@@ -7,7 +7,9 @@ $apple-gray: #f2f2f2;
 $white: #ffffff;
 $gray: #888;
 $black: #000000;
-$links: rgb(0,122,255);
+$apple-blue: rgb(0,122,255);
+@import "typography";
+@import "colors";
 
 /* body {
     outline: red solid;
@@ -33,34 +35,20 @@ html {
     quotes:"“" "”"
 }
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-size: 17px;
     margin: 0;
     padding: 0;
-    background-color: $white
 }
 
 a, 
 a:active, 
 a:visited {
-    color: $links;
     text-decoration: none
-}
-
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 {
-    color: $black
 }
 
 footer {
     font-size: 1em;
     margin: 2em 0;
-    color: $gray;
-    border-top: 1px solid $gray;
     overflow: hidden;
     text-align: center
 }
@@ -73,10 +61,6 @@ footer p {
     display: none;
 }
 
-.noprint {
-    color: $gray
-}
-
 /* MASTHEAD */
 
 #masthead {
@@ -84,7 +68,6 @@ footer p {
     padding-top: 0;
     margin-top: 0.5em;
     font-size: 1.4em;
-    color: $black
 }
 #mastheadtext {
     font-size: 1em
@@ -94,11 +77,6 @@ footer p {
     margin-top: 0;
     padding-top: 0.05em;
     margin-bottom: 0.05em
-}
-#masthead h1 a, 
-#masthead h1 a:active,
-#masthead h1 a:visited {
-    color: $black
 }
 
 #masthead p { 
@@ -113,9 +91,7 @@ article {
     line-height: 1.5em;
     margin-top: 1.5em
 }
-article header { 
-    color: $gray
-}
+
 article header p { 
     margin: 0
 }
@@ -136,19 +112,18 @@ h2 {
     line-height: 1.5em;
     font-weight: 600
 }
+
 h2 a, 
 h2 a:active, 
 h2 a:visited {
-    color: $black;
     text-decoration: none
 }
 
-/* POSTS - EXTERNAL LINKS */
+/* POSTS - EXTERNAL apple-blue */
 
 h2 a.link, 
 h2 a:active.link, 
 h2 a:visited.link {
-    color: $black;
     text-decoration: underline;
 }
 
@@ -181,7 +156,6 @@ img {
 
 pre, 
 code {
-    font-family: 'SF Mono', Menlo, Monaco, monospace;
     overflow: auto;
     font-size: 1em;
 
@@ -286,17 +260,5 @@ code {
 
     article {
         margin-top: 2em
-    }
-
-    #masthead a, 
-    #masthead a:active, 
-    #masthead a:visited, 
-    #masthead h1 a, 
-    #masthead h1 a:active, 
-    #masthead h1 a:visited, 
-    a, 
-    a:active, 
-    a:visted {
-        color: $black
     }
 }

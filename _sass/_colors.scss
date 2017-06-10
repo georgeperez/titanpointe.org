@@ -1,0 +1,74 @@
+$apple-gray: #f2f2f2;
+$white: #ffffff;
+$gray: #888;
+$black: #000000;
+$apple-blue: rgb(0,122,255);
+
+body {
+    background-color: $white;
+}
+
+a, 
+a:active, 
+a:visited {
+    color: $apple-blue;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    color: $black
+}
+
+footer {
+    color: $gray;
+    border-top: 1px solid $gray;
+}
+
+.noprint {
+    color: $gray
+}
+
+#masthead {
+    color: $black
+}
+
+#masthead h1 a, 
+#masthead h1 a:active,
+#masthead h1 a:visited {
+    color: $black
+}
+
+article header { 
+    color: $gray
+}
+
+h2 a, 
+h2 a:active, 
+h2 a:visited {
+    color: $black;
+}
+
+h2 a.link, 
+h2 a:active.link, 
+h2 a:visited.link {
+    color: $black;
+}
+
+@media print {
+    #masthead a, 
+    #masthead a:active, 
+    #masthead a:visited, 
+    #masthead h1 a, 
+    #masthead h1 a:active, 
+    #masthead h1 a:visited, 
+    a, 
+    a:active, 
+    a:visted {
+        color: $black
+    }
+}
+
