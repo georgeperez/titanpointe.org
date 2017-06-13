@@ -6,6 +6,7 @@ author: George Perez-Marrero
 url: https://george.perez-marrero.com
 email: george@perez-marrero.com
 permalink: :year/:month/:title
+host: 0.0.0.0
 description: "Not the comic book artist. CS undergrad at UPRM."
 highligther: rouge
 include: [".well-known"]
