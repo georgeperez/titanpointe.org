@@ -28,10 +28,12 @@ html {
     -webkit-text-size-adjust:100%;
     quotes:"\201C" "\201D"
 }
+
 body {
     font-size: 17px;
     margin: 0;
     padding: 0;
+    word-wrap: break-word;
 }
 
 a, 
@@ -142,17 +144,14 @@ blockquote {
 }
 
 img {
-    max-width: 110%;
+    max-width: 100%;
     height: auto;
     display: block;
-    margin: auto auto auto -35px
 }
 
 pre, 
 code {
     overflow: auto;
-    font-size: 1em;
-
 }
 
 /* Responsive design stuff */ 
@@ -164,13 +163,6 @@ code {
 
     #masthead {
         height: 90px
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 10px auto -10px
     }
 }
 
