@@ -6,9 +6,18 @@ permalink: /matricula/
 <article>
     <h2>Matricula en macOS Sierra</h2>
 
+    <h3>NOTA</h3>
+
+    <p>Es importante que lean estas instrucciones desde sus computadoras. El código tiene problemas de layout en móviles. Si las instrucciones de abajo no te funcionan, vas a tener que usar una forma menos permanente i.e. vas a tener que escribir un comando largo cada vez que quieras conectarte. Es recomendado que trates de hacer las instrucciones de abajo. Si no funciona, tendras que usar este comando:</p>
+    <blockquote><pre>ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss estudiante@rumad.uprm.edu
+</pre></blockquote>
+    <p>Si necesitan ayuda, mi email es <a href="mailto:{{ site.email | enconde_email }}">{{ site.email }}</a>.</p>
+    <p><b>NO SOY RESPONSABLE POR CUALQUIER DAÑO CAUSADO A SU COMPUTADORA.</b></p>
+    <p>Usen copy/paste para los comandos.</p>
+
     <h3>Primero</h3>
-    <p>Abre un nuevo window de Terminal. En Terminal, escribe <code>open .ssh/config</code>.</p>
-    <p>Si el Terminal te dice que ese archivo no existe, escribe primero <code>touch .ssh/config</code> y luego escribe el comando anterior.</p>
+    <p>Abre un nuevo window de Terminal. En Terminal, escribe <blockquote><pre>open .ssh/config</pre></blockquote></p>
+    <p>Si el Terminal te dice que ese archivo no existe, escribe primero <blockquote><pre>touch .ssh/config</pre></blockquote> y luego el comando anterior.</p>
     <a href="/assets/images/first-command.png"><img src="/assets/images/first-command.png"></a>
 
     <h3>Segundo</h3>
