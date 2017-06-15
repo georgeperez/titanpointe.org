@@ -58,6 +58,11 @@ h2 a:visited.link {
     color: $black;
 }
 
+code, 
+pre {
+    color: green;
+}
+
 @media print {
     #masthead a, 
     #masthead a:active, 
