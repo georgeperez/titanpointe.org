@@ -3,43 +3,60 @@ title: Matricula en macOS Sierra
 layout: default
 permalink: /matricula/
 ---
+
 <article>
-    <h2>Matricula en macOS Sierra</h2>
+    <h1>Matricula en macOS Sierra</h1>
 
-    <h3>NOTA</h3>
+    <h2>NOTA ACLARATORIA IMPORTANTE</h2>
 
-    <p>Es importante que lean estas instrucciones desde sus computadoras. El código tiene problemas de layout en móviles. Si las instrucciones de abajo no te funcionan, vas a tener que usar una forma menos permanente i.e. vas a tener que escribir un comando largo cada vez que quieras conectarte. Es recomendado que trates de hacer las instrucciones de abajo. Si no funciona, tendras que usar este comando:</p>
-    <blockquote><pre>ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss estudiante@rumad.uprm.edu
-</pre></blockquote>
+    <p>Es importante que lean estas instrucciones desde sus computadoras y detenidamente. Si las instrucciones de abajo (<b>después de esta nota aclaratoria</b>) no te funcionan tendras que entrar el siguente comando cada vez que quieras conectarte a <code>rumad.uprm.edu</code>:</p>
+    <pre>$ ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss estudiante@rumad.uprm.edu</pre>
+    <blockquote>El simbolo $ indica el prompt de comando en tu Mac. Todo lo que está <b>después</b> de $ es un comando para entrar (copy/paste). No lo incluyas en tus comandos.</blockquote>
+    <p>Oprime <b>Return</b>. Su Mac debe conectarse a <code>rumad.uprm.edu</code>.</p>
     <p>Si necesitan ayuda, mi email es <a href="mailto:{{ site.email | enconde_email }}">{{ site.email }}</a>.</p>
     <p><b>NO SOY RESPONSABLE POR CUALQUIER DAÑO CAUSADO A SU COMPUTADORA.</b></p>
     <p>Usen copy/paste para los comandos.</p>
 
     <h3>Primero</h3>
-    <p>Abre un nuevo window de Terminal. En Terminal, escribe <blockquote><pre>open .ssh/config</pre></blockquote></p>
-    <p>Si el Terminal te dice que ese archivo no existe, escribe primero <blockquote><pre>touch .ssh/config</pre></blockquote> y luego el comando anterior.</p>
-    <a href="/assets/images/first-command.png"><img src="/assets/images/first-command.png"></a>
+    <p>Abre un nuevo window de <b>Terminal</b>. En <b>Terminal</b>, haste seguro que estás en el directorio correcto. Escribe lo siguiente: <pre>$ pwd</pre> Oprime <b>Return</b>. Debería salir lo siguente:</p>
+    <pre>$ pwd
+/Users/YOU
+</pre>
+    <p>En sus computadoras, <code>YOU</code> será el nombre de tu usuario.</p>
+    <p>Si el resultado del comando <code>pwd</code> fue <code>/Users/YOU</code> significa que estás en el directorio correcto. Si tu resultado no fue el anterior, estás en el directorio incorrecto. Escribe el siguente comando:<pre>$ cd</pre></p>
+    <p>Oprime <b>Return</b>. Vuelve y corre el comando <code>pwd</code> y verifica que llegaste al directorio correcto.</p>
+    <p>Escribe el siguiente comando: <pre>$ open .ssh/config</pre></p>
+    <p>Oprime <b>Return</b>. Si el Terminal te dice que ese archivo no existe, escribe el siguiente comando: <pre>$ touch .ssh/config</pre></p>
+    <p>Oprime <b>Return</b>. Luego escribe escribe el comando anterior y oprime <b>Return</b>.</p>
+    <p>Es posible que el directorio <code>.ssh/</code> no exista en tu Mac y el <b>Terminal</b> muestre el siguiente error: <pre>.ssh/: No such file or directory</pre></p>
+    <p>En este caso, tendrás que crear el directorio. Escribe el siguiente comando: <pre>$ sudo mkdir .ssh</pre></p>
+    <p>El prompt te va a pedir tu password de usuario.</p>
+    <pre>Password: |</pre>
+    <p>El password no va aparecer en la pantalla como tal, pero si está funcionando. Cuando escribas el password oprime <b>Return</b>.</p> 
+    <p>Luego escribe estos comandos en orden:</p>
+    <pre>$ touch .ssh/config</pre>
+    <p>Oprime <b>Return</b>.</p>
+    <pre>$ open .ssh/config</pre>
+    <p>Oprime <b>Return</b> una vez más.</p>
 
     <h3>Segundo</h3>
-    <p>Luego que corras ese comando, tu Mac debe haber abierto un nuevo window de TextEdit. Para ti, debe de estar vacía. En mi caso no porque ya apliqué el arreglo para conectarse a <code>rumad.uprm.edu</code>.<p>
-    <p>En ese documento de TextEdit, vas a darle copy and paste a este parcho de texto:</p>
-    <blockquote><pre>Host rumad.uprm.edu
+    <p>Tu Mac debe haber abierto una nueva ventana de <b>TextEdit</b> con el documento <code>config</code>. Para ti, este archivo debe de estar vacio.<p>
+    <p>En este documento <code>config</code>, copy/paste este bloque de texto al archivo:</p>
+    <pre>Host rumad.uprm.edu
       KexAlgorithms +diffie-hellman-group1-sha1
       HostKeyAlgorithms +ssh-dss</pre>
-    </blockquote>
-
-    <p>Tu file debe verse como en el screenshot de abajo. Asegurate que tenga el formato <b>exacto</b> o quizás tengas problemas.</p>
+    <p>Tu <code>config</code> debe verse como en el screenshot de abajo. Asegurate que luzca de la misma forma que en el screenshot.</p>
     <a href="/assets/images/textedit.png"><img src="/assets/images/textedit.png"></a>
 
     <h3>Tercero</h3>
-    <p>Cuando hayas hecho lo anterior, guarda el archivo usando <code>Command + S</code> o navegando a File > Save en TextEdit.</p>
-    <p>Luego trata de conectarte a <code>rumad.uprm.edu</code> como de costumbre, usando <blockquote><pre>ssh estudiante@rumad.uprm.edu</pre></blockquote>
-    Si todo está funcionando bien, deberias ver el prompt para entrar el password para estudiante. Presiona enter (estudiante no tiene password.)
+    <p>Guarda tus cambios usando la combinación de teclado <code>Command+S</code> o navegando a File -> Save en <b>TextEdit</b>.</p>
+    <p>Conectate a <code>rumad.uprm.edu</code> usando el siguiente comando: <pre>$ ssh estudiante@rumad.uprm.edu</pre></p>
+    <p>Oprime <b>Return</b>. Si todo está funcionando bien, deberias ver el prompt para entrar el <em>password</em> de <code>estudiante</code>. Oprime <b>Return</b> ya que <code>estudiante</code> no tiene <em>password</em>.</p>
     <a href="/assets/images/login.png"><img src="/assets/images/login.png"></a>
 
     <h3>Cuarto</h3>
-    <p>ÉXITO! Si hiciste todo bien, deberias ver el menu normal de Matrícula.</p>
+    <p>¡ÉXITO! Si seguistes las instrucciones correctamente, tu <b>Terminal</b> mostrará el menu del <b>Sistema Estudiantil Colegial</b>.</p>
     <a href="/assets/images/end.png"><img src="/assets/images/end.png"></a>
 
-    <p>Espero que consigan las clases que necesitan.</p>
+    <p>Por favor enviar cualquier pregunta o recomendación a <a href="mailto:{{ site.email | enconde_email }}">{{ site.email }}</a>.</p>
 </article>

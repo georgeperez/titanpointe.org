@@ -1,18 +1,27 @@
 $apple-gray: #f2f2f2;
 $white: #ffffff;
 $gray: #888;
+$grey: #656D78;
+$green: #26820f;
 $black: #000000;
+$black-grey: #1A1D20;
 $apple-blue: rgb(0,122,255);
 
 body {
     background-color: $white;
+    color: $grey;
 }
 
 a, 
 a:active, 
 a:visited {
-    color: $apple-blue;
+    color: $black-grey;
 }
+
+a:hover {
+    color: $apple-blue
+}
+
 
 h1, 
 h2, 
@@ -33,13 +42,23 @@ footer {
 }
 
 #masthead {
-    color: $black
+    color: $black-grey
 }
 
-#masthead h1 a, 
-#masthead h1 a:active,
-#masthead h1 a:visited {
-    color: $black
+#masthead {
+    h1 a,
+    h1 a:active,
+    h1 a:visited {
+        color: $black-grey;
+        text-decoration: none;
+    }
+
+    h1 a:hover {
+        color: $apple-blue
+    }
+}
+p#mastheadtext{
+    color: $grey;
 }
 
 article header { 
@@ -58,9 +77,13 @@ h2 a:visited.link {
     color: $black;
 }
 
-code, 
+code {
+    color: $green;
+}
+
 pre {
-    color: $gray;
+    color: $apple-gray;
+    background: $black;
 }
 
 @media print {

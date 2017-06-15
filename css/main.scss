@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    font-size: 17px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     word-wrap: break-word;
@@ -39,7 +39,11 @@ body {
 a, 
 a:active, 
 a:visited {
-    text-decoration: none
+    text-decoration: underline
+}
+
+a:hover {
+    transition: 0.2s;
 }
 
 footer {
@@ -65,9 +69,11 @@ footer p {
     margin-top: 0.5em;
     font-size: 1.4em;
 }
+
 #mastheadtext {
     font-size: 1em
 }
+
 #masthead h1 {
     font-size: 1.5em;
     margin-top: 0;
@@ -94,6 +100,7 @@ article header p {
 article header a { 
     text-decoration: none
 }
+
 #content, #posts {
     position: relative;
     display: block;
@@ -147,9 +154,16 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    border: 1px solid
 }
 
-pre, 
+pre {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    overflow: scroll;
+    white-space: pre;
+}
+
 code {
     overflow: auto;
 }
