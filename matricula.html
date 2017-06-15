@@ -1,0 +1,40 @@
+---
+title: Matricula en macOS Sierra
+layout: default
+permalink: /matricula/
+---
+<article>
+    <h2>Matricula en macOS Sierra</h2>
+
+    <h3>Primero</h3>
+    <p>Abre un nuevo window de Terminal. En Terminal, escribe <code>open .ssh/config</code>.</p>
+    <p>Si el Terminal te dice que ese archivo no existe, escribe primero <code>touch .ssh/config</code> y luego escribe el comando anterior.</p>
+    <a href="/assets/images/first-command.png"><img src="/assets/images/first-command.png"></a>
+
+    <h3>Segundo</h3>
+    <p>Luego que corras ese comando, tu Mac debe haber abierto un nuevo window de TextEdit. Para ti, debe de estar vacía. En mi caso no porque ya apliqué el arreglo para conectarse a <code>rumad.uprm.edu</code>.<p>
+    <p>En ese documento de TextEdit, vas a darle copy and paste a este parcho te texto:</p>
+
+        <pre>
+        {% highlight bash %}
+Host rumad.uprm.edu
+        KexAlgorithms +diffie-hellman-group1-sha1
+        HostKeyAlgorithms +ssh-dss
+        {% endhighlight %}
+        </pre>
+
+    <p>Tu file debe verse como en el screenshot de abajo. Asegurate que tenga el formato <b>exacto</b> o quizás tengas problemas.</p>
+    <a href="/assets/images/textedit.png"><img src="/assets/images/textedit.png"></a>
+
+    <h3>Tercero</h3>
+    <p>Cuando hayas hecho lo anterior, guarda el archivo usando <code>Command + S</code> o navegando a File > Save en TextEdit.</p>
+    <p>Luego trata de conectarte a <code>rumad.uprm.edu</code> como de costumbre, usando <blockquote><pre>ssh estudiante@rumad.uprm.edu</pre></blockquote>
+    Si todo está funcionando bien, deberias ver el prompt para entrar el password para estudiante. Presiona enter (estudiante no tiene password.)
+    <a href="/assets/images/login.png"><img src="/assets/images/login.png"></a>
+
+    <h3>Cuarto</h3>
+    <p>ÉXITO! Si hiciste todo bien, deberias ver el menu normal de Matrícula.</p>
+    <a href="/assets/images/end.png"><img src="/assets/images/end.png"></a>
+
+    <p>Espero que consigan las clases que necesitan.</p>
+</article>
