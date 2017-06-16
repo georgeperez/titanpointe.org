@@ -6,6 +6,7 @@ $green: #26820f;
 $black: #000000;
 $black-grey: #1A1D20;
 $apple-blue: rgb(0,122,255);
+$neven-purple: #8367c9;
 
 body {
     background-color: $white;
@@ -22,6 +23,10 @@ a:hover {
     color: $apple-blue
 }
 
+blockquote {
+    color: $apple-gray;
+    background: $grey;
+}
 
 h1, 
 h2, 
@@ -33,12 +38,12 @@ h6 {
 }
 
 footer {
-    color: $gray;
-    border-top: 1px solid $gray;
+    color: $grey;
+    border-top: 1px solid $grey;
 }
 
 .noprint {
-    color: $gray
+    color: $grey
 }
 
 #masthead {
@@ -63,7 +68,7 @@ p#mastheadtext{
 }
 
 article header { 
-    color: $gray
+    color: $grey
 }
 
 h2 a, 

@@ -135,10 +135,12 @@ strong {
 }
 
 blockquote {
-    margin: 0 18px 18px 18px;
-    color: #666;
-    padding-left: 10px;
-    border-left: 4px solid #eee
+    margin: 1em;
+    padding: 1em;
+    border-left: 8px solid $black-grey;
+    /* border-top: 4px solid $black-grey;
+    border-bottom: 4px solid $black-grey; */
+    border-radius: 0.3em;
 }
 
 img {
@@ -149,8 +151,8 @@ img {
 }
 
 pre {
-    border-radius: 0.5rem;
-    padding: 1rem;
+    border-radius: 0.5em;
+    padding: 1em;
     overflow: scroll;
     white-space: pre;
 }

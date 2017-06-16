@@ -11,10 +11,10 @@ permalink: /matricula/
 
     <p>Es importante que lean estas instrucciones desde sus computadoras y detenidamente. Si las instrucciones de abajo (<b>después de esta nota aclaratoria</b>) no te funcionan tendras que entrar el siguente comando cada vez que quieras conectarte a <code>rumad.uprm.edu</code>:</p>
     <pre>$ ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss estudiante@rumad.uprm.edu</pre>
-    <blockquote>El simbolo $ indica el prompt de comando en tu Mac. Todo lo que está <b>después</b> de $ es un comando para entrar (copy/paste). No lo incluyas en tus comandos.</blockquote>
-    <p>Oprime <b>Return</b>. Su Mac debe conectarse a <code>rumad.uprm.edu</code>.</p>
+    <blockquote>El simbolo $ indica el <em>prompt</em> de comando en tu Mac. Todo lo que está <b>después</b> de $ es un comando para entrar (copy/paste). No lo incluyas en tus comandos.</blockquote>
+    <p>Oprime <b>Return</b>. Tu Mac debe conectarse a <code>rumad.uprm.edu</code>.</p>
     <p>Si necesitan ayuda, mi email es <a href="mailto:{{ site.email | enconde_email }}">{{ site.email }}</a>.</p>
-    <p><b>NO SOY RESPONSABLE POR CUALQUIER DAÑO CAUSADO A SU COMPUTADORA.</b></p>
+    <p><b>NO SOY RESPONSABLE POR CUALQUIER DAÑO CAUSADO A TU COMPUTADORA.</b></p>
     <p>Usen copy/paste para los comandos.</p>
 
     <h3>Primero</h3>
@@ -30,7 +30,7 @@ permalink: /matricula/
     <p>Oprime <b>Return</b>. Luego escribe escribe el comando anterior y oprime <b>Return</b>.</p>
     <p>Es posible que el directorio <code>.ssh/</code> no exista en tu Mac y el <b>Terminal</b> muestre el siguiente error: <pre>.ssh/: No such file or directory</pre></p>
     <p>En este caso, tendrás que crear el directorio. Escribe el siguiente comando: <pre>$ sudo mkdir .ssh</pre></p>
-    <p>El prompt te va a pedir tu password de usuario.</p>
+    <p>El <em>prompt</em> te va a pedir tu password de usuario.</p>
     <pre>Password: |</pre>
     <p>El password no va aparecer en la pantalla como tal, pero si está funcionando. Cuando escribas el password oprime <b>Return</b>.</p> 
     <p>Luego escribe estos comandos en orden:</p>
