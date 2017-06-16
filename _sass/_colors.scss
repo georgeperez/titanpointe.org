@@ -57,6 +57,7 @@ footer {
         color: $apple-blue
     }
 }
+
 p#mastheadtext{
     color: $grey;
 }
@@ -71,10 +72,18 @@ h2 a:visited {
     color: $black;
 }
 
+h2 a:hover {
+    color: $apple-blue;
+}
+
 h2 a.link, 
 h2 a:active.link, 
 h2 a:visited.link {
     color: $black;
+}
+
+h2 a:hover.link {
+    color: $apple-blue
 }
 
 code {
