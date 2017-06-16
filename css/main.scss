@@ -61,8 +61,6 @@ footer p {
     display: none;
 }
 
-/* MASTHEAD */
-
 #masthead {
     width: 600px;
     padding-top: 0;
@@ -86,8 +84,6 @@ footer p {
     padding: 0;
 }
 
-/* POSTS */ 
-
 article {
     display: block;
     line-height: 1.5em;
@@ -97,6 +93,7 @@ article {
 article header p { 
     margin: 0
 }
+
 article header a { 
     text-decoration: none
 }
@@ -107,8 +104,6 @@ article header a {
     width: 650px;
     margin: 0 auto
 }
-
-/* POSTS - TITLE */ 
 
 h2 {
     margin-bottom: 0;
@@ -122,15 +117,11 @@ h2 a:visited {
     text-decoration: none
 }
 
-/* POSTS - EXTERNAL LINKS */
-
 h2 a.link, 
 h2 a:active.link, 
 h2 a:visited.link {
     text-decoration: underline;
 }
-
-/* POSTS - CONTENT */
 
 h3 {
     font-size: 1.25em;
@@ -207,7 +198,7 @@ code {
 
     pre, 
     code {
-        font-size: 5px
+        font-size: 1em
     }
 }
 
