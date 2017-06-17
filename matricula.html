@@ -5,59 +5,59 @@ permalink: /matricula/
 ---
 
 <article>
-    <h1>Matricula en macOS Sierra</h1>
+    <h1>Matr&iacute;cula en macOS Sierra</h1>
 
-    <h2>NOTA ACLARATORIA IMPORTANTE</h2>
+    <h4>Nota Aclaratoria</h4>
 
-    <p>Es importante que lean estas instrucciones desde sus computadoras y detenidamente. Si las instrucciones de abajo (<b>después de esta nota aclaratoria</b>) no te funcionan tendras que entrar el siguente comando cada vez que quieras conectarte a <code>rumad.uprm.edu</code>:</p>
-    <pre>$ ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss estudiante@rumad.uprm.edu</pre>
-    <blockquote>El simbolo $ indica el <em>prompt</em> de comando en tu Mac. Todo lo que está <b>después</b> de $ es un comando para entrar (copy/paste). No lo incluyas en tus comandos.</blockquote>
-    <p>Oprime <b>Return</b>. Tu Mac debe conectarse a <code>rumad.uprm.edu</code>.</p>
-    <p>Si necesitan ayuda, mi email es <a href="mailto:{{ site.email | enconde_email }}">{{ site.email }}</a>.</p>
-    <p><b>NO SOY RESPONSABLE POR CUALQUIER DAÑO CAUSADO A TU COMPUTADORA.</b></p>
-    <p>Usen copy/paste para los comandos.</p>
+    <p>Es importante que leas estas instrucciones desde tu computadora y detenidamente. Si las instrucciones de abajo &#40;<b>despu&eacute;s de esta nota aclaratoria</b>&#41; no te funcionan tendras que entrar el siguente comando cada vez que quieras conectarte a <code>rumad.uprm.edu</code>:</p>
+    <pre>&#36; ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss estudiante@rumad.uprm.edu</pre>
+    <blockquote><h4>OJO</h4>El s&iacute;mbolo &#36; indica el <em>prompt</em> de comando en tu Mac. Todo lo que est&aacute; <b>despu&eacute;s</b> del s&iacute;mbolo &#36; es un comando para entrar (copy/paste). No en tus comandos.</blockquote>
+    <p>Oprime <b>Return</b>.</p>
+    <p>Usando el comando anterior, tu Mac debe conectarse a <code>rumad.uprm.edu</code>. Si necesitan ayuda, mi email est&aacute; al final de esta p&aacute;gina.</p>
+    <p><b>No soy responsable de ningún daño que ocurra con el uso de estas instrucciones</b>.</p>
+    <p>Usa copy/paste para los comandos.</p>
 
     <h3>Primero</h3>
-    <p>Abre una nueva ventana de <b>Terminal</b>. En <b>Terminal</b>, haste seguro que estás en el directorio correcto. Escribe lo siguiente: <pre>$ pwd</pre> Oprime <b>Return</b>. Debería salir lo siguente:</p>
-    <pre>$ pwd
+    <p>Abre una nueva ventana de <b>Terminal</b>. En <b>Terminal</b>, haste seguro que est&aacute;s en el directorio correcto. Escribe el siguiente comando: <pre>&#36; pwd</pre> Oprime <b>Return</b>. Debería salir lo siguente:</p>
+    <pre>&#36; pwd
 /Users/YOU
 </pre>
-    <p>En sus computadoras, <code>YOU</code> será el nombre de tu usuario.</p>
-    <p>Si el resultado del comando <code>pwd</code> fue <code>/Users/YOU</code> significa que estás en el directorio correcto. Si tu resultado no fue el anterior, estás en el directorio incorrecto. Escribe el siguente comando:<pre>$ cd</pre></p>
+    <p>En tu computadora, <code>YOU</code> ser&aacute; el nombre de tu usuario.</p>
+    <p>Si el resultado del comando <code>pwd</code> fue <code>/Users/YOU</code> significa que est&aacute;s en el directorio correcto. Si tu resultado no fue el anterior, est&aacute;s en el directorio incorrecto. Escribe el siguente comando:<pre>&#36; cd</pre></p>
     <p>Oprime <b>Return</b>. Vuelve y corre el comando <code>pwd</code> y verifica que llegaste al directorio correcto.</p>
-    <p>Confirmando que estás en el directorio correcto, escribe el siguiente comando: <pre>$ open .ssh/config</pre></p>
+    <p>Confirmando que est&aacute;s en el directorio correcto, escribe el siguiente comando: <pre>&#36; open .ssh/config</pre></p>
     <p>Oprime <b>Return</b>. Este command debe haber abierto una nueva ventana de <b>TextEdit</b></p>
-    <p>Si el Terminal te dice que ese archivo no existe, escribe el siguiente comando: <pre>$ touch .ssh/config</pre></p>
+    <p>Si el Terminal te dice que ese archivo no existe, escribe el siguiente comando: <pre>&#36; touch .ssh/config</pre></p>
     <p>Oprime <b>Return</b>. Luego escribe escribe el comando anterior y oprime <b>Return</b>.</p>
     <p>Es posible que el directorio <code>.ssh/</code> no exista en tu Mac y el <b>Terminal</b> muestre el siguiente error: <pre>.ssh/: No such file or directory</pre></p>
-    <p>En este caso, tendrás que crear el directorio. Escribe el siguiente comando: <pre>$ sudo mkdir .ssh</pre></p>
-    <p>El <em>prompt</em> te va a pedir tu password de usuario.</p>
-    <pre>Password: |</pre>
-    <p>El password no va aparecer en la pantalla como tal, pero si está funcionando. Cuando escribas el password oprime <b>Return</b>.</p> 
+    <p>En este caso, tendr&aacute;s que crear el directorio. Escribe el siguiente comando: <pre>&#36; sudo mkdir .ssh</pre></p>
+    <p>El <em>prompt</em> te va a pedir tu <em>password</em> de usuario.</p>
+    <pre>Password:</pre>
+    <p>Escribe tu <em>password</em>. El <em>password</em> no va aparecer en la pantalla mientras escribes, pero <b>s&iacute;</b> lo est&aacute;s escribiendo. Cuando escribas el <em>password</em> oprime <b>Return</b>.</p> 
     <p>Luego escribe estos comandos en orden:</p>
-    <pre>$ touch .ssh/config</pre>
+    <pre>&#36; touch .ssh/config</pre>
     <p>Oprime <b>Return</b>.</p>
-    <pre>$ open .ssh/config</pre>
-    <p>Oprime <b>Return</b> una vez más.</p>
+    <pre>&#36; open .ssh/config</pre>
+    <p>Oprime <b>Return</b> una vez m&aacute;s.</p>
 
     <h3>Segundo</h3>
-    <p>Tu Mac debe haber abierto una nueva ventana de <b>TextEdit</b> con el documento <code>config</code>. Para ti, este archivo debe de estar vacio.<p>
-    <p>En este documento <code>config</code>, copy/paste este bloque de texto al archivo:</p>
+    <p>Tu Mac debe haber abierto una nueva ventana de <b>TextEdit</b> con el documento <code>config</code>. Para ti, este archivo debe de estar vac&iacute;o.<p>
+    <p>En este documento <code>config</code>, copy/paste el siguiente bloque de texto en el archivo:</p>
     <pre>Host rumad.uprm.edu
       KexAlgorithms +diffie-hellman-group1-sha1
       HostKeyAlgorithms +ssh-dss</pre>
-    <p>Tu <code>config</code> debe verse como en el screenshot de abajo. Asegurate que luzca de la misma forma que en el screenshot.</p>
+    <p>Tu <code>config</code> debe lucir como el siguiente screenshot. Asegurate que luzca de la misma forma que el screenshot.</p>
     <a href="/assets/images/textedit.png"><img src="/assets/images/textedit.png"></a>
 
     <h3>Tercero</h3>
-    <p>Guarda tus cambios usando la combinación de teclado <code>Command+S</code> o navegando a File -> Save en <b>TextEdit</b>.</p>
-    <p>Conectate a <code>rumad.uprm.edu</code> usando el siguiente comando: <pre>$ ssh estudiante@rumad.uprm.edu</pre></p>
-    <p>Oprime <b>Return</b>. Si todo está funcionando bien, deberias ver el prompt para entrar el <em>password</em> de <code>estudiante</code>. Oprime <b>Return</b> ya que <code>estudiante</code> no tiene <em>password</em>.</p>
+    <p>Guarda tus cambios usando la combinaci&oacute;n de teclado <code>Command&#43;S</code> o navegando a File -> Save en <b>TextEdit</b>.</p>
+    <p>Conectate a <code>rumad.uprm.edu</code> usando el siguiente comando: <pre>&#36; ssh estudiante@rumad.uprm.edu</pre></p>
+    <p>Oprime <b>Return</b>. Si todo est&aacute; funcionando bien, deberias ver el prompt para entrar el <em>password</em> de <code>estudiante</code>. Oprime <b>Return</b> ya que <code>estudiante</code> no tiene <em>password</em>.</p>
     <a href="/assets/images/login.png"><img src="/assets/images/login.png"></a>
 
     <h3>Cuarto</h3>
-    <p>¡ÉXITO! Si seguistes las instrucciones correctamente, tu <b>Terminal</b> mostrará el menu del <b>Sistema Estudiantil Colegial</b>.</p>
+    <p>&iexcl;&Eacute;XITO&#33; Si seguistes las instrucciones correctamente, tu <b>Terminal</b> mostrar&aacute; el menu del <b>Sistema Estudiantil Colegial</b>.</p>
     <a href="/assets/images/end.png"><img src="/assets/images/end.png"></a>
 
-    <p>Por favor enviar cualquier pregunta o recomendación a <a href="mailto:{{ site.email | enconde_email }}">{{ site.email }}</a>.</p>
+    <p>Por favor envia cualquier pregunta o recomendaci&oacute;n a <a href="mailto:{{ site.email | enconde_email }}">{{ site.email }}</a>.</p>
 </article>
