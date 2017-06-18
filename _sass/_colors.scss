@@ -37,6 +37,31 @@ h6 {
     color: $black
 }
 
+.btn {
+    padding: 10px 15px;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: $white;
+    background-color: $grey;
+    border: none;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 5px $black-grey;
+}
+
+.btn:hover {
+    background-color: $grey
+}
+
+.btn:active {
+    background-color: $grey;
+    box-shadow: 0 5px $black-grey;
+    transform: translateY(2px);
+}
+
 footer {
     color: $grey;
     border-top: 1px solid $grey;
