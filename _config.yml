@@ -7,7 +7,7 @@ url: https://george.perez-marrero.com
 email: george@perez-marrero.com
 permalink: :year/:month/:title
 host: 0.0.0.0
-description: "Not the comic book artist. CS undergrad at UPRM."
+description: "Computer science undergrad at the University of Puerto Rico Mayag&uuml;ez. Interested in macOS, iOS, software development, and photography."
 highligther: rouge
 include: [".well-known"]
 plugins:

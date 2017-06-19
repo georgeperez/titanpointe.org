@@ -15,7 +15,7 @@ article {
     outline: green solid;
 }
 
-#content, #posts {
+#content, #container {
     outline: blue solid;
 }
 
@@ -38,8 +38,7 @@ body {
     word-wrap: break-word;
 }
 
-a, 
-a:active, 
+a,  
 a:visited {
     text-decoration: underline
 }
@@ -100,7 +99,7 @@ article header a {
     text-decoration: none
 }
 
-#content, #posts {
+#content, #container {
     position: relative;
     display: block;
     width: 650px;
@@ -171,7 +170,7 @@ code {
 /* Responsive design stuff */ 
 
 @media (max-width: 780px) {
-    #content, #posts {
+    #content, #container {
         width: calc(100vw - 40px)
     }
 
@@ -252,7 +251,7 @@ code {
         border: 0
     }
 
-    #content, #posts {
+    #content, #container {
         position: static;
         margin: 0;
         width: 100%
