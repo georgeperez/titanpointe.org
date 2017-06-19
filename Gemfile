@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 gem 'jekyll'
 gem 'activesupport'
+gem 'jekyll-last-modified-at'
 gem 'html-pipeline'
 gem 'jekyll-optional-front-matter'
 gem 'jekyll-paginate'

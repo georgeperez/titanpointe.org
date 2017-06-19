@@ -3,6 +3,7 @@ title: How to get matricula working on macOS Sierra
 layout: post
 date: 2017-06-14 23:14:50 TZ
 external-url: https://george.perez-marrero.com/matricula/
+last_modified_at: 2017-06-18 20:00:00 TZ
 ---
 
 Late last year with the release of macOS 10.12 Sierra, Apple updated its internal binary for OpenSSH. This new OpenSSH update brought changes to the way it handles `diffie-hellman-group1-sha1` keys and `ssh-dss` algorithms. This meant that anyone that tried to connect to the "matricula" system (class enrollment system in UPRM) they were meant with an error that both `diffie-hellman-group1-sha1` keys and `ssh-dss` were depreciated. When I faced this problem with my own Mac, I just added the `rumad.uprm.edu` host to my config file. Out of mind, out of sight. I emailed my university's CTI (the department in charge of the campus network and computers) and told them about the problem. They replied that they were aware and would update the support pages "soon." 
