@@ -3,13 +3,14 @@ title: "Recommended Mac and iPhone apps"
 date: 2016-11-20 22:46:00 TZ
 layout: post
 keywords: mac apps, iphone apps, ios apps
+excerpt_separator: <!--MORE-->
 ---
 
 I&#8217;m very picky when it comes to software. I am not one of those people who routinely goes to the App Store, looks at the "New Apps We Love" section, and downloads new apps. Usually, for me to try out an app, it has to be recommended to me or be acclaimed as a great app. I&#8217;ve found apps like [Working Copy](https://workingcopyapp.com) and [Narwhal](http://getnarwhal.com) this way. These apps are used daily on my devices. Without them, my enjoyment (and thus my productivity) would grind to a halt. 
 
-Side note: Believe it or not, I use the official social networking apps i.e. Twitter, Facebook, Instagram, so you won&#8217;t find recommendations for those here.
+Side note: Believe it or not, I use the official social networking apps i.e. Twitter, Facebook, Instagram, so you won&#8217;t find recommendations for those here. <!--MORE-->
 
-### [1Password](https://1password.com)   
+### [1Password](https://1password.com)
 Using the same password on multiple websites or services is the one of the worst possible things you could do, and this is why using a password manager is a good investment.  
 
 With 1Password, you can randomly generate complex passwords to use for all of your accounts. It also monitors websites to check if there&#8217;s been a leak, and it will warn you with its Watchtower service (turned off by default.) When I get a new device, the first thing I install is 1Password because it has all of my passwords.  

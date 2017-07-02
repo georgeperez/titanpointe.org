@@ -4,8 +4,6 @@
 @charset "UTF-8";
 @import "typography";
 @import "colors";
-@import "bigfoot-default";
-@import "syntax";
 
 /* body {
     outline: red solid;
@@ -23,8 +21,6 @@ img {
     outline: yellow solid;
 } */
 
-/* GLOBAL RESETS */
-
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust:100%;
@@ -38,28 +34,27 @@ body {
     word-wrap: break-word;
 }
 
-a,  
-a:visited {
-    text-decoration: underline
-}
+a {
+    &:visited {
+        text-decoration: underline
+    }
 
-a:hover {
-    transition: 0.2s;
+    &:hover {
+        transition: 0.2s;
+    }
+
 }
 
 footer {
     font-size: 1em;
     margin: 2em 0;
     overflow: hidden;
-    text-align: center
-}
+    text-align: center;
 
-footer p {
-    margin: 0.5em
-}
+    p {
+        margin: 0.5em
+    }
 
-.printonly {
-    display: none;
 }
 
 #masthead {
@@ -67,36 +62,37 @@ footer p {
     padding-top: 0;
     margin-top: 0.5em;
     font-size: 1.4em;
+
+    h1 {
+        font-size: 1.5em;
+        margin-top: 0;
+        padding-top: 0.05em;
+        margin-bottom: 0.05em;
+    }
+
+    p { 
+        margin: 0;
+        padding: 0;
+    }
 }
 
 #mastheadtext {
     font-size: 1em
 }
 
-#masthead h1 {
-    font-size: 1.5em;
-    margin-top: 0;
-    padding-top: 0.05em;
-    margin-bottom: 0.05em
-}
-
-#masthead p { 
-    margin: 0;
-    padding: 0;
-}
-
 article {
     display: block;
     line-height: 1.5em;
-    margin-top: 1.5em
-}
+    margin-top: 1.5em;
 
-article header p { 
-    margin: 0
-}
-
-article header a { 
-    text-decoration: none
+    header {
+        a {
+            text-decoration: none;
+        }
+        p {
+            margin: 0;
+        }
+    }
 }
 
 #content, #container {
@@ -109,19 +105,17 @@ article header a {
 h2 {
     margin-bottom: 0;
     line-height: 1.5em;
-    font-weight: 600
-}
+    font-weight: 600;
 
-h2 a, 
-h2 a:active, 
-h2 a:visited {
-    text-decoration: none;
-}
+    a {
+        &:active, &:visited {
+            text-decoration: none;
+        }
 
-h2 a.link, 
-h2 a:active.link, 
-h2 a:visited.link {
-    text-decoration: underline;
+        &.link, &:active.link, &:visited.link {
+            text-decoration: underline;
+        }
+    }
 }
 
 h3 {
@@ -167,7 +161,9 @@ code {
     overflow: auto;
 }
 
-/* Responsive design stuff */ 
+.printonly {
+    display: none;
+}
 
 @media (max-width: 780px) {
     #content, #container {
@@ -211,11 +207,17 @@ code {
 }
 
 @media print {
-    a {
-        color: #888
+
+    body {
+        width: auto;
+        max-width: 125em;
+        padding: 0;
+        margin: 0 auto;
+        color: #000;
+        border: 0
     }
 
-    #masthead {
+    a {
         color: #888
     }
 
@@ -228,27 +230,19 @@ code {
     }
 
     #masthead {
+        color: #888;
         width: 100%;
-        height: auto
-    }
+        height: auto;
 
-    #masthead h1 {
-        margin: 0;
-        font-size: 1.5em;
-        color: #444
+        h1 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #444
+        }
     }
 
     #mastheadtext {
         font-size: 10pt;
-    }
-
-    body {
-        width: auto;
-        max-width: 125em;
-        padding: 0;
-        margin: 0 auto;
-        color: #000;
-        border: 0
     }
 
     #content, #container {
@@ -261,3 +255,10 @@ code {
         margin-top: 2em
     }
 }
+
+/* Bigfoot.js CSS */
+
+@import "bigfoot-default";
+
+/* Syntax CSS */
+@import "syntax";
