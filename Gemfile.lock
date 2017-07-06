@@ -27,8 +27,6 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-archives (2.1.1)
-      jekyll (>= 2.4)
     jekyll-email-protect (1.0.3)
     jekyll-last-modified-at (1.0.1)
       jekyll (~> 3.3)
@@ -77,7 +75,6 @@ DEPENDENCIES
   activesupport
   html-pipeline
   jekyll
-  jekyll-archives
   jekyll-email-protect
   jekyll-last-modified-at
   jekyll-optional-front-matter
