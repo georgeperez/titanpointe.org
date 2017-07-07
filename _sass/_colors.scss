@@ -20,7 +20,7 @@ a:visited {
 }
 
 a:hover {
-    color: $apple-blue
+    color: $grey
 }
 
 blockquote {
@@ -84,7 +84,7 @@ footer {
     }
 
     h1 a:hover {
-        color: $apple-blue
+        color: $grey
     }
 }
 
@@ -103,7 +103,7 @@ h2 a:visited {
 }
 
 h2 a:hover {
-    color: $apple-blue;
+    color: $grey;
 }
 
 h2 a.link, 
@@ -113,7 +113,7 @@ h2 a:visited.link {
 }
 
 h2 a:hover.link {
-    color: $apple-blue
+    color: $grey
 }
 
 code {
