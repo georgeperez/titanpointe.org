@@ -26,10 +26,6 @@ Our prices are as follows:
 
 A contract can be arranged for product deployments.
 
-## How will I know you're charging the right hours?
-
-I use a service called [Toggl](https://toggl.com/) that runs on all of my working platforms. You, as a client, will get the same detailed reports that the service generates.
-
 ## What payment methods do you accept?
 
 I accept Apple Pay Cash, Venmo, PayPal, ATH M&oacute;vil, and cash. I do not accept checks.
