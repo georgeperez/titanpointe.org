@@ -34,13 +34,11 @@ layout: default
     </p>
   </header>
 {% endif %}
-
 {% if post.excerpt_separator %}
 {{ post.excerpt }}
-<a href="{{ post.url }}">Continue reading...</a>
+<a href="{{ post.url }}">READ MORE</a>
 {% else %}
 {{ post.content }}
 {% endif %}
 </article>
-
 {% endfor %}
