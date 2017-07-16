@@ -171,7 +171,7 @@ code {
     }
 
     #masthead {
-        height: 90px
+        height: 60px
     }
 }
 
@@ -182,22 +182,24 @@ code {
 
     #masthead {
         width: 100%;
-        font-size: 1em
-    }
+        height: 50px;
+        font-size: 1em;
 
-    #masthead h1 {
-        padding-top: 0.50em;
-        font-size: 1.5em
-    }
-
-    #masthead {
-        height: 70px
+        h1 {
+            padding-top: 0.50em;
+            width: 100%;
+            font-size: 1.5em;
+        }
     }
 }
 
 @media (max-width: 360px) {
     #masthead {
-        font-size: 0.9em
+        font-size: 1em
+    }
+
+    article {
+
     }
 
     pre, 
