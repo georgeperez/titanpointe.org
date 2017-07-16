@@ -50,16 +50,16 @@ h6 {
     display: block;
     border-radius: 10px;
     box-shadow: 0 5px $black-grey;
-}
 
-.btn:hover {
-    background-color: $grey
-}
+    &:hover {
+        background-color: $grey
+    }
 
-.btn:active {
-    background-color: $grey;
-    box-shadow: 0 5px $black-grey;
-    transform: translateY(2px);
+    &:active {
+        background-color: $grey;
+        box-shadow: 0 5px $black-grey;
+        transform: translateY(2px);
+    }
 }
 
 footer {
