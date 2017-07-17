@@ -21,16 +21,20 @@ img {
     outline: yellow solid;
 } */
 
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
 html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust:100%;
+    font-size: 16px;
+    line-height: 1.6em;
     quotes:"\201C" "\201D"
 }
 
 body {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
     word-wrap: break-word;
 }
 
@@ -57,7 +61,7 @@ footer {
 
 }
 
-#masthead {
+.masthead {
     width: 600px;
     padding-top: 0;
     margin-top: 0.5em;
@@ -68,6 +72,7 @@ footer {
         margin-top: 0;
         padding-top: 0.05em;
         margin-bottom: 0.05em;
+        font-weight: 700;
     }
 
     p { 
@@ -76,7 +81,7 @@ footer {
     }
 }
 
-#mastheadtext {
+.masthead-text {
     font-size: 1em
 }
 
@@ -95,12 +100,59 @@ article {
     }
 }
 
-#content, #container {
+.container, .content {
     position: relative;
     display: block;
     width: 650px;
     margin: 0 auto
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.5em;
+    text-rendering: optimizeLegibility;
+    font-weight: 600;
+    line-height: 1.25em;
+}
+
+/* h1 {
+    font-size: 2em
+}
+
+h2 {
+    margin-top: 1em;
+    font-size: 1.5em;
+
+    a {
+        &:active, &:visited {
+            text-decoration: none;
+        }
+
+        &.link, &:active.link, &:visited.link {
+            text-decoration: underline;
+        }
+    }
+}
+
+h3 {
+    margin-top: 1.5em;
+    font-size: 1.25em
+}
+
+h4, h5, h6 {
+    margin-top: 1em;
+    font-size: 1em
+} */
+
+ul, ol, dl {
+    margin-top: 0;
+    margin-bottom: 1em
+}
+
 
 h2 {
     margin-bottom: 0;
@@ -146,8 +198,19 @@ blockquote {
 img {
     max-width: 100%;
     height: auto;
+    margin: 0 0 1rem;
     display: block;
-    border: 1px solid
+    border-radius: 3px;
+    border: 1px solid;
+}
+
+.portrait {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 1rem;
+    display: block;
+    border: none;
+    border-radius: none
 }
 
 pre {
@@ -166,21 +229,23 @@ code {
 }
 
 @media (max-width: 780px) {
-    #content, #container {
+
+    .content, .container {
         width: calc(100vw - 40px)
     }
 
-    #masthead {
+    .masthead {
         height: 60px
     }
 }
 
 @media (max-width: 560px) {
+
     body {
         font-size: 1em
     }
 
-    #masthead {
+    .masthead {
         width: 100%;
         height: 50px;
         font-size: 1em;
@@ -194,12 +259,9 @@ code {
 }
 
 @media (max-width: 360px) {
-    #masthead {
+    
+    .masthead {
         font-size: 1em
-    }
-
-    article {
-
     }
 
     pre, 
@@ -231,7 +293,7 @@ code {
         display: inline
     }
 
-    #masthead {
+    .masthead {
         color: #888;
         width: 100%;
         height: auto;
@@ -243,11 +305,12 @@ code {
         }
     }
 
-    #mastheadtext {
+    .masthead-text {
         font-size: 10pt;
     }
 
-    #content, #container {
+    .content, 
+    .container {
         position: static;
         margin: 0;
         width: 100%

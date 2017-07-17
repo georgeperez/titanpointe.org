@@ -1,7 +1,7 @@
 ---
 title: "Consulting"
-layout: consulting
-permalink: /consulting/
+layout: default
+permalink: /consultingmd/
 keywords: consulting, apple, ios, iphone
 ---
 

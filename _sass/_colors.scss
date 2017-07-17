@@ -71,11 +71,11 @@ footer {
     color: $grey
 }
 
-#masthead {
+.masthead {
     color: $black-grey
 }
 
-#masthead {
+.masthead {
     h1 a,
     h1 a:active,
     h1 a:visited {
@@ -88,7 +88,7 @@ footer {
     }
 }
 
-p#mastheadtext{
+.masthead-text {
     color: $grey;
 }
 
@@ -96,24 +96,24 @@ article header {
     color: $grey
 }
 
-h2 a, 
-h2 a:active, 
-h2 a:visited {
-    color: $black;
-}
+h2 {
+    a {
+        &:active, &:visited {
+            color: $black;
+        }
 
-h2 a:hover {
-    color: $grey;
-}
+        &:hover {
+            color: $grey;
+        }
 
-h2 a.link, 
-h2 a:active.link, 
-h2 a:visited.link {
-    color: $black;
-}
+        &.link, &:active.link, &:visited.link {
+            color: $black;
+        }
 
-h2 a:hover.link {
-    color: $grey
+        &:hover.link {
+            color: $grey
+        }
+    }
 }
 
 code {
@@ -126,12 +126,12 @@ pre {
 }
 
 @media print {
-    #masthead a, 
-    #masthead a:active, 
-    #masthead a:visited, 
-    #masthead h1 a, 
-    #masthead h1 a:active, 
-    #masthead h1 a:visited, 
+    .masthead a, 
+    .masthead a:active, 
+    .masthead a:visited, 
+    .masthead h1 a, 
+    .masthead h1 a:active, 
+    .masthead h1 a:visited, 
     a, 
     a:active, 
     a:visted {

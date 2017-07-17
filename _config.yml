@@ -6,7 +6,7 @@ author: George Perez-Marrero
 url: https://george.perez-marrero.com
 email: george@perez-marrero.com
 consulting-email: consulting@perez-marrero.com
-permalink: :year/:month/:title
+permalink: blog/:year/:month/:title
 host: 0.0.0.0
 description: "Computer science undergrad at the University of Puerto Rico Mayag&uuml;ez. Interested in macOS, iOS, software development, and photography."
 highligther: rouge
