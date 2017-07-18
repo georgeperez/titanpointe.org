@@ -8,5 +8,3 @@ User-agent: Facebot
 Allow: /
 User-agent: *
 Disallow: /
-
-Sitemap: https://george.perez-marrero.com/sitemap.xml

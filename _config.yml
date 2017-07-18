@@ -11,7 +11,6 @@ host: 0.0.0.0
 description: "Computer science undergrad at the University of Puerto Rico Mayag&uuml;ez. Interested in macOS, iOS, software development, and photography."
 highligther: rouge
 plugins:
-    - jekyll-sitemap
     - jekyll-email-protect
 sass:
     sass_dir: _sass
