@@ -34,7 +34,7 @@ h3,
 h4, 
 h5, 
 h6 {
-    color: $black
+    color: $black-grey
 }
 
 .btn {
@@ -59,7 +59,7 @@ footer {
 }
 
 .noprint {
-    color: $grey
+    color: $black-grey
 }
 
 .masthead {
@@ -84,13 +84,13 @@ footer {
 }
 
 article header { 
-    color: $grey
+    color: $black-grey
 }
 
 h2 {
     a {
         &:active, &:visited {
-            color: $black;
+            color: $black-grey;
         }
 
         &:hover {
@@ -98,7 +98,7 @@ h2 {
         }
 
         &.link, &:active.link, &:visited.link {
-            color: $black;
+            color: $black-grey;
         }
 
         &:hover.link {
