@@ -28,16 +28,16 @@ keywords: matricula, colegio, uprm, rum, mac, macos, sierra, macos sierra
     <blockquote><h4>OJO</h4>El s&iacute;mbolo &#36; indica el <em>prompt</em> de comando en tu Mac. Todo lo que est&aacute; <b>despu&eacute;s</b> del s&iacute;mbolo &#36; es un comando para entrar (copy/paste). <b>NO</b> lo incluyas en tus comandos.</blockquote>
     <p>Abre una nueva ventana de <b>Terminal</b>. En <b>Terminal</b>, haste seguro que est&aacute;s en el directorio correcto. Escribe el siguiente comando: <pre>&#36; pwd</pre> Oprime <b>Return</b>. Debería salir lo siguente:</p>
     <pre>&#36; pwd
-/Users/tu-nombre-de-usuario
+/Users/tu-usuario
 </pre>
-    <p>En tu computadora, <code>tu-nombre-de-usuario</code> va a ser tu <em>username</em>.</p>
-    <p>Si el resultado del comando <code>pwd</code> fue <code>/Users/tu-nombre-de-usuario</code> significa que est&aacute;s en el directorio correcto. Si tu resultado no fue el anterior, est&aacute;s en el directorio incorrecto. Escribe el siguente comando:<pre>&#36; cd</pre></p>
+    <p>En tu computadora, <code>tu-usuario</code> va a ser tu <em>username</em>.</p>
+    <p>Si el resultado del comando <code>pwd</code> fue <code>/Users/tu-usuario</code> significa que est&aacute;s en el directorio correcto. Si tu resultado no fue el anterior, est&aacute;s en el directorio incorrecto. Escribe el siguente comando:<pre>&#36; cd</pre></p>
     <p>Oprime <b>Return</b>. Vuelve y corre el comando <code>pwd</code> y verifica que llegaste al directorio correcto.</p>
     <p>Confirmando que est&aacute;s en el directorio correcto, escribe el siguiente comando: <pre>&#36; open .ssh/config</pre></p>
     <p>Oprime <b>Return</b>. Este command debe haber abierto una nueva ventana de <b>TextEdit</b>.</p>
     <h1>Posibles problemas y sus arreglos</h1>
-    <h4>1. "The file /Users/tu-nombre-de-usuario/.ssh/config does not exist"</h4>
-    <p>Si tu ventana de <b>Terminal</b> muestra el siguiente error: <pre>The file /Users/tu-nombre-de-usuario/.ssh/config does not exist</pre>
+    <h4>1. "The file /Users/tu-username/.ssh/config does not exist"</h4>
+    <p>Si tu ventana de <b>Terminal</b> muestra el siguiente error: <pre>The file /Users/tu-username/.ssh/config does not exist</pre>
     Significa que el archivo <code>config</code> no existe en tu Mac. Para arreglar esto, escribe el siguiente comando para crear el archivo: <pre>&#36; touch .ssh/config</pre></p>
     <p>Oprime <b>Return</b>. Luego, escribe el comando anterior: <pre>&#36; open .ssh/config</pre> Oprime <b>Return</b> otra vez.</p>
     <h4>2. "No such file or directory"</h4>
