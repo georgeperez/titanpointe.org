@@ -3,7 +3,7 @@ title: George Perez-Marrero
 layout: default
 ---
 
-I’m a computer science undergrad at the [University of Puerto Rico, Mayagüez](http://math.uprm.edu/). I'm interested in macOS, iOS, software development, film, and photography. If you want, you can learn more [about this site and my gear](/about/).
+I’m a computer science undergrad at the [University of Puerto Rico at Mayagüez](http://math.uprm.edu/). I'm interested in macOS, iOS, software development, film, and photography. If you want, you can learn more [about this site](/about/).
 
 You can find me on [Twitter](https://twitter.com/georgeperez/), [Facebook](https://facebook.com/georgeperezmarrero/), [Instagram](https://instagram.com/georgeperez/), [Letterboxd](https://letterboxd.com/georgeperez/), [GitHub](https://github.com/georgeperez/), and [LinkedIn](https://linkedin.com/in/georgeperezmarrero/).
 

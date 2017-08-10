@@ -4,9 +4,9 @@ layout: default
 permalink: /about/
 ---
 
-### About this site
+### About this site and gear
 
-#### Mac Apps
+#### Software
 
 *   [Sublime Text 3](https://sublimetext.com/)
 *   [Transmit](https://panic.com/transmit/)
@@ -14,9 +14,6 @@ permalink: /about/
 *   [1Password 6](https://1password.com/)
 *   [Byword](https://bywordapp.com)
 *   [Pixelmator](http://www.pixelmator.com)
-
-#### iPhone apps
-
 *   [Workflow](https://workflow.is)
 *   [Prompt](https://panic.com/prompt/)
 *   [Working Copy](https://workingcopyapp.com/)
