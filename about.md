@@ -4,7 +4,7 @@ layout: default
 permalink: /about/
 ---
 
-### About this site and gear
+### About this site
 
 #### Software
 
@@ -22,7 +22,7 @@ permalink: /about/
 
 This website is built using the blog-aware static site generator [Jekyll](https://jekyllrb.com) and hosted on [DigitalOcean](https://m.do.co/c/d4f8c9c9d236).
 
-It also uses a bunch of plugins. View the Gemfile [here](https://gist.github.com/georgeperez/e24c53209df6195e7b84e57c66300102).
+View the site's Gemfile [here](https://gist.github.com/georgeperez/e24c53209df6195e7b84e57c66300102).
 
 #### Disclaimers and stuff
 
