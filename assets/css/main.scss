@@ -62,15 +62,12 @@ a {
         margin-bottom: 0.01em;
         font-weight: 700;
     }
-
-    p { 
-        margin: 0;
-        padding: 0;
-    }
 }
 
 .masthead-text {
-    font-size: 1em
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
