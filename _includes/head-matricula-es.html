@@ -16,12 +16,13 @@
   <script>$.bigfoot();</script>
   <script src="/assets/js/clipboard.min.js"></script>
   
-  <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="/assets/images/favicon-16x16.png" sizes="16x16">
-  <link rel="shortcut icon" href="/assets/images/favicon.ico">
-  <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#182536">
-  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon-precomposed.png">
+  <link rel="icon" type="image/png" href="{{ "/assets/images/favicon-32x32.png" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ "/assets/images/favicon-16x16.png" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}" sizes="16x16">
+  <link rel="shortcut icon" href="{{ "/assets/images/favicon.ico" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
+  
+  <link rel="mask-icon" href="{{ "/assets/images/safari-pinned-tab.svg" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}" color="#182536">
+  <link rel="apple-touch-icon" href="{{ "/assets/images/apple-touch-icon-precomposed.png" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
+  <link rel="apple-touch-icon-precomposed" href="{{ "/assets/images/apple-touch-icon-precomposed.png" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
 
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="fb:app_id" content="361878010839981" />
