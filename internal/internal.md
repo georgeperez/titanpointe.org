@@ -8,6 +8,7 @@ permalink: /internal/
 * [ ] Fix dead links
 * [ ] Fix translations
 * [ ] Fix mixmatched language localizations
+    * [ ] http://www.prsn.uprm.edu/English/research/geodesy/NTRIP_info.php
 * [ ] Fix map offset
 * [ ] Fix publications
 * [ ] Fix typographical errors
