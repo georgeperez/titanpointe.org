@@ -13,12 +13,20 @@ article {
     outline: green solid;
 }
 
-#content, #container {
+.content {
     outline: blue solid;
+}
+
+.container {
+    outline: purple solid;
 }
 
 img {
     outline: yellow solid;
+}
+
+html {
+    outline: pink solid;
 } */
 
 html, body {
