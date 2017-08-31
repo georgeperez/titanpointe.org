@@ -20,7 +20,7 @@ permalink: /about/
 
 #### Server software
 
-This website is built using [Jekyll](https://jekyllrb.com) and it's hosted on [DigitalOcean](https://m.do.co/c/d4f8c9c9d236).
+This website is built using the static site generator [Jekyll](https://jekyllrb.com) i.e. no server side scripting and it's hosted on [DigitalOcean](https://m.do.co/c/d4f8c9c9d236).
 
 View the site's Gemfile [here](https://gist.github.com/georgeperez/e24c53209df6195e7b84e57c66300102).
 
