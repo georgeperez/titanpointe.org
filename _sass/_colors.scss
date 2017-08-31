@@ -11,18 +11,18 @@ $chase-blue: #244C65;
 $chase-gray: #738B99;
 
 body {
-    background-color: $white;
-    color: $grey;
+    background-color: $black-grey;
+    color: $white;
 }
 
 a, 
 a:active, 
 a:visited {
-    color: $black-grey;
+    color: $grey;
 }
 
 a:hover {
-    color: $grey
+    color: $white
 }
 
 blockquote {
@@ -72,7 +72,7 @@ footer {
     h1 a,
     h1 a:active,
     h1 a:visited {
-        color: $black-grey;
+        color: $white;
         text-decoration: none;
     }
 
