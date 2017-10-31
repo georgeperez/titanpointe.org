@@ -2,7 +2,9 @@
 title: Hurricane Maria Log
 layout: post
 date: 2017-10-31 09:09:48 TZ
+last_modified_at: 2017-10-31 09:12:57 TZ
 keywords: hurricane maria, puerto rico
+description: "Hurricane Maria log from Puerto Rico"
 ---
 
 ### Day negative two - September eighteen
@@ -19,11 +21,11 @@ This is it. At 3:00AM AST, almost like it was intentional, power was cutoff. For
 
 At 6:00AM, almost like clockwork, I woke up. I checked my phone, and was met with two words you never want to see on your phone: “No service”. Since I knew my phone would keep looking for a signal and drain my battery, I quickly put my phone airplane mode. For good measure, I also turned low power mode on.
 
-### Day one - September twenty-first
+### Day one - September twenty-one
 
 Water is still going strong. Power? Forget about it. Still no service. This is all kinds of crazy.
 
-### Day two - September twenty-second
+### Day two - September twenty-two
 
 Still no power, still no cell service.
 
@@ -33,7 +35,7 @@ Gas lines are a mile long. Gas is being dispatched in dollar amounts, not liters
 
 Luckily our semi trailers that we use for storage a town away from us were intact. The area around it not so much, a huge mango tree snapped and blocked most of the entrance to the storage area. You could only get by on foot.
 
-### Day three - September twenty-third
+### Day three - September twenty-three
 
 Telecommunications are up at 25% capacity, but all in the metro area. Priority has been assigned to cell towers with no damage.
 
@@ -158,6 +160,9 @@ Nothing eventful. Went to the vet to pickup some allergy medicine for our six ye
 ### Day nineteen - October nine
 
 Had a salami sandwich for breakfast. My siblings went to school and catch up on their work. I stayed home. Don’t know what to do to entertain myself.
+
+...
+...
 
 ### Day forty-one - October thirty-one
 
