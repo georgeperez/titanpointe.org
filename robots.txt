@@ -1,15 +1,10 @@
 User-agent: Applebot
 Allow: /
-Disallow: /internal/
 User-agent: Googlebot
 Allow: /
-Disallow: /internal/
 User-agent: Twitterbot
 Allow: /
-Disallow: /internal/
 User-agent: Facebot
 Allow: /
-Disallow: /internal/
 User-agent: *
 Disallow: /
-Disallow: /internal/
