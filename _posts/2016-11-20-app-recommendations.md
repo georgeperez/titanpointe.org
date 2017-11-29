@@ -7,9 +7,9 @@ excerpt_separator: <!--MORE-->
 description: "These are the apps I use the most"
 ---
 
-I&#8217;m very picky when it comes to software. I am not one of those people who routinely goes to the App Store, looks at the "New Apps We Love" section, and downloads new apps. Usually, for me to try out an app, it has to be recommended to me or be acclaimed as a great app. I&#8217;ve found apps like [Working Copy](https://workingcopyapp.com) and [Narwhal](http://getnarwhal.com) this way. These apps are used daily on my devices. Without them, my enjoyment (and thus my productivity) would grind to a halt. 
+I&#8217;m very picky when it comes to software. I am not one of those people who routinely goes to the App Store, looks at the "New Apps We Love" section, and downloads new apps. Usually, for me to try out an app, it has to be recommended to me or be acclaimed as a great app. I&#8217;ve found apps like [Working Copy](https://workingcopyapp.com) and [Narwhal](http://getnarwhal.com) this way. These apps are used daily on my devices. Without them, my enjoyment (and thus my productivity) would grind to a halt. <!--MORE-->
 
-Side note: Believe it or not, I use the official social networking apps i.e. Twitter, Facebook, Instagram, so you won&#8217;t find recommendations for those here. <!--MORE-->
+Side note: Believe it or not, I use the official social networking apps i.e. Twitter, Facebook, Instagram, so you won&#8217;t find recommendations for those here.
 
 ### [1Password](https://1password.com)
 Using the same password on multiple websites or services is the one of the worst possible things you could do, and this is why using a password manager is a good investment.  

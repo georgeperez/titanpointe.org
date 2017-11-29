@@ -4,35 +4,33 @@ layout: blog
 
 <article>
 {% if page.external-url %}
-  <header>
-    <h2>
-      <a class="link" href="{{ page.external-url }}">{{ page.title }}</a>
-    </h2>
-    <p>
-      <time datetime="{{ page.date }}" pubdate="pubdate">{{ page.date | date:"%B %-d, %Y" }}</time>
-      <span>&bull;</span> 
-      <a class="permalink" title="Permalink" href="{{ relative.url }}">
-        <span class="noprint">Permalink</span>
-        <span class="printonly">{{ site.url }}{{ page.url }}</span>
-      </a>
-    </p>
+	<header class="post-info">
+		<h2 class="entry-title" id="headline name">
+			<a class="link" href="{{ page.external-url }}">{{ page.title }}</a>
+		</h2>
+	<p>
+		<time datetime="{{ page.date }}" pubdate="pubdate">{{ page.date | date:"%B %-d, %Y" }}</time>
+		<span>&bull;</span> 
+		<a class="permalink" title="Permalink" href="{{ relative.url }}">
+		<span class="no-print">Permalink</span>
+		<span class="print-only">{{ site.url }}{{ page.url }}</span>
+		</a>
+	</p>
   </header>
 {% else %}
-  <header>
-    <h2>
-      <a href="{{ page.url }}">{{ page.title }}</a>
-    </h2>
-    <p>
-      <time datetime="{{ page.date }}" pubdate="pubdate">{{ page.date | date:"%B %-d, %Y" }}</time>
-      <span>&bull;</span> 
-      <a class="permalink" title="Permalink" href="{{ page.url }}">
-        <span class="noprint">Permalink</span>
-        <span class="printonly">{{ site.url }}{{ page.url }}</span>
-      </a>
-    </p>
+	<header class="post-info">
+		<h2 class="entry-title" id="headline name">
+	  		<a href="{{ page.url }}">{{ page.title }}</a>
+		</h2>
+	<p>
+		<time datetime="{{ page.date }}" pubdate="pubdate">{{ page.date | date:"%B %-d, %Y" }}</time>
+		<span>&bull;</span> 
+		<a class="permalink" title="Permalink" href="{{ page.url }}">
+		<span class="no-print">Permalink</span>
+		<span class="print-only">{{ site.url }}{{ page.url }}</span>
+	  	</a>
+	</p>
   </header>
 {% endif %}
-
   {{ content }}
-
 </article>

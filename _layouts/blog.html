@@ -1,11 +1,9 @@
 {% include head.html %}
-<body>
-  <div class="container">
-    {% include masthead-blog.html %}
-      <div class="content">
+<body class="index" id="blog">
+    {% include masthead.html %}
+    <section class="body" id="content">
         {{ content }}
-      </div>
+    </section>
     {% include footer-blog.html %}
-  </div><!--container-->
 </body>
 </html>

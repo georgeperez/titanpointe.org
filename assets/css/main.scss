@@ -6,125 +6,198 @@
 @import "colors";
 
 /* body {
-    outline: red solid;
+	outline: red solid;
 }
 
 article {
-    outline: green solid;
+	outline: green solid;
 }
 
 .content {
-    outline: blue solid;
+	outline: blue solid;
 }
 
 .container {
-    outline: purple solid;
+	outline: purple solid;
 }
 
 img {
-    outline: yellow solid;
+	outline: yellow solid;
 }
 
 html {
-    outline: pink solid;
+	outline: pink solid;
 } */
 
-html, body {
-    padding: 0;
-    margin: 0;
+header,
+section,
+footer,
+aside,
+nav,
+article,
+figure {
+	display: block;
 }
 
-html {
-    font-size: 16px;
-    line-height: 1.5;
+* {
+	padding: 0;
+	margin: 0;
+	line-height: 1.5;
+}
+
+.print-only {
+	display: none;
+}
+
+blockquote,
+pre,
+pre *,
+code,
+code * {
+	font-size: 95%
+}
+
+ul,
+ol {
+	padding-left: 2em
+}
+
+canvas,
+img,
+video {
+	border-style: none;
+	max-width: 100%
 }
 
 body {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    word-wrap: break-word;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	word-wrap: break-word;
+	text-rendering: optimizeLegibility
 }
 
-a {
-    &:visited {
-        text-decoration: underline
-    }
+#banner,
+#menu,
+#contentinfo,
+#content {
+	max-width: 55em;
+	margin: 0 auto;
+	clear: both;
+	overflow: auto;
 }
 
-.masthead {
-    width: 650px;
-    padding-top: 0;
-    margin-top: 0.5em;
-    font-size: 1.4em;
-
-    h1 {
-        font-size: 1.5em;
-        margin-top: 0;
-        margin-bottom: 0.01em;
-        font-weight: 700;
-    }
+#banner {
+	max-width: 51em;
+	min-width: 16em;
+	height: 3em;
+	margin-top: .5em;
+	padding: 1em 2em;
+	vertical-align: top
 }
 
-.masthead-text {
-    font-size: 1em;
-    margin: 0;
-    padding: 0;
+#banner a.site-name {
+	font-size: 2.1em;
+	text-decoration: none;
+	float: left;
+	font-weight: bold
+}
+
+#menu ul {
+	list-style-type: none;
+	padding: 0;
+	height: 2em;
+	font-size: 1.25em;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-bottom: 2px
+}
+
+#menu li {
+	float: left;
+	padding: 0;
+	margin: 0
+}
+
+#menu a,
+#menu a:link,
+#menu a:visited,
+#menu a:hover {
+	display: block;
+	text-align: left;
+	line-height: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
+	text-decoration: none;
+}
+
+#post-list {
+	list-style: none
 }
 
 footer {
-    font-size: 1em;
-    margin: 2em 0;
-    overflow: hidden;
-    text-align: center;
+	font-size: 1em;
+	margin: 2em 0;
+	overflow: hidden;
+	text-align: center;
 
-    p {
-        margin: 0.5em
-    }
+	p {
+		margin: 0.5em
+	}
 }
 
 .btn {
-    padding: 10px 15px;
-    font-size: 17px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    margin: auto;
-    display: block;
-    border-radius: 10px;
+	padding: 10px 15px;
+	font-size: 17px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	margin: auto;
+	display: block;
+	margin-top: 0.5em;
+	border-radius: 10px;
 
-    &:active {
-        transform: translateY(2px);
-    }
+	&:active {
+		transform: translateY(2px);
+	}
 }
 
 article {
-    display: block;
-    margin-top: 1.5em;
+	margin-bottom: 1.5em;
 
-    header {
+	header {
 
-        a {
-            text-decoration: none;
-        }
+		a {
+			text-decoration: none;
+		}
 
-        p {
-            margin: 0;
-        }
-    }
+		p {
+			margin: 0;
+		}
+	}
 }
 
-.container {
-    position: relative;
-    display: block;
-    max-width: 650px;
-    margin: 0 auto;
+#content {
+	max-width: 50em;
+	min-width: 15em;
+	padding: 1.5em 2.5em
 }
 
-.content {
-    position: inherit;
-    margin-top: 1.5em;
+p,
+blockquote,
+hr,
+ul,
+ol,
+li {
+	margin-bottom: .75em;
+	margin-top: .75em
+}
+
+hr {
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto
 }
 
 h1,
@@ -133,182 +206,172 @@ h3,
 h4,
 h5,
 h6 {
-    margin-bottom: 0.5em;
-    font-size: 20px;
-    text-rendering: optimizeLegibility;
-    font-weight: 800;
-    line-height: 1.25em;
+	margin-bottom: 0.5em;
+	font-size: 20px;
+	font-weight: 800;
+	line-height: 1.25em;
 }
 
 h2 {
-    margin-bottom: 0;
-    line-height: 1.5em;
-    font-weight: 600;
+	margin-bottom: 0;
+	line-height: 1.5em;
+	font-weight: 600;
 
-    a {
-        &:active, &:visited {
-            text-decoration: none;
-        }
+	a {
+		&:active, &:visited {
+			text-decoration: none;
+		}
 
-        &.link, &:active.link, &:visited.link {
-            text-decoration: underline;
-        }
-    }
+		&.link, &:active.link, &:visited.link {
+			text-decoration: underline;
+		}
+	}
 }
 
 h3 {
-    font-size: 1.25em;
-    font-weight: 500;
-    margin: 1em 0 1em
+	font-size: 1.25em;
+	font-weight: 500;
+	margin: 1em 0 1em
 }
 
 h4 {
-    font-size: 1em; 
-    margin: 0
+	font-size: 1em; 
+	margin: 0
 }
 
 b, 
 strong {
-    font-weight: 700
+	font-weight: 700
 }
 
 blockquote {
-    margin: 1em;
-    padding: 1em;
-    border-left: 8px solid $black-grey;
-    /* border-top: 4px solid $black-grey;
-    border-bottom: 4px solid $black-grey; */
-    border-radius: 0.3em;
+	margin: 1em;
+	padding: 1em;
+	border-left: 8px solid $black-grey;
+	/* border-top: 4px solid $black-grey;
+	border-bottom: 4px solid $black-grey; */
+	border-radius: 0.3em;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 0 1rem;
-    display: block;
-    border-radius: 3px;
-    border: 1px solid;
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 1rem;
+	display: block;
+	border-radius: 3px;
+	border: 1px solid;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.right {
+	display: block;
+	float: right;
+	margin: 1em
+}
+
+.left {
+	display: block;
+	float: left;
+	margin: 1em
 }
 
 a:hover img, a:focus img {
-    opacity: 0.8
+	opacity: 0.8
 }
 
 .portrait {
-    max-width: 100%;
-    height: auto;
-    margin: 0 0 1rem;
-    display: block;
-    border: none;
-    border-radius: none
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 1rem;
+	display: block;
+	border: none;
+	border-radius: none
+}
+
+pre.code-snippet {
+	border-radius: 0.5em;
+	padding: 1em;
+	overflow: auto;
+	word-wrap: break-word;
+	white-space: pre-wrap;
 }
 
 pre {
-    border-radius: 0.5em;
-    padding: 1em;
-    overflow: auto;
-    white-space: pre;
+	overflow: auto;
+	word-wrap: break-word;
+	white-space: pre-wrap;
 }
 
 code {
-    overflow: auto;
+	overflow: auto;
 }
 
-.printonly {
-    display: none;
+#contentinfo {
+	padding: 1em 0;
+	text-align: center;
+	margin-bottom: 1em
 }
 
-@media (max-width: 780px) {
-
-    .content, .container {
-        width: calc(100vw - 40px)
-    }
-
-    .masthead {
-        height: 60px
-    }
+#contentinfo p {
+	font-size: 80%
 }
 
-@media (max-width: 560px) {
-
-    body {
-        font-size: 1em
-    }
-
-    .masthead {
-        width: 100%;
-        height: 50px;
-        font-size: 1em;
-
-        h1 {
-            padding-top: 0.50em;
-            width: 100%;
-            font-size: 1.5em;
-        }
-    }
+.entry-title a {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none
 }
 
-@media (max-width: 360px) {
-    
-    .masthead {
-        font-size: .8em
-    }
-
-    pre, 
-    code {
-        font-size: 1em
-    }
+.post-info {
+    font-size: .9em;
+    margin-top: .5em;
+    margin-bottom: .5em
 }
 
-@media print {
+.published {
+    border-style: none
+}
 
-    body {
-        width: auto;
-        max-width: 125em;
-        padding: 0;
-        margin: 0 auto;
-        color: #000;
-        border: 0
-    }
+@media(max-width:55em) {
+	#banner,
+	#contentinfo {
+		margin: 0
+	}
+}
 
-    a {
-        color: #888
-    }
+@media(max-width:550px) {
+	#menu a,
+	#menu a:link,
+	#menu a:visited,
+	#menu a:hover {
+		padding: 0 17px;
+		width: auto
+	}
+	#menu li {
+		width: auto
+	}
+	#banner,
+	#contentinfo {
+		padding: 17px;
+		margin: 0
+	}
+	#content {
+		padding: 0 17px
+	}
+}
 
-    .noprint {
-        display: none
-    }
-
-    .printonly {
-        display: inline
-    }
-
-    .masthead {
-        color: #888;
-        width: 100%;
-        height: auto;
-
-        h1 {
-            margin: 0;
-            font-size: 1.5em;
-            color: #444
-        }
-    }
-
-    .masthead-text {
-        font-size: 10pt;
-    }
-
-    .content, 
-    .container {
-        position: static;
-        margin: 0;
-        width: 100%
-    }
-
-    article {
-        margin-top: 2em
-    }
+@media(max-width:350px) {
+	#banner a.site-name {
+		font-size: 1.4em
+	}
+	#banner {
+		height: 2em
+	}
 }
 
 /* Bigfoot.js CSS */

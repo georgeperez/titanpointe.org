@@ -1,12 +1,10 @@
 {% include head-matricula-es.html %}
-<body>
-  <div class="container">
-  {% include masthead.html %}
-  <div class="content">
-    {{ content }}
-  </div>
-  {% include footer.html %}
-  </div><!--container-->
-  {% include clipboard.min.html %}
+<body class="index" id="home">
+	{% include masthead.html %}
+	<section class="body" id="content">
+		{{ content }}
+	</section>
+	{% include footer.html %}
+	{% include clipboard.min.html %}
 </body>
 </html>
