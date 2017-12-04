@@ -4,7 +4,7 @@ layout: default
 permalink: /about-me/
 ---
 
-### About me
+## About me
 
 I’m a computer science undergrad at the [University of Puerto Rico at Mayaguez](http://math.uprm.edu/). I currently work at the [Puerto Rico Seismic Network](http://redsismica.uprm.edu/English). I'm interested in macOS, iOS, software development, film, and photography. If you want, you can [learn more about this site](/about-site/). Read my [resume](/resume/).
 

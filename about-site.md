@@ -4,7 +4,9 @@ layout: default
 permalink: /about-site/
 ---
 
-### About this site
+## About this site
+
+---
 
 #### Software I use
 
