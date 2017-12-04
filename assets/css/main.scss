@@ -206,10 +206,8 @@ h3,
 h4,
 h5,
 h6 {
-	margin-bottom: 0.5em;
-	font-size: 20px;
-	font-weight: 800;
-	line-height: 1.25em;
+    margin-bottom: .5em;
+    margin-top: .5em
 }
 
 h2 {
@@ -244,7 +242,7 @@ strong {
 	font-weight: 700
 }
 
-blockquote {
+blockquote.warning {
 	margin: 1em;
 	padding: 1em;
 	border-left: 8px solid $black-grey;

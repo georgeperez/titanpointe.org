@@ -59,9 +59,17 @@ footer#contentinfo {
     border-color: $white
 }
 
-blockquote {
+blockquote.warning {
     color: $apple-gray;
     background: $grey;
+}
+
+blockquote {
+    color: $black;
+    background: $apple-gray;
+    border-left: .25em solid $light-gray;
+    margin: 1em;
+    padding: 1em;
 }
 
 h1, 
