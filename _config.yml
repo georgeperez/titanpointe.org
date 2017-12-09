@@ -9,6 +9,8 @@ permalink: blog/:year/:month/:title
 host: 0.0.0.0
 exclude:
   - README.md
+  - Gemfile
+  - Gemfile.lock
 description: "Computer science undergrad at the University of Puerto Rico at Mayag&uuml;ez. Interested in macOS, iOS, software development, and photography."
 highligther: rouge
 plugins:
