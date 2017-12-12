@@ -1,12 +1,12 @@
 ---
-title: RUMAD on macOS Sierra
+title: RUMAD on macOS Sierra and up (including High Sierra)
 layout: matricula
 permalink: /matricula/
-keywords: matricula, colegio, uprm, rum, mac, macos, sierra, macos sierra
+keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra, high sierra, macos high sierra
 ---
 
 <article>
-    <h1>RUMAD on macOS Sierra</h1>
+    <h1>{{ page.title }}</h1>
 
     <p><a class="permalink" title="Spanish" href="/matricula/es">
         <span class="no-print">Lee en espa&ntilde;ol</span>
@@ -14,7 +14,7 @@ keywords: matricula, colegio, uprm, rum, mac, macos, sierra, macos sierra
       </a>
     </p>
 
-    <h4>Warning</h4>
+    <h4>START WARNING</h4>
 
     <p>It's important that you read these instructions from your desktop and to do so diligently. If the instructions below (<b>after this warning</b>) don't work for you, you're going to need to enter the following command each time you want to connect to <code>rumad.uprm.edu</code> in <b>Terminal</b>:</p>
     <pre class="code-snippet" id="c1" class="code-snippet">ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss estudiante@rumad.uprm.edu</pre>
@@ -22,18 +22,20 @@ keywords: matricula, colegio, uprm, rum, mac, macos, sierra, macos sierra
     <p>Press <b>Return</b>.</p>
     <p>Using the aforementioned command, your Mac should connect to <code>rumad.uprm.edu</code>. If you need any help, my email is at the end of this page.</p>
     <p><b>I'm not responsible for any damages done to your computer from following these instructions</b>.</p>
-    <p>Manually copy and paste the commands or use the provided buttons when available.</p>
+    <p>Manually copy and paste the commands or use the provided "<em>copy to clipboard</em>" buttons when available.</p>
     <p>Your <b>Terminal</b> window <b>might look differently from mine</b>. These instructions <b>will still work</b> no matter how yours looks.</p>
+
+    <h4>END WARNING</h4>
 
     <h3>First step</h3>
     <blockquote class="warning"><h4>NOTE</h4>The &#36; symbol indicates the <em>command prompt</em> of your <b>Terminal</b>. Everything that is <b>after</b> the &#36; symbol is a command. <b>DO NOT</b> include it in your commands.</blockquote>
-    <p>Open a new <b>Terminal</b> window. In <b>Terminal</b>, make sure you're on the correct directory. Type the following command: <pre class="code-snippet">&#36; pwd</pre> Press <b>Return</b>. The following should appear:</p>
+    <p>Open a new <b>Terminal</b> window. In <b>Terminal</b>, make sure you're in the correct directory. Type the following command: <pre class="code-snippet">&#36; pwd</pre> Press <b>Return</b>. The following should appear:</p>
     <pre class="code-snippet">&#36; pwd
 /Users/your-username
 </pre>
     <p>On your computer, <code>your-username</code> will be <b>your username</b>.</p>
-    <p>If the command <code>pwd</code> showed <code>/Users/your-username</code> it means that you're on the correct directory. If it didn't, you'll need to change directories. Type the following command:<pre class="code-snippet">&#36; cd</pre></p>
-    <p>Press <b>Return</b>. Run the <code>pwd</code> command once again and confirm that you're on the right directory.</p>
+    <p>If the command <code>pwd</code> showed <code>/Users/your-username</code> it means that you're in the correct directory. If it didn't, you'll need to change directories. Type the following command:<pre class="code-snippet">&#36; cd</pre></p>
+    <p>Press <b>Return</b>. Run the <code>pwd</code> command once again and confirm that you're in the right directory.</p>
     <p>Once you've confirmed the directory, type the following command: <pre class="code-snippet">&#36; open .ssh/config</pre></p>
     <p>Press <b>Return</b>. Running this command should've opened a <b>TextEdit</b> window.</p>
     <h1>Possible problems and their fixes</h1>
