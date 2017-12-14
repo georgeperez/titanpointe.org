@@ -11,6 +11,8 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+include:
+  - /.well-known/
 description: "Computer science undergrad at the University of Puerto Rico at Mayag&uuml;ez. Interested in macOS, iOS, software development, and photography."
 highligther: rouge
 plugins:
