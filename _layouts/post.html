@@ -9,7 +9,7 @@ layout: blog
 			<a class="link" href="{{ page.external-url }}">{{ page.title }}</a>
 		</h2>
 	<p>
-		<time datetime="{{ page.date }}" pubdate="pubdate">{{ page.date | date:"%B %-d, %Y" }}</time>
+		<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date:"%B %-d, %Y" }}</time>
 		<span>&bull;</span> 
 		<a class="permalink" title="Permalink" href="{{ relative.url }}">
 		<span class="no-print">Permalink</span>
@@ -23,7 +23,7 @@ layout: blog
 	  		<a href="{{ page.url }}">{{ page.title }}</a>
 		</h2>
 	<p>
-		<time datetime="{{ page.date }}" pubdate="pubdate">{{ page.date | date:"%B %-d, %Y" }}</time>
+		<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date:"%B %-d, %Y" }}</time>
 		<span>&bull;</span> 
 		<a class="permalink" title="Permalink" href="{{ page.url }}">
 		<span class="no-print">Permalink</span>
