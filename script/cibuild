@@ -1,8 +1,7 @@
-#!/bin/bash
+#!usr/bin/env bash
 
-install: gem install bundler
-script: 
-    - bundle install
-    - bundle exec jekyll build
-
-cleanup: rm -rf _site
+gem install bundler 
+bundle install
+bundle exec jekyll build 
+bundle exec html-proofer --exclude-external-sites
+rm -rf _site
