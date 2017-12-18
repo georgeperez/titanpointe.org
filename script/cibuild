@@ -1,0 +1,8 @@
+#!/bin/bash
+
+install: gem install bundler
+script: 
+    - bundle install
+    - bundle exec jekyll build
+
+cleanup: rm -rf _site
