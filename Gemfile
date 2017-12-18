@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 gem 'jekyll'
 gem 'activesupport'
+gem 'html-proofer'
 gem 'html-pipeline'
 gem 'jekyll-last-modified-at'
 gem 'jekyll-email-protect'
