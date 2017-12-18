@@ -1,9 +1,9 @@
 ---
-title: How to get matricula working on macOS Sierra
+title: How to get RUMAD working on macOS Sierra
 layout: post
 date: 2017-06-14 23:14:50 TZ
 external-url: /matricula/
-last_modified_at: 2017-08-12 09:11:55 TZ
+last_modified_at: 2017-12-18 14:40:14 TZ
 keywords: matricula, colegio, uprm, rum, mac, macos, sierra, macos sierra
 excerpt_separator: <!--MORE-->
 description: "Get ahead of those pesky SSH errors"
