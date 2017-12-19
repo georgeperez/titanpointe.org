@@ -4,9 +4,6 @@ rvm:
 addons:
   ssh_known_hosts: george.perez-marrero.com
 
-before_script:
-  - chown +x .script/cibuild
-
 script: "./script/cibuild" 
 
 before_deploy:
