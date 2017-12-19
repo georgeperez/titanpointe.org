@@ -1,19 +1,33 @@
 language: ruby
 rvm:
-  - 2.4.3
+- 2.4.3
+addons:
+  ssh_known_hosts: george.perez-marrero.com
 
-branches:
-  only:
-    - master
+before_script:
+  - chown +x .script/cibuild
 
-script: ./script/cibuild
+script: "./script/cibuild" 
+
+before_deploy:
+  - openssl aes-256-cbc -K $encrypted_<...>_key -iv $encrypted_<...>_iv -in script/deploy_rsa.enc -out /tmp/deploy_rsa -d
+  - eval "$(ssh-agent -s)"
+  - chmod 600 /tmp/deploy_rsa
+  - ssh-add /tmp/deploy_rsa
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/_site george@george.perez-marrero.com:/var/www/george.perez-marrero.com/html/
+  on:
+    branch: master
 
 env:
   global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 sudo: false
-
 exclude: [vendor]
+
 notifications:
   email: false
