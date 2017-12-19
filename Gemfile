@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 gem 'jekyll'
+gem 'rake'
 gem 'activesupport'
 gem 'html-proofer'
 gem 'html-pipeline'

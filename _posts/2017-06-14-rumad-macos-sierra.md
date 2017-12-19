@@ -17,4 +17,4 @@ Come June 2017. Many Mac users started to ask on social media websites what was 
 
 It's available in [English](/matricula/) and [Spanish](/matricula/es/).
 
-[^1]: If you want to read more about this, here's the relevant document on [OpenSSH Legacy](http://www.openssh.com/legacy.html).
+[^1]: If you want to read more about this, here's the relevant document on [OpenSSH Legacy](https://www.openssh.com/legacy.html).

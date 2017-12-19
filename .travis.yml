@@ -1,16 +1,19 @@
 language: ruby
 rvm:
-- 2.4.3
+	- 2.4.3
 
-# Assume bundler is being used, therefore
-# the `install` step will run `bundle install` by default.
+branches:
+	only:
+		- master
+
 script: ./script/cibuild
 
 env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+	global:
+		- NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
-sudo: false # route your build to the container-based infrastructure for a faster build
+sudo: false
 
+exclude: [vendor]
 notifications:
-  email: false
+	email: false

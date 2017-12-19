@@ -12,7 +12,7 @@ permalink: /about-site/
 *   [Transmit 5](https://panic.com/transmit/)
 *   [1Password 6](https://1password.com/)
 *   [Byword](https://bywordapp.com)
-*   [Pixelmator Pro](http://www.pixelmator.com/pro/)
+*   Pixelmator Pro
 *   Terminal (with zsh and oh-my-zsh)
 
 #### Server software I use

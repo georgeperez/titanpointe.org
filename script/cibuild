@@ -1,7 +1,6 @@
 #!usr/bin/env bash
 
-gem install bundler 
+gem install bundler
 bundle install
-bundle exec jekyll build 
-bundle exec html-proofer --exclude-external-sites
-rm -rf _site
+bundle exec jekyll build
+rake test

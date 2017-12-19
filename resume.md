@@ -6,9 +6,9 @@ layout: default
 
 ## Experience
 
-*[Puerto Rico Seismic Network](http://redsismica.uprm.edu/English/)*; Mayaguez, PR — 2017 – Present
+*Puerto Rico Seismic Network*; Mayaguez, PR — 2017 – Present
 
-* I manage the [Research](http://redsismica.uprm.edu/English/research) and [Geodesy](http://redsismica.uprm.edu/English/research/geodesy) pages of the Puerto Rico Seismic Network.
+* I manage the research and geodesy pages of the Puerto Rico Seismic Network.
 * I implemented a new map for the Geodesy GPS stations using Leaflet.js.
 
 ## Education

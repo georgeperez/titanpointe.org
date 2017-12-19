@@ -7,7 +7,7 @@ excerpt_separator: <!--MORE-->
 description: "These are the apps I use the most"
 ---
 
-I&#8217;m very picky when it comes to software. I am not one of those people who routinely goes to the App Store, looks at the "New Apps We Love" section, and downloads new apps. Usually, for me to try out an app, it has to be recommended to me or be acclaimed as a great app. I&#8217;ve found apps like [Working Copy](https://workingcopyapp.com) and [Narwhal](http://getnarwhal.com) this way. These apps are used daily on my devices. Without them, my enjoyment (and thus my productivity) would grind to a halt. <!--MORE-->
+I&#8217;m very picky when it comes to software. I am not one of those people who routinely goes to the App Store, looks at the "New Apps We Love" section, and downloads new apps. Usually, for me to try out an app, it has to be recommended to me or be acclaimed as a great app. I&#8217;ve found apps like [Working Copy](https://workingcopyapp.com) and [Apollo](https://apolloapp.io) this way. These apps are used daily on my devices. Without them, my enjoyment (and thus my productivity) would grind to a halt. <!--MORE-->
 
 Side note: Believe it or not, I use the official social networking apps i.e. Twitter, Facebook, Instagram, so you won&#8217;t find recommendations for those here.
 
@@ -18,7 +18,7 @@ With 1Password, you can randomly generate complex passwords to use for all of yo
 
 A word of advice is to always enable Two-Factor Authentication on every service that has it. It will make hacking your account much more difficult because you would need a second method of verification that you own, most of the times your phone. You can also add these code generators to 1Password itself.
 
-### [Homebrew](http://brew.sh/)   
+### [Homebrew](https://brew.sh/)   
 If you&#8217;re serious about Mac development or expanding your Macs' feature set, you&#8217;d be crazy not installing this. It is the best way to install GitHub-hosted packages or open source software. As an extension, I also recommend you install Xcode which adds a lot of useful stuff to your computer.  
 
 You can replace Apple&#8217;s version of popular development utilities, which tend to be a bit behind from the official sources. An example of this is [Git](https://git-scm.com).
