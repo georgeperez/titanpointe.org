@@ -1,19 +1,19 @@
 language: ruby
 rvm:
-	- 2.4.3
+  - 2.4.3
 
 branches:
-	only:
-		- master
+  only:
+    - master
 
 script: ./script/cibuild
 
 env:
-	global:
-		- NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 sudo: false
 
 exclude: [vendor]
 notifications:
-	email: false
+  email: false
