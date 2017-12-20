@@ -3,7 +3,7 @@ timezone: America/Puerto_Rico
 markdown: kramdown
 name: George Perez-Marrero
 author: George Perez-Marrero
-url: https://george.perez-marrero.com
+url: https://titanpointe.org
 email: george@perez-marrero.com
 permalink: blog/:year/:month/:title
 host: 0.0.0.0
