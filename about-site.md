@@ -23,8 +23,6 @@ View the site's Gemfile [here](https://gist.github.com/georgeperez/e24c53209df61
 
 #### Disclaimers and stuff
 
-Everything in this website is to be used at your own risk. This includes executing code provided by me, any downloads provided by me, and any other part that's hosted on this site. The websites I link to are subject to heavy scrutiny. Anything not on the domain \*.perez-marrero.com is subject to the site's own privacy policy and terms of use.
-
-~~This website will send anonymized usage data to Google Analytics for statistics. This means that your browser may send out your information like device, screen resolution, operating system (OS), geographical location, among other things.~~ I removed Google Analytics from the website, but I still recommend using a content/ad blocker (I recommend [1Blocker](https://1blocker.com) or [uBlock Origin](https://github.com/gorhill/uBlock) if you're on Windows, Linux, or using Chrome on macOS).
+Everything in this website is to be used at your own risk. This includes executing code provided by me, any downloads provided by me, and any other part that's hosted on this site. The websites I link to are subject to heavy scrutiny. Anything not on the domain \*.titanpointe.org is subject to the site's own privacy policy and terms of use.
 
 Links to any of Apple's digital stores are encoded with a special code for the iTunes Affiliate program. I may also include affiliate links from other programs.
