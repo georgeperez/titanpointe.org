@@ -13,10 +13,6 @@ exclude:
   - Gemfile.lock
   - vendor
   - Rakefile
-  - package.json
-  - package-lock.json
-  - node_modules
-  - gulpfile.js
 include:
   - /.well-known/
 description: "Computer science undergrad at the University of Puerto Rico at Mayag&uuml;ez. Interested in macOS, iOS, software development, and photography."

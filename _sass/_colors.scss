@@ -1,22 +1,12 @@
-$apple-gray: #f2f2f2;
-$white: #ffffff;
-$gray: #888;
-$grey: #656D78;
-$green: #26820f;
-$black: #000000;
-$black-grey: #1A1D20;
-$apple-blue: rgb(0,122,255);
-$neven-purple: #8367c9;
-$navy-blue: #244C65;
-$light-gray: #738B99;
-$sublime-gray: #323a43;
+
+@import "variables";
 
 body {
     background-color: $apple-gray;
 }
 
-a, 
-a:active, 
+a,
+a:active,
 a:visited {
     color: $black;
 }
@@ -72,11 +62,11 @@ blockquote {
     padding: 1em;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
     color: $black-grey
 }
@@ -101,7 +91,7 @@ h6 {
     color: $grey
 }
 
-article header { 
+article header {
     color: $grey
 }
 
