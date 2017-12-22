@@ -2,6 +2,7 @@
 @import "variables";
 
 body {
+	color: $text-01;
     background-color: $apple-gray;
 }
 
@@ -71,19 +72,12 @@ h6 {
     color: $black-grey
 }
 
-.btn {
+button.btn {
     color: $white;
-    background-color: $grey;
-    border-radius: 10px;
-    box-shadow: 0 5px $black-grey;
+    background-color: $blue;
 
-    &:hover {
-        background-color: $grey
-    }
-
-    &:active {
-        background-color: $grey;
-        box-shadow: 0 5px $black-grey;
+    &:hover, &:focus {
+        background-color: #5596e6;
     }
 }
 
