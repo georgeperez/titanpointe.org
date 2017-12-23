@@ -1,0 +1,105 @@
+
+@import "variables";
+
+body {
+	color: $text-01;
+	background-color: $ui-03;
+}
+
+a,
+a:active,
+a:visited {
+	color: $brand-01;
+}
+
+a:hover {
+	color: $brand-02;
+}
+
+section#content,
+footer#contentinfo {
+	background-color: $ui-01;
+}
+
+#banner {
+	background-color: $ui-05;
+}
+
+#banner a.site-name {
+	color: $ui-01;
+}
+
+#menu,
+#menu li ul {
+	background-color: $ui-04;
+}
+
+#menu a,
+#menu a:link,
+#menu a:visited {
+	color: $text-01;
+	border-color: $ui-04;
+}
+
+#menu a:hover {
+	color: $text-01;
+	background-color: $ui-04;
+}
+
+blockquote.warning {
+	color: $text-02;
+	background: $field-01;
+}
+
+blockquote {
+	color: $text-01;
+	background: $field-01;
+	margin: 1em;
+	padding: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $text-01
+}
+
+.no-print {
+	color: $text-03;
+}
+
+article header {
+	color: $text-03;
+}
+
+h2 {
+	a {
+		&:active, &:visited {
+			color: $text-01;
+		}
+
+		&:hover {
+			color: $text-02;
+		}
+
+		&.link, &:active.link, &:visited.link {
+			color: $text-01;
+		}
+
+		&:hover.link {
+			color: $text-02;
+		}
+	}
+}
+
+code {
+	color: $brand-01;
+}
+
+pre.code-snippet {
+	color: $ui-01;
+	background: $text-01;
+}

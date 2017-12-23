@@ -18,11 +18,10 @@ keywords: matricula, colegio, uprm, rum, mac, macos, sierra, macos sierra
 
     <p>Es importante que leas estas instrucciones desde tu computadora y detenidamente. Si las instrucciones de abajo &#40;<b>despu&eacute;s de esta nota aclaratoria</b>&#41; no te funcionan tendras que entrar el siguente comando cada vez que quieras conectarte a <code>rumad.uprm.edu</code>:</p>
     <pre class="code-snippet" id="c1">ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss estudiante@rumad.uprm.edu</pre>
-    <button class="btn" id="copy-button-1-es" data-clipboard-target="#c1">Copia al clipboard</button>
     <p>Oprime <b>Return</b>.</p>
     <p>Usando el comando anterior, tu Mac debe conectarse a <code>rumad.uprm.edu</code>. Si necesitan ayuda, mi email est&aacute; al final de esta p&aacute;gina.</p>
     <p><b>No soy responsable de ningún daño que ocurra con el uso de estas instrucciones</b>.</p>
-    <p>Usa copy/paste para los comandos o usa los botones provistos cuando estén disponibles.</p>
+    <p>Usa copy/paste para los comandos.</p>
     <p>Puede ser que tu <b>Terminal</b> se <b>vea diferente al mio</b>. No importa como se vea, las <b>instrucciones funcionan igual</b>.</p>
 
     <h3>Primero</h3>
@@ -47,7 +46,7 @@ keywords: matricula, colegio, uprm, rum, mac, macos, sierra, macos sierra
     <blockquote class="warning"><h4>OJO</h4>La parte <b>sudo</b> del comando anterior eleva tu <b>Terminal</b> a usar privelegios de administrador.</blockquote>
     <p>El <em>prompt</em> pedir&aacute; tu <em>password</em> de usuario.</p>
     <pre class="code-snippet">Password:</pre>
-    <p>Escribe tu <em>password</em> de usuario. El <em>password</em> no va aparecer el pantalla, pero <b>s&iacute; se est&aacute; escribiendo</b>. Cuando termines de escribir tu <em>password</em>, oprime <b>Return</b>.</p> 
+    <p>Escribe tu <em>password</em> de usuario. El <em>password</em> no va aparecer el pantalla, pero <b>s&iacute; se est&aacute; escribiendo</b>. Cuando termines de escribir tu <em>password</em>, oprime <b>Return</b>.</p>
     <p>Luego de todo eso escribe los siguientes comandos en orden:</p>
     <pre class="code-snippet">&#36; touch .ssh/config</pre>
     <p>Oprime <b>Return</b>.</p>
@@ -60,7 +59,6 @@ keywords: matricula, colegio, uprm, rum, mac, macos, sierra, macos sierra
     <pre class="code-snippet" id="c2">Host rumad.uprm.edu
       KexAlgorithms +diffie-hellman-group1-sha1
       HostKeyAlgorithms +ssh-dss</pre>
-    <button class="btn" id="copy-button-2-es" data-clipboard-target="#c2">Copia al clipboard</button>
     <p>Tu <code>config</code> debe lucir como el siguiente screenshot. Asegurate que luzca de la misma forma que el screenshot.</p>
     <a href="/assets/images/textedit.png"><img src="/assets/images/textedit.png"></a>
 
