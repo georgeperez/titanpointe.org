@@ -116,11 +116,19 @@ footer {
 }
 
 article {
-	margin-bottom: 1.5em;
+	margin-bottom: 2em;
 
-	header {
+	header.post-info {
 
-		a {
+		font-size: .9em;
+		margin-top: .5em;
+		margin-bottom: .5em;
+
+		a.post {
+			text-decoration: none;
+		}
+
+		a.permalink {
 			text-decoration: none;
 		}
 
@@ -158,8 +166,8 @@ h3,
 h4,
 h5,
 h6 {
-    margin-bottom: .5em;
-    margin-top: .5em
+	margin-bottom: .5em;
+	margin-top: .5em
 }
 
 h2 {
@@ -168,7 +176,7 @@ h2 {
 	font-weight: 600;
 
 	a {
-		&:active, &:visited {
+		&:active.post, &:visited.post {
 			text-decoration: none;
 		}
 
@@ -206,29 +214,11 @@ img {
 	margin: 0 0 1rem;
 	display: block;
 	border-radius: 3px;
-	border: 1px solid;
-}
-
-.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto
-}
-
-.right {
-	display: block;
-	float: right;
-	margin: 1em
-}
-
-.left {
-	display: block;
-	float: left;
-	margin: 1em
+	border: 1px solid transparent;
 }
 
 a:hover img, a:focus img {
-	opacity: 0.8
+	opacity: 0.9
 }
 
 .portrait {
@@ -269,19 +259,12 @@ code {
 }
 
 .entry-title a {
-    font-weight: bold;
-    font-size: 1.2em;
-    text-decoration: none
-}
-
-.post-info {
-    font-size: .9em;
-    margin-top: .5em;
-    margin-bottom: .5em
+	font-weight: 600;
+	font-size: 1.2em;
 }
 
 .published {
-    border-style: none
+	border-style: none
 }
 
 @media(max-width:55em) {

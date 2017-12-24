@@ -5,29 +5,29 @@ layout: blog
 <article>
 {% if page.external-url %}
 	<header class="post-info">
-		<h2 class="entry-title" id="headline name">
+		<h2 class="entry-title">
 			<a class="link" href="{{ page.external-url }}">{{ page.title }}</a>
 		</h2>
 	<p>
 		<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date:"%B %-d, %Y" }}</time>
-		<span>&bull;</span> 
-		<a class="permalink" title="Permalink" href="{{ relative.url }}">
+		<span>&bull;</span>
+		<a class="permalink" title="Permalink" href="{{ page.url }}">
 		<span class="no-print">Permalink</span>
-		<span class="print-only">{{ site.url }}{{ page.url }}</span>
+        <span class="print-only">{{ site.url }}{{ post.url }}</span>
 		</a>
 	</p>
   </header>
 {% else %}
 	<header class="post-info">
-		<h2 class="entry-title" id="headline name">
-	  		<a href="{{ page.url }}">{{ page.title }}</a>
+		<h2 class="entry-title">
+	  		<a class="post" href="{{ page.url }}">{{ page.title }}</a>
 		</h2>
 	<p>
 		<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date:"%B %-d, %Y" }}</time>
-		<span>&bull;</span> 
+		<span>&bull;</span>
 		<a class="permalink" title="Permalink" href="{{ page.url }}">
 		<span class="no-print">Permalink</span>
-		<span class="print-only">{{ site.url }}{{ page.url }}</span>
+        <span class="print-only">{{ site.url }}{{ post.url }}</span>
 	  	</a>
 	</p>
   </header>
