@@ -1,20 +1,3 @@
-# Jekyll plugin to create yearly archive pages
-#
-# George Perez-Marrero, July 2017
-# Copyright notice (MIT License) attached at the end of this file
-#
-
-#
-# This code is based on the following works:
-#   https://github.com/shigeya/jekyll-monthly-archive-plugin
-#
-
-#
-# Archive will be written as #{archive_path}/#{year}/index.html
-# archive_path can be configured in 'path' key in 'monthly_archive' of
-# site configuration file. 'path' is default null.
-#
-
 module Jekyll
 
   module YearlyArchiveUtil
