@@ -6,5 +6,7 @@ User-agent: Twitterbot
 Allow: /
 User-agent: Facebot
 Allow: /
+User-agent: DuckDuckbot
+Allow: /
 User-agent: *
 Disallow: /
