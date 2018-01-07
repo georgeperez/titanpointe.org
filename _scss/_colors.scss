@@ -77,7 +77,7 @@ article header {
 
 h2 {
 	a {
-		&:active.post, &:visited.post {
+		&.post, &:active.post, &:visited.post {
 			color: $text-01;
 		}
 
