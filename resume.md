@@ -1,7 +1,7 @@
 ---
 title: Resume
 permalink: /resume
-redirect-from: /resume/
+redirect_from: /resume/
 layout: default
 ---
 

@@ -2,7 +2,7 @@
 layout: default
 title: Attributions and License Notices
 permalink: /attribution
-redirect-from: /attribution/
+redirect_from: /attribution/
 ---
 
 ## Open source software licenses
