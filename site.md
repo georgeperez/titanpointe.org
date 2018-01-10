@@ -1,7 +1,7 @@
 ---
 title: About this site
 layout: default
-permalink: /about-site/
+permalink: /site
 ---
 
 ## About this site

@@ -1,8 +1,10 @@
 ---
 layout: default
 title: Attributions and License Notices
-permalink: /attribution/
+permalink: /attribution
 ---
+
+## Open source software licenses
 
 This website uses open source code under different licenses.
 

@@ -1,0 +1,146 @@
+---
+title: RUMAD on macOS Sierra and up (including High Sierra)
+layout: matricula
+permalink: /matricula
+keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra, high sierra, macos high sierra
+---
+
+<header>
+	<h2 lang="en">RUMAD on macOS Sierra and up (including High Sierra)</h2>
+	<h2 lang="es">RUMAD en macOS Sierra en adelante (incluyendo High Sierra)</h2>
+	<h4>Available in:</h4>
+	<div class="body lang-switcher">
+		<ul>
+			<li><a href='?lang=en' data-langswitch='en'>English</a></li>
+			<li><a href='?lang=es' data-langswitch='es'>Espa&ntilde;ol</a></li>
+		</ul>
+	</div>
+</header>
+
+<article lang="en">
+
+	<h4>START WARNING</h4>
+
+	<p>It's important that you read these instructions from your desktop and to do so diligently. If the instructions below (<b>after this warning</b>) don't work for you, you're going to need to enter the following command each time you want to connect to <code>rumad.uprm.edu</code> in <b>Terminal</b>:</p>
+	<pre class="code-snippet" id="c1" class="code-snippet">ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss estudiante@rumad.uprm.edu</pre>
+	<p>Press <b>Return</b>.</p>
+	<p>Using the aforementioned command, your Mac should connect to <code>rumad.uprm.edu</code>. If you need any help, my email is at the end of this page.</p>
+	<p><b>I'm not responsible for any damages done to your computer from following these instructions</b>.</p>
+	<p>Manually copy and paste the commands.</p>
+	<p>Your <b>Terminal</b> window <b>might look differently from mine</b>. These instructions <b>will still work</b> no matter how yours looks.</p>
+
+	<h4>END WARNING</h4>
+
+	<h3>First step</h3>
+	<blockquote class="warning"><h4>NOTE</h4>The &#36; symbol indicates the <em>command prompt</em> of your <b>Terminal</b>. Everything that is <b>after</b> the &#36; symbol is a command. <b>DO NOT</b> include it in your commands.</blockquote>
+	<p>Open a new <b>Terminal</b> window. In <b>Terminal</b>, make sure you're in the correct directory. Type the following command: <pre class="code-snippet">&#36; pwd</pre> Press <b>Return</b>. The following should appear:</p>
+	<pre class="code-snippet">&#36; pwd
+/Users/your-username
+</pre>
+	<p>On your computer, <code>your-username</code> will be <b>your username</b>.</p>
+	<p>If the command <code>pwd</code> showed <code>/Users/your-username</code> it means that you're in the correct directory. If it didn't, you'll need to change directories. Type the following command:<pre class="code-snippet">&#36; cd</pre></p>
+	<p>Press <b>Return</b>. Run the <code>pwd</code> command once again and confirm that you're in the right directory.</p>
+	<p>Once you've confirmed the directory, type the following command: <pre class="code-snippet">&#36; open .ssh/config</pre></p>
+	<p>Press <b>Return</b>. Running this command should've opened a <b>TextEdit</b> window.</p>
+	<h1>Possible problems and their fixes</h1>
+	<h4>1. "The file /Users/your-username/.ssh/config does not exist"</h4>
+	<p>If your <b>Terminal</b> shows the following error: <pre class="code-snippet">The file /Users/your-username/.ssh/config does not exist</pre>
+	It means that the <code>config</code> file doesn't exist on your Mac. To fix this, type the following command to create the file: <pre class="code-snippet">&#36; touch .ssh/config</pre></p>
+	<p>Press <b>Return</b>. Afterwards, type the previous command: <pre class="code-snippet">&#36; open .ssh/config</pre> Press <b>Return</b> once more.</p>
+	<h4>2. "No such file or directory"</h4>
+	<p>It's possible that the <code>.ssh/</code> directory does not exist on your Mac. Your <b>Terminal</b> window will show the following error: <pre class="code-snippet">.ssh/: No such file or directory</pre></p>
+	<p>In this case, you'll need to create it. Type the following command: <pre class="code-snippet">&#36; sudo mkdir .ssh</pre></p>
+	<blockquote class="warning"><h4>NOTE</h4>The <b>sudo</b> part of the previous command elevates your <b>Terminal</b> <em>command prompt</em> to use admin privileges.</blockquote>
+	<p>The <em>command prompt</em> will ask for your user <em>password</em>.</p>
+	<pre class="code-snippet">Password:</pre>
+	<p>Type your user <em>password</em>. The <em>password</em> will not appear on-screen, but rest assured it <b>is</b> being written. When you finish typing your <em>password</em>, press <b>Return</b>.</p>
+	<p>Afterwards write these commands in order:</p>
+	<pre class="code-snippet">&#36; touch .ssh/config</pre>
+	<p>Press <b>Return</b>.</p>
+	<pre class="code-snippet">&#36; open .ssh/config</pre>
+	<p>Press <b>Return</b> one more time.</p>
+
+	<h3>Second step</h3>
+	<p>Your Mac must've opened a new <b>TextEdit</b> window with the document <code>config</code>. This file will be empty for you.<p>
+	<p>In the <code>config</code> file, copy and paste the following text:</p>
+	<pre class="code-snippet" id="c2" class="code-snippet">Host rumad.uprm.edu
+	  KexAlgorithms +diffie-hellman-group1-sha1
+	  HostKeyAlgorithms +ssh-dss</pre>
+	<p>Your <code>config</code> file should look like the screenshot below. Make sure it does before continuing.</p>
+	<a href="/assets/images/textedit.png"><img src="/assets/images/textedit.png"></a>
+
+	<h3>Third step</h3>
+	<p>Save your changes using the <code>Command&#43;S</code> keyboard shortcut or by navegating to File -> Save in <b>TextEdit</b>.</p>
+	<p>Connect to <code>rumad.uprm.edu</code> using the following command: <pre class="code-snippet">&#36; ssh estudiante@rumad.uprm.edu</pre></p>
+	<p>Press <b>Return</b>. If everything is working correctly, you should see a <em>password prompt</em> for the user <code>estudiante</code>. Since <code>estudiante</code> does not have a <em>password</em>, press <b>Return</b> again.</p>
+	<a href="/assets/images/login.png"><img src="/assets/images/login.png"></a>
+
+	<h3>Fourth step</h3>
+	<p>SUCCESS! If everything was done correctly, your <b>Terminal</b> will show the user menu for the <b>Sistema Estudiantil Colegial</b>.</p>
+	<a href="/assets/images/end.png"><img src="/assets/images/end.png"></a>
+
+	<p>Please send any questions or feedback to <a href="mailto:{{ site.email | encode_email }}">my email</a>.</p>
+</article>
+
+<article lang="es">
+
+	<h4>Nota Aclaratoria</h4>
+
+	<p>Es importante que leas estas instrucciones desde tu computadora y detenidamente. Si las instrucciones de abajo &#40;<b>despu&eacute;s de esta nota aclaratoria</b>&#41; no te funcionan tendras que entrar el siguente comando cada vez que quieras conectarte a <code>rumad.uprm.edu</code>:</p>
+	<pre class="code-snippet" id="c1">ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss estudiante@rumad.uprm.edu</pre>
+	<p>Oprime <b>Return</b>.</p>
+	<p>Usando el comando anterior, tu Mac debe conectarse a <code>rumad.uprm.edu</code>. Si necesitan ayuda, mi email est&aacute; al final de esta p&aacute;gina.</p>
+	<p><b>No soy responsable de ningún daño que ocurra con el uso de estas instrucciones</b>.</p>
+	<p>Usa copy/paste para los comandos.</p>
+	<p>Puede ser que tu <b>Terminal</b> se <b>vea diferente al mio</b>. No importa como se vea, las <b>instrucciones funcionan igual</b>.</p>
+
+	<h3>Primero</h3>
+	<blockquote class="warning"><h4>OJO</h4>El s&iacute;mbolo &#36; indica el <em>prompt</em> de comando en tu Mac. Todo lo que est&aacute; <b>despu&eacute;s</b> del s&iacute;mbolo &#36; es un comando para entrar (copy/paste). <b>NO</b> lo incluyas en tus comandos.</blockquote>
+	<p>Abre una nueva ventana de <b>Terminal</b>. En <b>Terminal</b>, haste seguro que est&aacute;s en el directorio correcto. Escribe el siguiente comando: <pre class="code-snippet">&#36; pwd</pre> Oprime <b>Return</b>. Debería salir lo siguente:</p>
+	<pre class="code-snippet">&#36; pwd
+/Users/tu-usuario
+</pre>
+	<p>En tu computadora, <code>tu-usuario</code> va a ser tu <em>username</em>.</p>
+	<p>Si el resultado del comando <code>pwd</code> fue <code>/Users/tu-usuario</code> significa que est&aacute;s en el directorio correcto. Si tu resultado no fue el anterior, est&aacute;s en el directorio incorrecto. Escribe el siguente comando:<pre class="code-snippet">&#36; cd</pre></p>
+	<p>Oprime <b>Return</b>. Vuelve y corre el comando <code>pwd</code> y verifica que llegaste al directorio correcto.</p>
+	<p>Confirmando que est&aacute;s en el directorio correcto, escribe el siguiente comando: <pre class="code-snippet">&#36; open .ssh/config</pre></p>
+	<p>Oprime <b>Return</b>. Este command debe haber abierto una nueva ventana de <b>TextEdit</b>.</p>
+	<h1>Posibles problemas y sus arreglos</h1>
+	<h4>1. "The file /Users/tu-username/.ssh/config does not exist"</h4>
+	<p>Si tu ventana de <b>Terminal</b> muestra el siguiente error: <pre class="code-snippet">The file /Users/tu-username/.ssh/config does not exist</pre>
+	Significa que el archivo <code>config</code> no existe en tu Mac. Para arreglar esto, escribe el siguiente comando para crear el archivo: <pre class="code-snippet">&#36; touch .ssh/config</pre></p>
+	<p>Oprime <b>Return</b>. Luego, escribe el comando anterior: <pre class="code-snippet">&#36; open .ssh/config</pre> Oprime <b>Return</b> otra vez.</p>
+	<h4>2. "No such file or directory"</h4>
+	<p>Es posible que el directorio <code>.ssh/</code> no exista en tu Mac. Tu ventana de <b>Terminal</b> mostrata el siguiente error: <pre class="code-snippet">.ssh/: No such file or directory</pre></p>
+	<p>En este caso, tienes que crearlo. Escribe el siguiente comando: <pre class="code-snippet">&#36; sudo mkdir .ssh</pre></p>
+	<blockquote class="warning"><h4>OJO</h4>La parte <b>sudo</b> del comando anterior eleva tu <b>Terminal</b> a usar privelegios de administrador.</blockquote>
+	<p>El <em>prompt</em> pedir&aacute; tu <em>password</em> de usuario.</p>
+	<pre class="code-snippet">Password:</pre>
+	<p>Escribe tu <em>password</em> de usuario. El <em>password</em> no va aparecer el pantalla, pero <b>s&iacute; se est&aacute; escribiendo</b>. Cuando termines de escribir tu <em>password</em>, oprime <b>Return</b>.</p>
+	<p>Luego de todo eso escribe los siguientes comandos en orden:</p>
+	<pre class="code-snippet">&#36; touch .ssh/config</pre>
+	<p>Oprime <b>Return</b>.</p>
+	<pre class="code-snippet">&#36; open .ssh/config</pre>
+	<p>Oprime <b>Return</b> una vez m&aacute;s.</p>
+
+	<h3>Segundo</h3>
+	<p>Tu Mac debe haber abierto una nueva ventana de <b>TextEdit</b> con el documento <code>config</code>. Para ti, este archivo debe de estar vac&iacute;o.<p>
+	<p>En este documento <code>config</code>, copy/paste el siguiente bloque de texto en el archivo:</p>
+	<pre class="code-snippet" id="c2">Host rumad.uprm.edu
+	  KexAlgorithms +diffie-hellman-group1-sha1
+	  HostKeyAlgorithms +ssh-dss</pre>
+	<p>Tu <code>config</code> debe lucir como el siguiente screenshot. Asegurate que luzca de la misma forma que el screenshot.</p>
+	<a href="/assets/images/textedit.png"><img src="/assets/images/textedit.png"></a>
+
+	<h3>Tercero</h3>
+	<p>Guarda tus cambios usando la combinaci&oacute;n de teclado <code>Command&#43;S</code> o navegando a File -> Save en <b>TextEdit</b>.</p>
+	<p>Conectate a <code>rumad.uprm.edu</code> usando el siguiente comando: <pre class="code-snippet">&#36; ssh estudiante@rumad.uprm.edu</pre></p>
+	<p>Oprime <b>Return</b>. Si todo est&aacute; funcionando bien, deberias ver el prompt para entrar el <em>password</em> de <code>estudiante</code>. Oprime <b>Return</b> ya que <code>estudiante</code> no tiene <em>password</em>.</p>
+	<a href="/assets/images/login.png"><img src="/assets/images/login.png"></a>
+
+	<h3>Cuarto</h3>
+	<p>&iexcl;&Eacute;XITO&#33; Si seguistes las instrucciones correctamente, tu <b>Terminal</b> mostrar&aacute; el menu del <b>Sistema Estudiantil Colegial</b>.</p>
+	<a href="/assets/images/end.png"><img src="/assets/images/end.png"></a>
+
+	<p>Por favor envia cualquier pregunta o recomendaci&oacute;n a <a href="mailto:{{ site.email | encode_email }}">mi email</a>.</p>
+</article>
