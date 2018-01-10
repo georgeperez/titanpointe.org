@@ -46,6 +46,10 @@ footer#contentinfo {
 	background-color: $ui-04;
 }
 
+.lang-switcher {
+	background-color: $ui-03
+}
+
 .lang-switcher a,
 .lang-switcher a:link,
 .lang-switcher a:visited {
@@ -58,7 +62,7 @@ footer#contentinfo {
 
 blockquote.warning {
 	color: $text-02;
-	background: $ui-03;
+	background-color: $ui-03;
 }
 
 blockquote {
