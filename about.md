@@ -2,6 +2,7 @@
 title: About me
 layout: default
 permalink: /about
+redirect-from: /about/
 ---
 
 ## About me

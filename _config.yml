@@ -18,6 +18,7 @@ description: "Computer science undergrad at the University of Puerto Rico at May
 highligther: rouge
 plugins:
     - jekyll-email-protect
+    - jekyll-redirect-from
 sass:
     sass_dir: _scss
     style: compressed
