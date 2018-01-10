@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Attributions and License Notices
-permalink: /attribution
-redirect_from: /attribution/
+permalink: /attribution/
 ---
 
 ## Open source software licenses

@@ -1,7 +1,6 @@
 ---
 title: Resume
-permalink: /resume
-redirect_from: /resume/
+permalink: /resume/
 layout: default
 ---
 

@@ -1,8 +1,7 @@
 ---
 title: About me
 layout: default
-permalink: /about
-redirect_from: /about/
+permalink: /about/
 ---
 
 ## About me
