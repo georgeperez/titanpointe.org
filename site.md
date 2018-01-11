@@ -2,6 +2,7 @@
 title: About this site
 layout: default
 permalink: /site/
+redirect_from: /about-site/
 ---
 
 ## About this site
