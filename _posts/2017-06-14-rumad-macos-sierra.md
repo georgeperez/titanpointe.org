@@ -15,6 +15,6 @@ When I faced this problem with my own Mac, I just added the `rumad.uprm.edu` hos
 
 Come June 2017. Many Mac users started to ask on social media websites what was going on because their computers weren't able to connect to the class enrollment system. I went to the IT department's website to see if they had done either one of two things: update the instructions or update the keys/algorithms its server offered. Turns out, they did neither. So, I decided to take it upon myself to write on how to get RUMAD working on macOS Sierra. If you're a fellow Colegial with a Mac, this tutorial is for you.  
 
-It's available in [English](/matricula/) and [Spanish](/matricula/es/).
+It's available in [English](/matricula/?lang=en) and [Spanish](/matricula/?lang=es).
 
 [^1]: If you want to read more about this, here's the relevant document on [OpenSSH Legacy](https://www.openssh.com/legacy.html)
