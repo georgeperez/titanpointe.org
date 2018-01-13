@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Attributions and License Notices
-permalink: /attribution/
+title: Acknowledgements
+permalink: /acknowledgements/
 ---
 
 ## Open source software licenses

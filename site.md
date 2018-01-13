@@ -6,6 +6,12 @@ permalink: /site/
 
 ## About this site
 
+#### Server software and services
+
+This website is built using the static site generator [Jekyll](https://jekyllrb.com). It uses [Let's Encrypt](https://letsencrypt.org/) for TLS certificates, [FastMail](https://www.fastmail.com/?STKI=17107656) for email, and it's hosted a [DigitalOcean droplet](https://m.do.co/c/d4f8c9c9d236).  
+
+View the site's source code [here](https://github.com/georgeperez/titanpointe.org).  
+
 #### Software
 
 *   [Sublime Text 3](https://sublimetext.com/)
@@ -14,12 +20,6 @@ permalink: /site/
 *   [Byword](https://bywordapp.com)
 *   Pixelmator Pro
 *   Terminal (with zsh and oh-my-zsh)
-
-#### Server software and services
-
-This website is built using the static site generator [Jekyll](https://jekyllrb.com). It uses the [nginx](https://nginx.org/) web server, [Let's Encrypt](https://letsencrypt.org/) for TLS certificates, [FastMail](https://www.fastmail.com/?STKI=17107656) for email, and [DigitalOcean](https://m.do.co/c/d4f8c9c9d236) for hosting and DNS.
-
-View the site's Gemfile [here](https://gist.github.com/georgeperez/e24c53209df6195e7b84e57c66300102).
 
 #### Disclaimers and policy
 
