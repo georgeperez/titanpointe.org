@@ -309,14 +309,14 @@ code {
 
 }
 
-@media(max-width:55em) {
+@media(max-width: 55em) {
 	#banner,
 	#contentinfo {
 		margin: 0
 	}
 }
 
-@media(max-width:550px) {
+@media(max-width: 550px) {
 	#menu a,
 	#menu a:link,
 	#menu a:visited,
@@ -337,7 +337,7 @@ code {
 	}
 }
 
-@media(max-width:350px) {
+@media(max-width: 350px) {
 	#banner a.site-name {
 		font-size: 1.4em
 	}

@@ -46,10 +46,6 @@ footer#contentinfo {
 	background-color: $ui-04;
 }
 
-.lang-switcher {
-	background-color: $ui-03
-}
-
 .lang-switcher a,
 .lang-switcher a:link,
 .lang-switcher a:visited {
@@ -110,7 +106,7 @@ h2 {
 }
 
 code {
-	color: $brand-01;
+	color: $text-03;
 }
 
 pre.code-snippet {
