@@ -13,7 +13,7 @@ layout: blog
     <p>
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%B %-d, %Y" }}</time>
       <a class="permalink" title="Permalink" href="{{ post.url }}">
-        <span class="no-print">Permalink</span>
+        <span>Permalink</span>
         <span class="print-only">{{ site.url }}{{ post.url }}</span>
       </a>
     </p>
@@ -25,9 +25,8 @@ layout: blog
     </h2>
     <p>
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%B %-d, %Y" }}</time>
-      <span>&bull;</span>
       <a class="permalink" title="Permalink" href="{{ post.url }}">
-        <span class="no-print">Permalink</span>
+        <span>Permalink</span>
         <span class="print-only">{{ site.url }}{{ post.url }}</span>
       </a>
     </p>

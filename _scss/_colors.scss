@@ -105,6 +105,12 @@ h2 {
 	}
 }
 
+a.permalink {
+	&:hover {
+		color: $text-02;
+	}
+}
+
 code {
 	color: $text-03;
 }
