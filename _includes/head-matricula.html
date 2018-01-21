@@ -18,7 +18,7 @@
 	<link rel="apple-touch-icon" href="{{ "/assets/images/apple-touch-icon-precomposed.png" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
 	<link rel="apple-touch-icon-precomposed" href="{{ "/assets/images/apple-touch-icon-precomposed.png" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
 
-	<script src="/assets/js/gtag.js"></script>
+	<script src="{{ "/assets/js/gtag.js" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}"></script>
 
 	<meta property="og:title" content="{{ page.title }}" />
 	<meta property="fb:app_id" content="361878010839981" />
