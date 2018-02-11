@@ -8,7 +8,12 @@ permalink: /site/
 
 #### Server software and services
 
-This website is built using the static site generator [Jekyll](https://jekyllrb.com). It uses [Let's Encrypt](https://letsencrypt.org/) for TLS certificates, [FastMail](https://www.fastmail.com/?STKI=17107656) for email, and it's hosted a [DigitalOcean droplet](https://m.do.co/c/d4f8c9c9d236).  
+* [Jekyll](https://jekyllrb.com/)
+* [certbot](https://certbot.eff.org/)
+* [FastMail](https://www.fastmail.com/?STKI=17107656)
+* [Ruby](https://www.ruby-lang.org/en/)
+
+All hosted on [DigitalOcean](https://m.do.co/c/d4f8c9c9d236).
 
 View the site's source code [here](https://github.com/georgeperez/titanpointe.org).  
 
