@@ -129,6 +129,7 @@ PLATFORMS
 DEPENDENCIES
   activesupport
   autoprefixer-rails
+  ffi (= 1.9.18)
   html-pipeline
   html-proofer
   jekyll
