@@ -5,38 +5,10 @@ layout: blog
 
 {% for post in site.posts %}
 <article>
-{% if post.external-url %}
-    <header class="post-info">
-    <h2 class="entry-title">
-      <a class="link" href="{{ post.external-url }}">{{ post.title }}</a>
-    </h2>
-    <p>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%B %-d, %Y" }}</time>
-      <a class="permalink" title="Permalink" href="{{ post.url }}">
-        <span>Permalink</span>
-        <span class="print-only">{{ site.url }}{{ post.url }}</span>
-      </a>
-    </p>
-  </header>
-{% else %}
-    <header class="post-info">
-    <h2 class="entry-title">
-      <a class="post" href="{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    <p>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%B %-d, %Y" }}</time>
-      <a class="permalink" title="Permalink" href="{{ post.url }}">
-        <span>Permalink</span>
-        <span class="print-only">{{ site.url }}{{ post.url }}</span>
-      </a>
-    </p>
-  </header>
-{% endif %}
-{% if post.excerpt_separator %}
-{{ post.excerpt }}
-<a href="{{ post.url }}">Read more</a>
-{% else %}
-{{ post.content }}
-{% endif %}
+	<header class="post-info">
+		<h2 class="entry-title">
+			<a class="post" href="{{ post.url }}">{{ post.title }}</a>
+		</h2>
+	</header>
 </article>
 {% endfor %}
