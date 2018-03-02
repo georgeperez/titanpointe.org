@@ -60,7 +60,7 @@ body {
 	max-width: 51em;
 	min-width: 16em;
 	height: 3em;
-	margin-top: .5em;
+	// margin-top: .5em;
 	padding: 1em 2em;
 	vertical-align: top
 }
@@ -339,9 +339,12 @@ code {
 
 @media(max-width: 350px) {
 	#banner a.site-name {
-		font-size: 1.4em
+		font-size: 1.3em
 	}
 	#banner {
 		height: 2em
+	}
+	.entry-title {
+		font-size: 1.2em;
 	}
 }

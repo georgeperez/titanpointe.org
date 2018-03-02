@@ -7,7 +7,7 @@ layout: blog
 <article>
 	<header class="post-info">
 		<h2 class="entry-title">
-			<a class="post" href="{{ post.url }}">{{ post.title }}</a>
+			<span><time class="no-print">{{ post.date | date: '%B %d, %Y' }}</time> – <a class="post" href="{{ post.url }}">{{ post.title }}</a></span>
 		</h2>
 	</header>
 </article>

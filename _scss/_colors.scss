@@ -3,13 +3,13 @@
 
 body {
 	color: $text-01;
-	background-color: $ui-03;
+	background-color: $ui-01;
 }
 
 a,
 a:active,
 a:visited {
-	color: $brand-01;
+	color: $b400;
 }
 
 a:hover {
@@ -26,18 +26,18 @@ footer#contentinfo {
 }
 
 #banner a.site-name {
-	color: $ui-01;
+	color: $ui-04;
 }
 
 #menu,
 #menu li ul {
-	background-color: $ui-04;
+	background-color: $text-01;
 }
 
 #menu a,
 #menu a:link,
 #menu a:visited {
-	color: $text-01;
+	color: $ui-04;
 	border-color: $ui-04;
 }
 
@@ -79,6 +79,10 @@ h6 {
 
 .no-print {
 	color: $text-03;
+}
+
+time.no-print {
+	color: $b400;
 }
 
 article header {
