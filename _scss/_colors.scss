@@ -9,7 +9,7 @@ body {
 a,
 a:active,
 a:visited {
-	color: $b400;
+	color: $blue;
 }
 
 a:hover {
@@ -26,24 +26,24 @@ footer#contentinfo {
 }
 
 #banner a.site-name {
-	color: $ui-04;
+	color: $ui-01;
 }
 
 #menu,
 #menu li ul {
-	background-color: $text-01;
+	background-color: $text-03;
 }
 
 #menu a,
 #menu a:link,
 #menu a:visited {
-	color: $ui-04;
-	border-color: $ui-04;
+	color: $ui-01;
+	border-color: $text-03;
 }
 
 #menu a:hover {
-	color: $text-01;
-	background-color: $ui-04;
+	color: $ui-01;
+	background-color: $text-03;
 }
 
 .lang-switcher a,
@@ -79,10 +79,6 @@ h6 {
 
 .no-print {
 	color: $text-03;
-}
-
-time.no-print {
-	color: $b400;
 }
 
 article header {
