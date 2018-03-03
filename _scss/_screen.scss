@@ -72,6 +72,10 @@ body {
 	font-weight: bold
 }
 
+#menu {
+	border-radius: 0 0 0.5em 0.5em;
+}
+
 #menu ul {
 	list-style-type: none;
 	padding: 0;
@@ -286,14 +290,11 @@ code {
 	font-size: 80%
 }
 
-.entry-title {
+h2.entry-title {
 
-	font-weight: 600;
-
-	h2 {
-		margin-bottom: 0;
-		line-height: 1.5em;
-	}
+	font-weight: 700;
+	margin-bottom: 0;
+	line-height: 1em;
 
 	a {
 		font-size: 1.2em;
@@ -305,8 +306,6 @@ code {
 			text-decoration: underline;
 		}
 	}
-
-
 }
 
 @media(max-width: 55em) {
@@ -323,6 +322,9 @@ code {
 	#menu a:hover {
 		padding: 0 17px;
 		width: auto
+	}
+	#menu {
+		border-radius: 0;
 	}
 	#menu li {
 		width: auto
@@ -342,6 +344,9 @@ code {
 }
 
 @media(max-width: 350px) {
+	body {
+		font-size: 14px;
+	}
 	#banner a.site-name {
 		font-size: 1.3em
 	}
