@@ -29,21 +29,14 @@ footer#contentinfo {
 	color: $slate;
 }
 
-#menu,
-#menu li ul {
-	background-color: $text-03;
-}
-
 #menu a,
 #menu a:link,
 #menu a:visited {
-	color: $ui-01;
-	border-color: $text-03;
+	color: $slate;
 }
 
 #menu a:hover {
-	color: $ui-01;
-	background-color: $slate;
+	color: $brand-02;
 }
 
 .lang-switcher a,
@@ -92,14 +85,6 @@ h2 {
 		}
 
 		&:hover.post {
-			color: $text-02;
-		}
-
-		&.link, &:active.link, &:visited.link {
-			color: $text-01;
-		}
-
-		&:hover.link {
 			color: $text-02;
 		}
 	}
