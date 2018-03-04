@@ -22,11 +22,11 @@ footer#contentinfo {
 }
 
 #banner {
-	background-color: $text-01;
+	background-color: $ui-01;
 }
 
 #banner a.site-name {
-	color: $ui-01;
+	color: $slate;
 }
 
 #menu,
@@ -43,7 +43,7 @@ footer#contentinfo {
 
 #menu a:hover {
 	color: $ui-01;
-	background-color: $text-03;
+	background-color: $slate;
 }
 
 .lang-switcher a,

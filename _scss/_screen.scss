@@ -47,7 +47,6 @@ body {
 }
 
 #banner,
-#menu,
 #contentinfo,
 #content {
 	max-width: 55em;
@@ -73,7 +72,11 @@ body {
 }
 
 #menu {
-	border-radius: 0 0 10px 10px;
+	max-width: 51em;
+	margin: 0 auto;
+	clear: both;
+	overflow: auto;
+	border-radius: 10px;
 }
 
 #menu ul {
