@@ -22,21 +22,22 @@ footer#contentinfo {
 }
 
 #banner {
-	background-color: $ui-01;
+	background-color: $text-01;
+	a.site-name {
+		color: $ui-01;
+	}
 }
 
-#banner a.site-name {
-	color: $slate;
+#menu,
+#menu li ul{
+	background-color: $text-03;
 }
 
 #menu a,
 #menu a:link,
+#menu a:hover,
 #menu a:visited {
-	color: $slate;
-}
-
-#menu a:hover {
-	color: $brand-02;
+	color: $ui-01;
 }
 
 .lang-switcher a,

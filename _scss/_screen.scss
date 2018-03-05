@@ -73,8 +73,7 @@ body {
 }
 
 #menu {
-	display: inline;
-	border-bottom: 10px solid $slate;
+	border-radius: 0 0 10px 10px;
 }
 
 #menu ul {
@@ -88,7 +87,7 @@ body {
 }
 
 #menu li {
-	float: right;
+	float: left;
 	padding: 0;
 	margin: 0
 }
