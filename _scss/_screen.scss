@@ -72,10 +72,6 @@ body {
 	font-weight: bold
 }
 
-#menu {
-	border-radius: 0 0 10px 10px;
-}
-
 #menu ul {
 	list-style-type: none;
 	padding: 0;
@@ -322,9 +318,6 @@ h2.entry-title {
 	#menu a:hover {
 		padding: 0 17px;
 		width: auto
-	}
-	#menu {
-		border-radius: 0;
 	}
 	#menu li {
 		width: auto
