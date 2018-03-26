@@ -3,7 +3,7 @@
 
 body {
 	color: $text-01;
-	background-color: $ui-01;
+	background-color: $ui-02;
 }
 
 a,
@@ -22,7 +22,7 @@ footer#contentinfo {
 }
 
 #banner {
-	background-color: $text-01;
+	background-color: $text-02;
 	a.site-name {
 		color: $ui-01;
 	}
@@ -30,7 +30,7 @@ footer#contentinfo {
 
 #menu,
 #menu li ul{
-	background-color: $text-03;
+	background-color: $ui-05;
 }
 
 #menu a,
@@ -72,11 +72,11 @@ h6 {
 }
 
 .no-print {
-	color: $text-03;
+	color: $text-02;
 }
 
 article header {
-	color: $text-03;
+	color: $text-02;
 }
 
 h2 {
@@ -98,7 +98,7 @@ a.permalink {
 }
 
 code {
-	color: $text-03;
+	color: $text-02;
 }
 
 pre.code-snippet {
