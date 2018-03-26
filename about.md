@@ -10,6 +10,6 @@ Hey, my name is George Perez-Marrero. I’m a computer science undergrad at the 
 
 You can find me on [Twitter](https://twitter.com/georgeperez/), [Facebook](https://facebook.com/georgeperezmarrero/), [Instagram](https://instagram.com/georgeperez/), [Letterboxd](https://letterboxd.com/georgeperez/), [GitHub](https://github.com/georgeperez/), and [LinkedIn](https://linkedin.com/in/georgeperezmarrero/). You can also [email me](mailto:{{ site.email | encode_email }}) or contact me via [FaceTime Audio](facetime-audio:{{ site.email | encode_email }}). 
 
-If you're looking for my instructions on how to get RUMAD (Matricula) working on macOS Sierra and High Sierra, [go here](/matricula).
+_If you're looking for my instructions on how to get RUMAD (Matricula) working on macOS Sierra and High Sierra, [go here](/matricula)._
 
-You can view my PGP key on [Keybase](https://keybase.io/georgeperezm/) or view the plain text [here](/key.txt).
+You can view my PGP key in plain text [here](/key.txt). You can also find me on [Keybase](https://keybase.io/georgeperezm/).
