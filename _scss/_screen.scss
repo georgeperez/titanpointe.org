@@ -113,8 +113,7 @@ html[lang=es] .lang-switcher li [data-langswitch='es'] {
 	pointer-events: none;
 }
 
-.lang-switcher,
-.college-switcher {
+.lang-switcher {
 	text-align: center;
 }
 
@@ -141,6 +140,10 @@ html[lang=es] .lang-switcher li [data-langswitch='es'] {
 	text-decoration: underline;
 }
 
+.discontinued {
+  text-align: center;
+  font-weight: bold;
+}
 
 #post-list {
 	list-style: none

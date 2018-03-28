@@ -50,6 +50,14 @@ footer#contentinfo {
 	color: $text-01;
 }
 
+.discontinued {
+  blockquote {
+    color: $ui-01;
+    background: $support-01;
+    background-color: $support-01;
+  }
+}
+
 blockquote.warning {
 	color: $text-02;
 	background-color: $ui-03;
