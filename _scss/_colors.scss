@@ -2,7 +2,7 @@
 @import "variables";
 
 body {
-	color: $text-01;
+	color: $grey-90;
 	background-color: $bg-color-gray;
 }
 
@@ -58,13 +58,26 @@ footer#contentinfo {
 }
 
 .discontinued {
-  blockquote {
     color: $bg-color-light;
     background-color: $support-01;
-  }
 }
 
-blockquote.warning {
+.success {
+  color: $bg-color-light;
+  background-color: $support-02;
+}
+
+.caution {
+  color: $bg-color-light;
+  background-color: $support-03;
+}
+
+.info {
+  color: $bg-color-light;
+  background-color: $support-04;
+}
+
+.warning {
 	color: $text-02;
 	background-color: $bg-color-gray;
 }

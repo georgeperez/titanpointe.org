@@ -139,7 +139,10 @@ html[lang=es] .lang-switcher li [data-langswitch='es'] {
 	text-decoration: underline;
 }
 
-.discontinued {
+.discontinued,
+.success,
+.caution,
+.info {
   text-align: center;
   font-weight: bold;
 }

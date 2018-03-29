@@ -35,9 +35,7 @@ layout: default
 
 * Personal website. Used Jekyll to create and manage my website, and git hooks for deployment.  
 * Created a dedicated page to solving SSH problems for UPRM macOS users trying to access the class enrollment system. **Received over 1000 visits per day** from **+600 users** during enrollment week of Spring 2017.  
+
 * Learned HTML and CSS. Adapted Ruby and JavaScript code to use with this project.  
 
-
-## References
-
-Available upon request.
+See source code on [GitHub](https://github.com/georgeperez/titanpointe.org).
