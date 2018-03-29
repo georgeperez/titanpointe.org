@@ -10,6 +10,7 @@ layout: default
 
 * I manage the research and geodesy pages of the Puerto Rico Seismic Network.
 * I implemented a new map for the Geodesy GPS stations using Leaflet.js.
+* Recreated the research page from the ground up using Bootstrap 4 and JavaScript.
 
 ## Education
 

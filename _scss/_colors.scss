@@ -3,7 +3,7 @@
 
 body {
 	color: $text-01;
-	background-color: $ui-02;
+	background-color: $bg-color-gray;
 }
 
 a,
@@ -18,26 +18,33 @@ a:hover {
 
 section#content,
 footer#contentinfo {
-	background-color: $ui-01;
+	background-color: $bg-color-light;
 }
 
 #banner {
-	background-color: $text-02;
+  background-color: $bg-color-oil;
 	a.site-name {
-		color: $ui-01;
+		color: $bg-color-light;
+    &:hover.site-name {
+      background-color: $bg-color-dark
+    }
 	}
 }
 
 #menu,
 #menu li ul{
-	background-color: $ui-05;
+	background-color: $bg-color-dark;
 }
 
 #menu a,
 #menu a:link,
-#menu a:hover,
 #menu a:visited {
-	color: $ui-01;
+	color: $bg-color-gray;
+}
+
+#menu a:hover {
+  background-color: $bg-color-light;
+  color: $blue
 }
 
 .lang-switcher a,
@@ -52,15 +59,14 @@ footer#contentinfo {
 
 .discontinued {
   blockquote {
-    color: $ui-01;
-    background: $support-01;
+    color: $bg-color-light;
     background-color: $support-01;
   }
 }
 
 blockquote.warning {
 	color: $text-02;
-	background-color: $ui-03;
+	background-color: $bg-color-gray;
 }
 
 blockquote {
@@ -110,6 +116,6 @@ code {
 }
 
 pre.code-snippet {
-	color: $ui-01;
+	color: $bg-color-light;
 	background: $text-01;
 }
