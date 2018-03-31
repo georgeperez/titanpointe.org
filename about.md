@@ -12,4 +12,4 @@ You can find me on [Twitter](https://twitter.com/georgeperez/), [Facebook](https
 
 _If you're looking for my instructions on how to get RUMAD (Matricula) working on macOS Sierra and High Sierra, [go here](/matricula)._
 
-You can view my PGP key in plain text [here](/key.txt). You can also find me on [Keybase](https://keybase.io/georgeperezm/).
+You can view my PGP key in plain text [here](/key/). You can also find me on [Keybase](https://keybase.io/georgeperezm/).
