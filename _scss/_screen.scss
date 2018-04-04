@@ -69,7 +69,7 @@ body {
 	font-size: 2em;
 	text-decoration: none;
 	float: left;
-	font-weight: bold
+	font-weight: bold;
 }
 
 #menu ul {
@@ -79,7 +79,6 @@ body {
 	font-size: 1.25em;
 	margin-bottom: 0;
 	margin-top: 0;
-	padding-bottom: 2px
 }
 
 #menu li {
@@ -140,7 +139,10 @@ html[lang=es] .lang-switcher li [data-langswitch='es'] {
 	text-decoration: underline;
 }
 
-.discontinued {
+.discontinued,
+.success,
+.caution,
+.info {
   text-align: center;
   font-weight: bold;
 }
@@ -334,10 +336,12 @@ h2.entry-title {
 	#content {
 		padding: 0 17px
 	}
-
 	.entry-title {
 		font-size: 1.3em;
 	}
+  .lang-switcher {
+    padding-top: 1em;
+  }
 }
 
 @media(max-width: 350px) {
@@ -353,4 +357,7 @@ h2.entry-title {
 	.entry-title {
 		font-size: 1.2em;
 	}
+  .lang-switcher {
+    padding-top: 1em;
+  }
 }
