@@ -1,7 +1,7 @@
 ---
 timezone: America/Puerto_Rico
 markdown: kramdown
-name: George Perez-Marrero
+name: TITANPOINTE
 author: George Perez-Marrero
 url: https://titanpointe.org
 email: george@perez-marrero.com
@@ -13,7 +13,7 @@ exclude:
   - Gemfile.lock
   - vendor
   - Rakefile
-description: "Computer science undergrad at the University of Puerto Rico at Mayag&uuml;ez. Interested in macOS, iOS, software development, and photography."
+description: "Computer science undergrad at the University of Puerto Rico at Mayag&uuml;ez. Interested in macOS, iOS, and software development."
 highligther: rouge
 plugins:
     - jekyll-email-protect
