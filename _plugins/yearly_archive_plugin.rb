@@ -34,7 +34,7 @@ module Jekyll
       @site = site
       @dir = dir
       @year = year
-      @archive_dir_name = 'blog/%04d' % [year]
+      @archive_dir_name = '%04d' % [year]
       @date = Date.new(@year)
       @layout =  site.config['yearly_archive'] && site.config['yearly_archive']['layout'] || 'yearly_archive'
       self.ext = '.html'
