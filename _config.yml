@@ -13,6 +13,8 @@ exclude:
   - Gemfile.lock
   - vendor
   - Rakefile
+  - .vagrant/
+  - Vagrantfile
 description: "Computer science undergrad at the University of Puerto Rico at Mayag&uuml;ez. Interested in macOS, iOS, and software development."
 highligther: rouge
 plugins:

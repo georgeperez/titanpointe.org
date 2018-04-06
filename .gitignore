@@ -3,4 +3,5 @@ _drafts/
 .sass-cache/
 .jekyll-metadata
 .ink-cache/
+.vagrant/
 node_modules/
