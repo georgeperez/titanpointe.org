@@ -6,7 +6,6 @@ author: George Perez-Marrero
 url: https://titanpointe.org
 email: george@perez-marrero.com
 permalink: :year/:month/:title/
-host: 0.0.0.0
 exclude:
   - README.md
   - Gemfile
