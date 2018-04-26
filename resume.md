@@ -6,7 +6,7 @@ layout: default
 
 ## Experience
 
-*Puerto Rico Seismic Network*; Mayaguez, PR — 2017 – Present
+*Puerto Rico Seismic Network*; Mayaguez, PR — August 2017 – April 2018, *8 months*
 
 * I manage the research and geodesy pages of the Puerto Rico Seismic Network.
 * I implemented a new map for the Geodesy GPS stations using Leaflet.js.

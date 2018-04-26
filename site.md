@@ -8,10 +8,7 @@ permalink: /site/
 
 #### Server software and services
 
-* [Jekyll](https://jekyllrb.com/)
-* [certbot](https://certbot.eff.org/)
-* [FastMail](https://www.fastmail.com/?STKI=17107656)
-* [Ruby](https://www.ruby-lang.org/en/)
+* [Jekyll](https://jekyllrb.com/), [acme.sh](https://github.com/Neilpang/acme.sh/), [FastMail](https://www.fastmail.com/?STKI=17107656), [Ruby](https://www.ruby-lang.org/en/)
 
 All hosted on [DigitalOcean](https://m.do.co/c/d4f8c9c9d236).
 
