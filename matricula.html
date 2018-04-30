@@ -39,17 +39,20 @@ description: Instructions to fix UPRM access errors on macOS Sierra and High Sie
 
 	<h3>Whitelist <code>rumad.uprm.edu</code></h3>
 	<p>Your <b>Terminal</b> window will show a document. This document will likely be empty for you.<p>
-	<p>In the <code>config</code> file, copy and paste the following text using the <code>Command+V</code> keyboard shortcut:</p>
+  <a href="/assets/images/nano-empty.png"><img src="/assets/images/nano-empty.png"></a>
+	<p>This document is called the <code>config</code> file. Copy the following text:</p>
 	<pre class="code-snippet" id="c2" class="code-snippet">Host rumad.uprm.edu
 	  KexAlgorithms +diffie-hellman-group1-sha1
 	  HostKeyAlgorithms +ssh-dss</pre>
+  <p>Go to the <b>Terminal</b> window that contains the document <code>config</code>. Paste the copied text with the keyboard shortcut <code>Command+V</code>.</p>
 	<p>Your <code>config</code> file should look like the screenshot below.</p>
-	<a href="/assets/images/textedit.png"><img src="/assets/images/textedit.png"></a>
+	<a href="/assets/images/nano-config.png"><img src="/assets/images/nano-config.png"></a>
 
-  <p>Save your changes using the <code>Control&#43;S</code> keyboard shortcut, then close the text editor by using <code>Control&#43;X</code>.</p>
+  <p>Save your changes using the <code>Control&#43;O</code> keyboard shortcut (when it asks you for a name for the document, just press <b>Return</b>), then close the text editor by using <code>Control&#43;X</code>.</p>
 	<h3>Testing out the connection</h3>
 	<p>Connect to <code>rumad.uprm.edu</code> using the following command: <pre class="code-snippet">&#36; ssh estudiante@rumad.uprm.edu</pre></p>
-	<p>Press <b>Return</b>. If everything is working correctly, you should see a <em>password prompt</em> for the user <code>estudiante</code>. Since <code>estudiante</code> does not have a <em>password</em>, press <b>Return</b> again.</p>
+	<p>Press <b>Return</b>. If everything is working correctly, you should see a <em>password prompt</em> for the user <code>estudiante</code>.</p>
+  <p>Since <code>estudiante</code> does not have a <em>password</em>, press <b>Return</b> again.</p>
 	<a href="/assets/images/login.png"><img src="/assets/images/login.png"></a>
 
 	<h3>Eureka!</h3>
@@ -71,22 +74,24 @@ description: Instructions to fix UPRM access errors on macOS Sierra and High Sie
 	<blockquote class="warning"><h4>OJO</h4>El s&iacute;mbolo &#36; indica el <em>prompt</em> de comando en tu Mac. Todo lo que est&aacute; <b>despu&eacute;s</b> del s&iacute;mbolo &#36; es un comando para entrar (copy/paste). <b>NO</b> lo incluyas en tus comandos.</blockquote>
 	<p>Abre una nueva ventana de <b>Terminal</b>. Este está localizado en <code>/Applications/Utilities/Terminal.app</code>.</p>
 	<p>Escribe el siguiente comando para crear el directorio de SSH: <pre class="code-snippet">&#36; mkdir ~/.ssh</pre></p>
-  <p>Después, cambia los permisos del directorio para que solo sea accesible por ti: <pre class="code-snippet">&#36; chmod 700 ~/.ssh</pre></p>
+  <p>Oprime <b>Return</b>.</p>
+  <p>Después, cambia los permisos del directorio para que solo sea accesible por t&iacute;: <pre class="code-snippet">&#36; chmod 700 ~/.ssh</pre></p>
 	<p>Oprime <b>Return</b>.</p>
   <p>Finalmente, escribe el siguiente comando: <pre class="code-snippet">&#36; nano ~/.ssh/config</pre></p>
 	<p>Oprime <b>Return</b> una vez m&aacute;s.</p>
 
 	<h3>"Whitelisting" a <code>rumad.uprm.edu</code></h3>
 	<p>Tu <b>Terminal</b> debe haber abierto un nuevo documento. Para t&iacute;, este documento lo m&aacute;s probable est&aacute; vac&iacute;o.<p>
+  <a href="/assets/images/nano-empty.png"><img src="/assets/images/nano-empty.png"></a>
 	<p>Este documento se llama el <code>config</code> file. Dele copy al siguiente bloque de texto:</p>
 	<pre class="code-snippet" id="c2">Host rumad.uprm.edu
 	  KexAlgorithms +diffie-hellman-group1-sha1
 	  HostKeyAlgorithms +ssh-dss</pre>
   <p>Vaya a la ventana de <b>Terminal</b> que contiene el documento <code>config</code>. Dele paste con la combinaci&oacute;n de teclado <code>Command+V</code>.</p>
 	<p>Tu <code>config</code> debe lucir como el siguiente screenshot.</p>
-	<a href="/assets/images/textedit.png"><img src="/assets/images/textedit.png"></a>
+	<a href="/assets/images/nano-config.png"><img src="/assets/images/nano-config.png"></a>
 
-  <p>Guarda tus cambios usando la combinaci&oacute;n de teclado <code>Control&#43;S</code> y sal del editor de texto usando <code>Control&#43;X</code>.</p>
+  <p>Guarda tus cambios usando la combinaci&oacute;n de teclado <code>Control&#43;O</code> (cuando de pregunte por el nombre del documento, solo presione <b>Return</b>) y sal del editor de texto usando <code>Control&#43;X</code>.</p>
 
 	<h3>Probando la conexi&oacute;n</h3>
 	<p>Con&eacute;ctate a <code>rumad.uprm.edu</code> usando el siguiente comando: <pre class="code-snippet">&#36; ssh estudiante@rumad.uprm.edu</pre></p>
