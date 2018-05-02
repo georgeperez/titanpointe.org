@@ -8,11 +8,9 @@ permalink: /site/
 
 #### Server software and services
 
-* [Jekyll](https://jekyllrb.com/), [acme.sh](https://github.com/Neilpang/acme.sh/), [FastMail](https://www.fastmail.com/?STKI=17107656), [Ruby](https://www.ruby-lang.org/en/)
+This website uses the following technology: [Jekyll](https://jekyllrb.com/), [acme.sh](https://github.com/Neilpang/acme.sh/), [FastMail](https://www.fastmail.com/?STKI=17107656), and [Ruby](https://www.ruby-lang.org/en/).
 
-All hosted on [DigitalOcean](https://m.do.co/c/d4f8c9c9d236).
-
-View the site's source code [here](https://github.com/georgeperez/titanpointe.org).  
+All hosted on [DigitalOcean](https://m.do.co/c/d4f8c9c9d236). View the site's source code [here](https://github.com/georgeperez/titanpointe.org).  
 
 #### Software
 
