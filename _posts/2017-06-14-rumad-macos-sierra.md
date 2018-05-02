@@ -7,7 +7,7 @@ description: "Get ahead of those pesky SSH errors and don't lose that ONE good c
 last_modified_at: 2018-02-27 23:00:00 TZ
 ---
 
-*__Update__ 2018-02-27*: [Instructions added for RRPADM as well](/matricula/iupi).
+*__Update__ 2018-02-27:* [Instructions added for RRPADM as well](/matricula/iupi).
 
 If you've had problems with RUMAD on macOS, I've made available instructions on how to fix it. Available in [English](/matricula/?lang=en) and [Spanish](/matricula/?lang=es).
 
