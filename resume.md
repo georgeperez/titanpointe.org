@@ -6,7 +6,7 @@ layout: default
 
 ## Experience
 
-*Puerto Rico Seismic Network*; Mayaguez, PR — August 2017 – April 2018, *8 months*
+Puerto Rico Seismic Network; Mayaguez, PR — August 2017 – April 2018, *8 months*
 
 * I manage the research and geodesy pages of the Puerto Rico Seismic Network.
 * I implemented a new map for the Geodesy GPS stations using Leaflet.js.
@@ -31,7 +31,7 @@ layout: default
 
 ## Projects
 
-*TITANPOINTE.ORG*; Cabo Rojo, PR — 2016 – Present  
+TITANPOINTE.ORG; Cabo Rojo, PR — 2016 – Present  
 
 * Personal website. Used Jekyll to create and manage my website, and git hooks for deployment.  
 * Created a dedicated page to solving SSH problems for UPRM macOS users trying to access the class enrollment system. **Received over 1000 visits per day** from **+600 users** during enrollment week of Spring 2017.  
