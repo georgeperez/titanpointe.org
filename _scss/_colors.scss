@@ -2,48 +2,51 @@
 @import "variables";
 
 body {
-	color: $grey-90;
-	background-color: $bg-color-gray;
+	color: $grey-90-a90;
+	background-color: $bg-color-light;
 }
 
 a,
 a:active,
 a:visited {
-	color: $blue;
+	color: $blue-60;
+  text-decoration: none;
 }
 
 a:hover {
-	color: $brand-02;
+	color: $blue-50;
+  text-decoration: underline;
+}
+
+a:active {
+  color: $blue-70;
 }
 
 section#content,
 footer#contentinfo {
-	background-color: $bg-color-light;
+	background-color: $white-100;
 }
 
 #banner {
-  background-color: $bg-color-oil;
+  background-color: $grey-10;
 	a.site-name {
-		color: $bg-color-light;
-    &:hover.site-name {
-      background-color: $bg-color-dark
-    }
+		color: $grey-90-a90;
 	}
 }
 
 #menu,
 #menu li ul{
-	background-color: $bg-color-dark;
+	background-color: $grey-20;
 }
 
 #menu a,
 #menu a:link,
 #menu a:visited {
-	color: $bg-color-gray;
+	color: $grey-90-a90;
 }
 
 #menu a:hover {
-  background-color: $bg-color-oil;
+  background-color: $grey-30;
 }
 
 .lang-switcher a,
@@ -58,7 +61,7 @@ footer#contentinfo {
 
 .discontinued {
     color: $bg-color-light;
-    background-color: $support-01;
+    background-color: $red-60;
 }
 
 .success {
@@ -68,15 +71,15 @@ footer#contentinfo {
 
 .caution {
   color: $bg-color-light;
-  background-color: $support-03;
+  background-color: $yellow-60;
 }
 
 .info {
   color: $bg-color-light;
-  background-color: $support-04;
+  background-color: $blue-60;
 }
 
-.warning {
+.aside {
 	color: $text-02;
 	background-color: $bg-color-gray;
 }
@@ -128,6 +131,6 @@ code {
 }
 
 pre.code-snippet {
-	color: $bg-color-light;
-	background: $text-01;
+	color: $grey-10;
+	background: $grey-90-a90;
 }
