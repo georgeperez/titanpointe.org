@@ -1,10 +1,10 @@
 {% include head-matricula.html %}
 <body class="index" id="home">
-	{% include masthead.html %}
-	<section class="body" id="content">
-		{{ content }}
-	</section>
-	{% include footer.html %}
-	<script src="{{ "/assets/js/langswitch.js" | prepend: site.baseurl }}?{{site.time | date:'%s%N'}}"></script>
+  {% include masthead.html %}
+  <section class="body" id="content">
+    {{ content }}
+  </section>
+  {% include footer.html %}
+  <script src="{{ "/assets/js/langswitch.js" | prepend: site.baseurl }}?{{site.time | date:'%s%N'}}"></script>
 </body>
 </html>

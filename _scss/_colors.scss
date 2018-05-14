@@ -2,19 +2,19 @@
 @import "variables";
 
 body {
-	color: $grey-90-a90;
-	background-color: $bg-color-light;
+  color: $grey-90-a90;
+  background-color: $bg-color-light;
 }
 
 a,
 a:active,
 a:visited {
-	color: $blue-60;
+  color: $blue-60;
   text-decoration: none;
 }
 
 a:hover {
-	color: $blue-50;
+  color: $blue-50;
   text-decoration: underline;
 }
 
@@ -24,25 +24,25 @@ a:active {
 
 section#content,
 footer#contentinfo {
-	background-color: $white-100;
+  background-color: $white-100;
 }
 
 #banner {
   background-color: $grey-10;
-	a.site-name {
-		color: $grey-90-a90;
-	}
+  a.site-name {
+    color: $grey-90-a90;
+  }
 }
 
 #menu,
 #menu li ul{
-	background-color: $grey-20;
+  background-color: $grey-20;
 }
 
 #menu a,
 #menu a:link,
 #menu a:visited {
-	color: $grey-90-a90;
+  color: $grey-90-a90;
 }
 
 #menu a:hover {
@@ -52,16 +52,16 @@ footer#contentinfo {
 .lang-switcher a,
 .lang-switcher a:link,
 .lang-switcher a:visited {
-	color: $text-01;
+  color: $text-01;
 }
 
 .lang-switcher a:hover {
-	color: $text-01;
+  color: $text-01;
 }
 
 .discontinued {
-    color: $bg-color-light;
-    background-color: $red-60;
+  color: $bg-color-light;
+  background-color: $red-60;
 }
 
 .success {
@@ -80,15 +80,15 @@ footer#contentinfo {
 }
 
 .aside {
-	color: $text-02;
-	background-color: $bg-color-gray;
+  color: $text-02;
+  background-color: $bg-color-gray;
 }
 
 blockquote {
-	color: $text-01;
-	background: $field-01;
-	margin: 1em;
-	padding: 1em;
+  color: $text-01;
+  background: $field-01;
+  margin: 1em;
+  padding: 1em;
 }
 
 h1,
@@ -97,40 +97,40 @@ h3,
 h4,
 h5,
 h6 {
-	color: $text-01
+  color: $text-01
 }
 
 .no-print {
-	color: $text-02;
+  color: $text-02;
 }
 
 article header {
-	color: $text-02;
+  color: $text-02;
 }
 
 h2 {
-	a {
-		&.post, &:active.post, &:visited.post {
-			color: $text-01;
-		}
+  a {
+    &.post, &:active.post, &:visited.post {
+      color: $text-01;
+    }
 
-		&:hover.post {
-			color: $text-02;
-		}
-	}
+    &:hover.post {
+      color: $text-02;
+    }
+  }
 }
 
 a.permalink {
-	&:hover {
-		color: $text-02;
-	}
+  &:hover {
+    color: $text-02;
+  }
 }
 
 code {
-	color: $text-02;
+  color: $text-02;
 }
 
 pre.code-snippet {
-	color: $grey-10;
-	background: $grey-90-a90;
+  color: $grey-10;
+  background: $grey-90-a90;
 }

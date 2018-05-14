@@ -5,11 +5,11 @@ layout: blog
 
 {% for post in site.posts %}
 <article>
-	<header class="post-info">
-		<h2 class="entry-title">
-			<a class="post" href="{{ post.url }}">{{ post.title }}</a>
-			<p><time title="{{ page.date | date: "%Y-%m-%d %H:%M"}}" class="no-print" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%B %-d, %Y" }}</time></p>
-		</h2>
-	</header>
+  <header class="post-info">
+    <h2 class="entry-title">
+      <a class="post" href="{{ post.url }}">{{ post.title }}</a>
+      <p><time title="{{ page.date | date: "%Y-%m-%d %H:%M"}}" class="no-print" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%B %-d, %Y" }}</time></p>
+    </h2>
+  </header>
 </article>
 {% endfor %}
