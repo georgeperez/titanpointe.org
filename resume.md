@@ -8,9 +8,9 @@ layout: default
 
 Puerto Rico Seismic Network; Mayaguez, PR — August 2017 – April 2018, *8 months*
 
-* I manage the research and geodesy pages of the Puerto Rico Seismic Network.
+* I managed the research and geodesy pages of the Puerto Rico Seismic Network.
 * I implemented a new map for the Geodesy GPS stations using Leaflet.js.
-* Recreated the research page from the ground up using Bootstrap 4 and JavaScript.
+* Prototyped a new research page from the ground up using Bootstrap 4 and JavaScript.
 
 ## Education
 
