@@ -12,4 +12,4 @@ You can find me on [Twitter](https://twitter.com/georgeperez/), [Facebook](https
 
 **If you're looking for my instructions on how to get RUMAD (Matricula) working on macOS Sierra and High Sierra,** [go here](/matricula).
 
-My PGP fingerprint is `0xF2266826623A1F97`.
+My GPG key fingerprint is `0xF2266826623A1F97`.
