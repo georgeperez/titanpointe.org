@@ -6,15 +6,11 @@ permalink: /site/
 
 #### Server software and services
 
-This website uses the following technology: [Jekyll](https://jekyllrb.com/) (and [Ruby](https://www.ruby-lang.org/en/)), [nginx](https://nginx.org), [Certbot](https://github.com/certbot/certbot/), and [FastMail](https://www.fastmail.com/?STKI=17107656).
-
-All hosted on [DigitalOcean](https://m.do.co/c/d4f8c9c9d236).  
+This website uses the following technology: [Jekyll](https://jekyllrb.com/) (and [Ruby](https://www.ruby-lang.org/en/)), and [FastMail](https://www.fastmail.com/?STKI=17107656).
 
 #### Tools
 
 *   [Sublime Text 3](https://sublimetext.com/)
-*   [Transmit](https://panic.com/transmit/)
-*   [1Password](https://1password.com/)
 *   [Byword](https://bywordapp.com)
 *   Pixelmator
 
