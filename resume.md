@@ -6,7 +6,9 @@ layout: default
 
 ## Experience
 
-Puerto Rico Seismic Network; Mayaguez, PR — August 2017 – April 2018, *8 months*
+**Work-Study Program, University of Puerto Rico at Mayaguez Department of Finance &mdash; June 2018–Present**
+
+**Student Web Developer, Puerto Rico Seismic Network &mdash; August 2017–April 2018, *8 months***
 
 * I managed the research and geodesy pages of the Puerto Rico Seismic Network.
 * I implemented a new map for the Geodesy GPS stations using Leaflet.js.
