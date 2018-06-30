@@ -4,17 +4,7 @@ layout: default
 permalink: /site/
 ---
 
-#### Server software and services
-
-This website uses the following technology: [Jekyll](https://jekyllrb.com/) (and [Ruby](https://www.ruby-lang.org/en/)), and [FastMail](https://www.fastmail.com/?STKI=17107656).
-
-#### Tools
-
-*   [Sublime Text 3](https://sublimetext.com/)
-*   [Byword](https://bywordapp.com)
-*   Pixelmator
-
-#### Disclaimers and policy
+## Disclaimers and policy
 
 Everything in this website is to be used at your own risk. This includes executing code provided by me, any downloads provided by me, and any other part that's hosted on this site. The websites I link to are subject to heavy scrutiny. Anything not on the domain \*.titanpointe.org is subject to the site's own privacy policy and terms of use.
 
