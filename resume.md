@@ -6,7 +6,9 @@ layout: default
 
 ## Experience
 
-**Work-Study Program, University of Puerto Rico at Mayaguez Department of Finance &mdash; June 2018–Present**
+**Work-Study Program, University of Puerto Rico at Mayaguez Department of Finance &mdash; June 2018**
+
+* Helped with administration tasks around the end of Fiscal Year 2017-2018.
 
 **Student Web Developer, Puerto Rico Seismic Network &mdash; August 2017–April 2018, *8 months***
 
@@ -33,9 +35,10 @@ layout: default
 
 ## Projects
 
-TITANPOINTE.ORG; Cabo Rojo, PR — 2016 – Present  
+TITANPOINTE.ORG; Cabo Rojo, PR — 2016  
 
 * Personal website. Used Jekyll to create and manage my website, and git hooks for deployment.  
+
 * Created a dedicated page to solving SSH problems for UPRM macOS users trying to access the class enrollment system. **Received over 1000 visits per day** from **+600 users** during enrollment week of Spring 2017.  
 
 * Learned HTML and CSS. Adapted Ruby and JavaScript code to use with this project.  
