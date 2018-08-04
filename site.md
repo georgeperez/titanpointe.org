@@ -12,4 +12,4 @@ This website uses Google Fonts for displaying the font used in the site's banner
 
 DNS is handled by Cloudflare, while email is handled by FastMail.
 
-Links to any of Apple's digital stores are encoded with an iTunes Affiliate token. I may also include affiliate links from other programs.
+External links may include affiliate links from store programs.

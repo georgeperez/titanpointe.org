@@ -10,20 +10,11 @@ discontinued: 2018-06-05
 {% include discontinued.html %}
 {% include info.html %}
 
-<div class="body lang-switcher">
-  <ul>
-    <li><a href='?lang=en' data-langswitch='en'>English</a></li>
-    <li><a href='?lang=es' data-langswitch='es'>Espa&ntilde;ol</a></li>
-  </ul>
-</div>
-
 <header>
-  <h1 lang="en">RUMAD on macOS Sierra and up (including High Sierra)</h1>
-  <h1 lang="es">RUMAD en macOS Sierra en adelante (incluyendo High Sierra)</h1>
+  <h1>RUMAD on macOS Sierra and up (including High Sierra)</h1>
 </header>
 
-<article lang="en">
-
+<article>
   <p>It's important that you read these instructions from your desktop and to do so diligently. If the instructions below don't work for you, you're going to need to enter the following command <em><b>every time</b></em> you want to connect to <code>rumad.uprm.edu</code> in <b>Terminal</b>:</p>
   <pre class="code-snippet" id="c1" class="code-snippet">ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss estudiante@rumad.uprm.edu</pre>
   <p>Press <b>Return</b>.</p>
@@ -65,49 +56,4 @@ discontinued: 2018-06-05
     <a href="/assets/images/end.png"><img src="/assets/images/end.png"></a>
 
     <p>Please send any questions or feedback to <a href="mailto:{{ site.email | encode_email }}?subject=Colegio">my email</a>.</p>
-  </article>
-
-  <article lang="es">
-
-    <p>Es importante que leas estas instrucciones desde tu computadora y detenidamente. Si las instrucciones de abajo no te funcionan tendras que entrar el siguente comando <em><b>cada vez</b></em> que quieras conectarte a <code>rumad.uprm.edu</code>:</p>
-    <pre class="code-snippet" id="c1">ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss estudiante@rumad.uprm.edu</pre>
-    <p>Oprime <b>Return</b>.</p>
-    <p>Usando el comando anterior, tu Mac debe conectarse a <code>rumad.uprm.edu</code>. Si necesitan ayuda, mi email est&aacute; al final de esta p&aacute;gina. <b>No soy responsable de ningún daño que ocurra con el uso de estas instrucciones</b>. Usa copy/paste para los comandos.</p>
-    <p>Finalmente, puede ser que tu <b>Terminal</b> se <b>vea diferente al mio</b>. No importa como se vea, las <b>instrucciones funcionan igual</b>.</p>
-
-    <h3>Configuraci&oacute;n del directorio SSH</h3>
-    <blockquote class="aside"><h4>OJO</h4>El s&iacute;mbolo &#36; indica el <em>prompt</em> de comando en tu Mac. Todo lo que est&aacute; <b>despu&eacute;s</b> del s&iacute;mbolo &#36; es un comando para entrar (copy/paste). <b>NO</b> lo incluyas en tus comandos.</blockquote>
-    <p>Abre una nueva ventana de <b>Terminal</b>. Este está localizado en <code>/Applications/Utilities/Terminal.app</code>.</p>
-    <p>Escribe el siguiente comando para crear el directorio de SSH: <pre class="code-snippet">&#36; mkdir ~/.ssh</pre></p>
-    <p>Oprime <b>Return</b>.</p>
-    <p>Después, cambia los permisos del directorio para que solo sea accesible por t&iacute;: <pre class="code-snippet">&#36; chmod 700 ~/.ssh</pre></p>
-    <p>Oprime <b>Return</b>.</p>
-    <p>Finalmente, escribe el siguiente comando: <pre class="code-snippet">&#36; nano ~/.ssh/config</pre></p>
-    <p>Oprime <b>Return</b> una vez m&aacute;s.</p>
-
-    <h3>"Whitelisting" a <code>rumad.uprm.edu</code></h3>
-    <p>Tu <b>Terminal</b> debe haber abierto un nuevo documento. Para t&iacute;, este documento lo m&aacute;s probable est&aacute; vac&iacute;o.<p>
-      <a href="/assets/images/nano-empty.png"><img src="/assets/images/nano-empty.png"></a>
-      <p>Este documento se llama el <code>config</code> file. Dele copy al siguiente bloque de texto:</p>
-      <pre class="code-snippet" id="c2">Host rumad.uprm.edu
-        KexAlgorithms +diffie-hellman-group1-sha1
-        HostKeyAlgorithms +ssh-dss</pre>
-      <p>Vaya a la ventana de <b>Terminal</b> que contiene el documento <code>config</code>. Dele paste con la combinaci&oacute;n de teclado <code>Command+V</code>.</p>
-      <p>Tu <code>config</code> debe lucir como el siguiente screenshot.</p>
-      <a href="/assets/images/nano-config.png"><img src="/assets/images/nano-config.png"></a>
-
-      <p>Guarda tus cambios usando la combinaci&oacute;n de teclado <code>Control&#43;O</code> (cuando de pregunte por el nombre del documento, solo presione <b>Return</b>) y sal del editor de texto usando <code>Control&#43;X</code>.</p>
-
-      <h3>Probando la conexi&oacute;n</h3>
-      <p>Con&eacute;ctate a <code>rumad.uprm.edu</code> usando el siguiente comando: <pre class="code-snippet">&#36; ssh estudiante@rumad.uprm.edu</pre></p>
-      <p>Oprime <b>Return</b>. Si todo est&aacute; funcionando bien, deberias ver el prompt para entrar el <em>password</em> de <code>estudiante</code>.</p>
-      <blockquote class="aside">Si esta es tu primera vez conect&aacute;ndote a <code>rumad.uprm.edu</code> ver&aacute;s un mensaje para aceptar la autenticidad de su huella digital. Solo escribe "<code>yes</code>" y oprima <b>Return</b>.</blockquote>
-      <p>Oprime <b>Return</b> ya que <code>estudiante</code> no tiene <em>password</em>.</p>
-      <a href="/assets/images/login.png"><img src="/assets/images/login.png"></a>
-
-      <h3>&iexcl;Eureka&#33;</h3>
-      <p>Si seguistes las instrucciones correctamente, tu <b>Terminal</b> mostrar&aacute; el men&uacute; del <b>Sistema Estudiantil Colegial</b>.</p>
-      <a href="/assets/images/end.png"><img src="/assets/images/end.png"></a>
-
-      <p>Por favor env&iacute;a cualquier pregunta o recomendaci&oacute;n a <a href="mailto:{{ site.email | encode_email }}?subject=Colegio">mi email</a>.</p>
-    </article>
+</article>
