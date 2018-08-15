@@ -6,7 +6,7 @@ layout: default
 
 ## Experience
 
-**Work-Study Program, University of Puerto Rico at Mayaguez Department of Finance &mdash; June 2018**
+**Work-Study Program, University of Puerto Rico at Mayaguez Department of Finance &mdash; June 2018, *1 month*** 
 
 * Helped with administration tasks around the end of Fiscal Year 2017-2018.
 

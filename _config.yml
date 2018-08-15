@@ -1,10 +1,12 @@
 ---
+description: "Computer science undergrad at the University of Puerto Rico at Mayag&uuml;ez. Interested in macOS, iOS, and software development."
 timezone: America/Puerto_Rico
 markdown: kramdown
+highligther: rouge
 name: TITANPOINTE
 author: George Perez-Marrero
 url: https://titanpointe.org
-email: george@perez-marrero.com
+email: george.perez.marrero@gmail.com
 permalink: :year/:month/:title/
 exclude:
   - README.md
@@ -12,12 +14,6 @@ exclude:
   - Gemfile.lock
   - vendor
   - Rakefile
-  - .vagrant/
-  - Vagrantfile
-description: "Computer science undergrad at the University of Puerto Rico at Mayag&uuml;ez. Interested in macOS, iOS, and software development."
-highligther: rouge
-plugins:
-    - jekyll-email-protect
 sass:
     sass_dir: _scss
     style: compressed

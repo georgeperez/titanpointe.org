@@ -1,13 +1,10 @@
 ---
-title: How to get RUMAD working on macOS Sierra and up
+title: How to get RUMAD working on macOS
 layout: post
 date: 2017-06-14 23:14:50 TZ
 keywords: matricula, colegio, putty uprm, putty matricula, putty colegio, uprm, rum, mac, macos, sierra, macos sierra, macos high sierra
-description: "Get ahead of those pesky SSH errors and don't lose that ONE good class"
 last_modified_at: 2018-02-27 23:00:00 TZ
 ---
-
-*__Update__ 2018-02-27:* [Instructions added for RRPADM as well](/matricula/iupi/).
 
 If you've had problems with RUMAD on macOS, I've made available instructions on how to fix it. Available in English [here](/matricula/).
 
