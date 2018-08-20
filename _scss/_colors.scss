@@ -3,7 +3,7 @@
 
 body {
   color: $grey-90-a90;
-  background-color: $bg-color-light;
+  background-color: $grey-10;
 }
 
 a,
@@ -49,44 +49,34 @@ footer#contentinfo {
   background-color: $grey-30;
 }
 
-.lang-switcher a,
-.lang-switcher a:link,
-.lang-switcher a:visited {
-  color: $text-01;
-}
-
-.lang-switcher a:hover {
-  color: $text-01;
-}
-
 .discontinued {
-  color: $bg-color-light;
+  color: $grey-10;
   background-color: $red-60;
 }
 
 .success {
-  color: $bg-color-light;
-  background-color: $support-02;
+  color: $grey-10;
+  background-color: $green-50;
 }
 
 .caution {
-  color: $bg-color-light;
+  color: $grey-10;
   background-color: $yellow-60;
 }
 
 .info {
-  color: $bg-color-light;
+  color: $grey-10;
   background-color: $blue-60;
 }
 
 .aside {
-  color: $text-02;
-  background-color: $bg-color-gray;
+  color: $grey-90-a90;
+  background-color: $grey-40;
 }
 
 blockquote {
-  color: $text-01;
-  background: $field-01;
+  color: $grey-90-a90;
+  background: $grey-30;
   margin: 1em;
   padding: 1em;
 }
@@ -97,37 +87,37 @@ h3,
 h4,
 h5,
 h6 {
-  color: $text-01
+  color: $grey-90-a90
 }
 
 .no-print {
-  color: $text-02;
+  color: $grey-90-a90;
 }
 
 article header {
-  color: $text-02;
+  color: $grey-90-a90;
 }
 
 h2 {
   a {
     &.post, &:active.post, &:visited.post {
-      color: $text-01;
+      color: $grey-90-a90;
     }
 
     &:hover.post {
-      color: $text-02;
+      color: $grey-90-a90;
     }
   }
 }
 
 a.permalink {
   &:hover {
-    color: $text-02;
+    color: $grey-90-a90;
   }
 }
 
 code {
-  color: $text-02;
+  color: $grey-90-a90;
 }
 
 pre.code-snippet {
