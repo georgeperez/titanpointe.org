@@ -1,6 +1,0 @@
-User-agent: Applebot
-Allow: /
-User-agent: Twitterbot
-Allow: /
-User-agent: *
-Disallow: /
