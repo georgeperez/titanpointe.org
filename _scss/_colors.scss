@@ -1,25 +1,25 @@
 
-@import "colors/variables";
+@import "colors/photon-colors";
 
 body {
-  color: $grey-90-a90;
+  color: $grey-90;
   background-color: $grey-10;
 }
 
 a,
 a:active,
 a:visited {
-  color: $blue-60;
+  color: $blue-50;
   text-decoration: none;
 }
 
 a:hover {
-  color: $blue-50;
+  color: $blue-40;
   text-decoration: underline;
 }
 
 a:active {
-  color: $blue-70;
+  color: $blue-60;
 }
 
 section#content,
@@ -28,9 +28,9 @@ footer#contentinfo {
 }
 
 #banner {
-  background-color: $grey-10;
+  background-color: $white-100;
   a.site-name {
-    color: $grey-90-a90;
+    color: $grey-90;
   }
 }
 
@@ -42,7 +42,7 @@ footer#contentinfo {
 #menu a,
 #menu a:link,
 #menu a:visited {
-  color: $grey-90-a90;
+  color: $grey-90;
 }
 
 #menu a:hover {
@@ -70,32 +70,21 @@ footer#contentinfo {
 }
 
 .aside {
-  color: $grey-90-a90;
-  background-color: $grey-40;
+  background-color: $grey-20;
 }
 
 blockquote {
-  color: $grey-90-a90;
-  background: $grey-30;
+  background: $grey-20;
   margin: 1em;
   padding: 1em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $grey-90-a90
-}
-
 .no-print {
-  color: $grey-90-a90;
+  color: $grey-50;
 }
 
 article header {
-  color: $grey-90-a90;
+  color: $grey-50;
 }
 
 h2 {
@@ -105,7 +94,7 @@ h2 {
     }
 
     &:hover.post {
-      color: $grey-90-a90;
+      color: $grey-50;
     }
   }
 }
@@ -117,10 +106,10 @@ a.permalink {
 }
 
 code {
-  color: $grey-90-a90;
+  color: $grey-70;
 }
 
 pre.code-snippet {
   color: $grey-10;
-  background: $grey-90-a90;
+  background: $grey-90;
 }
