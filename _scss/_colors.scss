@@ -3,7 +3,7 @@
 
 body {
   color: $grey-90;
-  background-color: $grey-10;
+  background-color: $white-100;
 }
 
 a,
@@ -22,13 +22,7 @@ a:active {
   color: $blue-60;
 }
 
-section#content,
-footer#contentinfo {
-  background-color: $white-100;
-}
-
 #banner {
-  background-color: $white-100;
   a.site-name {
     color: $grey-90;
   }
@@ -36,7 +30,7 @@ footer#contentinfo {
 
 #menu,
 #menu li ul{
-  background-color: $grey-20;
+  background-color: $grey-10;
 }
 
 #menu a,
@@ -46,7 +40,7 @@ footer#contentinfo {
 }
 
 #menu a:hover {
-  background-color: $grey-30;
+  background-color: $grey-20;
 }
 
 .discontinued {

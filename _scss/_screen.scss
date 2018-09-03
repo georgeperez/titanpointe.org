@@ -215,15 +215,6 @@ a:hover img, a:focus img {
 	opacity: 0.9
 }
 
-.portrait {
-	max-width: 100%;
-	height: auto;
-	margin: 0 0 1rem;
-	display: block;
-	border: none;
-	border-radius: none
-}
-
 pre.code-snippet {
 	border-radius: 0.5em;
 	padding: 1em;
@@ -299,9 +290,6 @@ h2.entry-title {
 	.entry-title {
 		font-size: 1.3em;
 	}
-  .lang-switcher {
-    padding-top: 1em;
-  }
 }
 
 @media(max-width: 350px) {
@@ -317,7 +305,4 @@ h2.entry-title {
 	.entry-title {
 		font-size: 1.2em;
 	}
-  .lang-switcher {
-    padding-top: 1em;
-  }
 }
