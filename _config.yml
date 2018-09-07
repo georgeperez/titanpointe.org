@@ -7,7 +7,7 @@ name: TITANPOINTE
 author: George Perez-Marrero
 url: https://titanpointe.org
 email: george.perez.marrero@gmail.com
-permalink: :year/:month/:title/
+permalink: :categories/:year/:month/:title/
 exclude:
   - README.md
   - Gemfile
