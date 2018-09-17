@@ -9,4 +9,4 @@ Hey, my name is George P&eacute;rez-Marrero. I’m a computer science undergrad 
 
 You can find me on [Twitter](https://twitter.com/georgeperez/), [Facebook](https://facebook.com/georgeperezmarrero/), and [GitHub](https://github.com/georgeperez/). You can also [email me](mailto:{{ site.email | encode_email }}). 
 
-**If you're looking for my instructions on how to get RUMAD (Matricula) working on macOS,** [go here](/matricula/).
+<blockquote class="aside" style="text-align: center;">If you're looking for my instructions on how to get RUMAD (Matricula) working on macOS, <a href="/matricula/">go here</a>.</blockquote>
