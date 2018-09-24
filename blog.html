@@ -5,9 +5,6 @@ permalink: /blog/
 ---
 
 {% for post in site.posts %}
-{% if post.categories == "comp4017" %}
-
-{% else %}
 <article>
   <header class="post-info">
     <h2 class="entry-title">
@@ -16,5 +13,4 @@ permalink: /blog/
     </h2>
   </header>
 </article>
-{% endif %}
 {% endfor %}
