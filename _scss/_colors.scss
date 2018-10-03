@@ -10,16 +10,7 @@ a,
 a:active,
 a:visited {
   color: $blue-50;
-  text-decoration: none;
-}
-
-a:hover {
-  color: $blue-40;
   text-decoration: underline;
-}
-
-a:active {
-  color: $blue-60;
 }
 
 #banner {
