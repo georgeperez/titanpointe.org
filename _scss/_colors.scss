@@ -13,12 +13,15 @@ a:visited {
   text-decoration: underline;
 }
 
-.banner a.logo {
-  color: $grey-90;
+.banner {
+  a.logo {
+    color: $grey-90;
+  }
 }
 
-nav li ul{
-  background-color: $grey-50;
+nav,
+nav ul li {
+  background-color: $grey-10;
 }
 
 nav a,

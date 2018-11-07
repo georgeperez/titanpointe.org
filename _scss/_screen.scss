@@ -47,7 +47,7 @@ body {
 }
 
 nav,
-footer,
+.footer-text,
 .banner,
 .content {
   max-width: 55em;
@@ -72,19 +72,21 @@ footer,
   font-weight: 700;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  height: 2em;
-  font-size: 1.25em;
-  margin-bottom: 0;
-  margin-top: 0;
-}
+nav {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    height: 2em;
+    font-size: 1.25em;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 
-nav li {
-  float: left;
-  padding: 0;
-  margin: 0
+  li {
+    float: left;
+    padding: 0;
+    margin: 0
+  }
 }
 
 nav a,
@@ -239,7 +241,7 @@ h2.post-title {
 
 @media(max-width: 55em) {
   .banner,
-  footer {
+  .footer-text {
     margin: 0
   }
 }
@@ -256,7 +258,7 @@ h2.post-title {
     width: auto
   }
   .banner,
-  footer {
+  .footer-text {
     padding: 17px;
     margin: 0
   }
