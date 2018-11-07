@@ -13,45 +13,22 @@ a:visited {
   text-decoration: underline;
 }
 
-#banner {
-  a.site-name {
-    color: $grey-90;
-  }
-}
-
-#menu,
-#menu li ul{
-  background-color: $grey-10;
-}
-
-#menu a,
-#menu a:link,
-#menu a:visited {
+.banner a.logo {
   color: $grey-90;
 }
 
-#menu a:hover {
+nav li ul{
+  background-color: $grey-50;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+  color: $grey-90;
+}
+
+nav a:hover {
   background-color: $grey-20;
-}
-
-.discontinued {
-  color: $grey-10;
-  background-color: $red-60;
-}
-
-.success {
-  color: $grey-10;
-  background-color: $green-50;
-}
-
-.caution {
-  color: $grey-10;
-  background-color: $yellow-60;
-}
-
-.info {
-  color: $grey-10;
-  background-color: $blue-60;
 }
 
 .aside {
@@ -74,11 +51,11 @@ article header {
 
 h2 {
   a {
-    &.post, &:active.post, &:visited.post {
+    &.post-link, &:active.post-link, &:visited.post-link {
       color: $grey-90-a90;
     }
 
-    &:hover.post {
+    &:hover.post-link {
       color: $grey-50;
     }
   }
@@ -97,108 +74,4 @@ code {
 pre.code-snippet {
   color: $grey-10;
   background: $grey-90;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #eee;
-  }
-
-  body {
-    color: $grey-90;
-    background-color: $white-100;
-  }
-
-  a,
-  a:active,
-  a:visited {
-    color: $blue-50;
-    text-decoration: underline;
-  }
-
-  #banner {
-    a.site-name {
-      color: $grey-90;
-    }
-  }
-
-  #menu,
-  #menu li ul{
-    background-color: $grey-10;
-  }
-
-  #menu a,
-  #menu a:link,
-  #menu a:visited {
-    color: $grey-90;
-  }
-
-  #menu a:hover {
-    background-color: $grey-20;
-  }
-
-  .discontinued {
-    color: $grey-10;
-    background-color: $red-60;
-  }
-
-  .success {
-    color: $grey-10;
-    background-color: $green-50;
-  }
-
-  .caution {
-    color: $grey-10;
-    background-color: $yellow-60;
-  }
-
-  .info {
-    color: $grey-10;
-    background-color: $blue-60;
-  }
-
-  .aside {
-    background-color: $grey-20;
-  }
-
-  blockquote {
-    background: $grey-20;
-    margin: 1em;
-    padding: 1em;
-  }
-
-  .no-print {
-    color: $grey-50;
-  }
-
-  article header {
-    color: $grey-50;
-  }
-
-  h2 {
-    a {
-      &.post, &:active.post, &:visited.post {
-        color: $grey-90-a90;
-      }
-
-      &:hover.post {
-        color: $grey-50;
-      }
-    }
-  }
-
-  a.permalink {
-    &:hover {
-      color: $grey-90-a90;
-    }
-  }
-
-  code {
-    color: $grey-70;
-  }
-
-  pre.code-snippet {
-    color: $grey-10;
-    background: $grey-90;
-  }
 }
