@@ -3,6 +3,10 @@
 
 body {
   color: $grey-90;
+  background-color: $grey-20;
+}
+
+.content {
   background-color: $white-100;
 }
 
@@ -31,7 +35,7 @@ nav a:visited {
 }
 
 nav a:hover {
-  background-color: $grey-20;
+  background-color: $grey-30;
 }
 
 .aside {
