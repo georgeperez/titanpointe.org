@@ -5,6 +5,8 @@ permalink: /blog/
 ---
 
 {% for post in site.posts %}
+{% if post.algorithms != null %}
+{% else %}
 <article>
   <header class="post-info">
     <h2 class="post-title">
@@ -13,4 +15,5 @@ permalink: /blog/
     </h2>
   </header>
 </article>
+{% endif %}
 {% endfor %}
