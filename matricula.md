@@ -46,7 +46,7 @@ This document is called the `config` file. Copy the following text:
 
 <pre class="code-snippet">Host rumad.uprm.edu
   KexAlgorithms +diffie-hellman-group1-sha1
-HostKeyAlgorithms +ssh-dss</pre>
+  HostKeyAlgorithms +ssh-dss</pre>
 
 Go to the **Terminal** window that contains the document <code>config</code>. Paste the copied text with the keyboard shortcut `Command+V`.
 
