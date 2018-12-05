@@ -1,7 +1,7 @@
 ---
 title: Greedy Algorithms
 layout: post-algorithms
-date: 2018-10-03 05:00:00PM TZ
+date: 2018-10-12 05:00:00PM TZ
 algorithms: algorithms
 ---
 
