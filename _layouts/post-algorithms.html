@@ -1,0 +1,12 @@
+---
+layout: algorithms
+---
+
+<article>
+  <header class="post-info">
+    <h2 class="post-title">
+      <a class="post-link" href="{{ page.url }}">{{ page.title }}</a>
+    </h2><time title="{{ page.date | date: "%Y-%m-%d %H:%M"}}" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date:"%B %-d, %Y" }}</time>
+  </header>
+  {{ content }}
+</article>

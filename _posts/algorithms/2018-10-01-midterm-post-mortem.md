@@ -1,7 +1,7 @@
 ---
 title: Midterm Post-Mortem
-layout: post
-date: 2018-10-01 12:00:00 TZ
+layout: post-algorithms
+date: 2018-10-01 12:00:00PM TZ
 algorithms: algorithms
 ---
 
