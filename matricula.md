@@ -3,7 +3,6 @@ title: RUMAD on macOS
 layout: page
 permalink: /matricula/
 keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra, high sierra, macos high sierra
-description: Instructions to fix UPRM access errors on macOS Sierra and High Sierra
 ---
 
 ## RUMAD on macOS
