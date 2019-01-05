@@ -13,7 +13,7 @@ Your **Terminal** window **might look differently from mine**. These instruction
 
 ### Setting up the SSH directory
 
-<blockquote class="aside"><h4>NOTE</h4>The $ symbol indicates the <em>command prompt</em> of your <b>Terminal</b>. Everything that is <b>after</b> the $ symbol is a command. <b>DO NOT</b> include it in your commands.</blockquote>
+<blockquote><h4>NOTE</h4>The $ symbol indicates the <em>command prompt</em> of your <b>Terminal</b>. Everything that is <b>after</b> the $ symbol is a command. <b>DO NOT</b> include it in your commands.</blockquote>
 
 Open a new **Terminal** window. **Terminal** is located in `/Applications/Utilities/Terminal.app`.
 
@@ -63,7 +63,7 @@ Connect to `rumad.uprm.edu` using the following command:
 
 Press **Return**. If everything is working correctly, you should see a <em>password prompt</em> for the user <code>estudiante</code>.
 
-<blockquote class="aside">If this is your first time connecting to <code>rumad.uprm.edu</code> you'll see a message to accept the authenticity of its key fingerprint. Just type "<code>yes</code>" and press <b>Return</b>.</blockquote>
+<blockquote>If this is your first time connecting to <code>rumad.uprm.edu</code> you'll see a message to accept the authenticity of its key fingerprint. Just type "<code>yes</code>" and press <b>Return</b>.</blockquote>
 
 [![](/assets/images/login.png)](/assets/images/login.png)
 

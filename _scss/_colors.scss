@@ -1,84 +1,32 @@
-
-@import "colors/photon-colors";
-
 body {
-  color: $grey-90;
-  background-color: $grey-20;
-}
-
-.content {
-  background-color: $white-100;
+  color: #333333;
+  background-color: rgb(231, 231, 229);
 }
 
 a,
 a:active,
 a:visited {
-  color: $blue-50;
+  color: #333333;
   text-decoration: underline;
 }
 
 .banner {
   a.logo {
-    color: $grey-90;
+    color: #ffb700;
   }
-}
-
-nav,
-nav ul li {
-  background-color: $grey-10;
-}
-
-nav a,
-nav a:link,
-nav a:visited {
-  color: $grey-90;
-}
-
-nav a:hover {
-  background-color: $grey-30;
-}
-
-.aside {
-  background-color: $grey-20;
 }
 
 blockquote {
-  background: $grey-20;
-  margin: 1em;
-  padding: 1em;
-}
-
-.no-print {
-  color: $grey-50;
-}
-
-article header {
-  color: $grey-50;
-}
-
-h2 {
-  a {
-    &.post-link, &:active.post-link, &:visited.post-link {
-      color: $grey-90-a90;
-    }
-
-    &:hover.post-link {
-      color: $grey-50;
-    }
-  }
-}
-
-a.permalink {
-  &:hover {
-    color: $grey-90-a90;
-  }
+  color: #ffffff;
+  background-color: #ffb700;
 }
 
 code {
-  color: $grey-70;
+  color: #333333;
+  background: #cccccc;
 }
 
 pre.code-snippet {
-  color: $grey-10;
-  background: $grey-90;
+  color: #ffb700;
+  background: #333;
 }
