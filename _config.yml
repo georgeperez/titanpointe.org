@@ -6,7 +6,7 @@ highligther: rouge
 title: titanpointe
 author: George Perez-Marrero
 url: https://titanpointe.org
-email: george.perez.marrero@gmail.com
+email: george@perez-marrero.com
 exclude:
   - README.md
   - Gemfile
