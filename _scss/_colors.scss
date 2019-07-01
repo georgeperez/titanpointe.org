@@ -1,28 +1,24 @@
 body {
-  color: #333333;
-  background-color: #eee;
+  color: #111;
+  background-color: #fff;
 }
 
 a,
 a:active,
 a:visited {
-  color: #22735B;
+  color: #111;
   text-decoration: underline;
 }
 
 .banner {
   a.logo {
-    color: #73233B;
+    color: #111;
   }
 }
 
-blockquote {
-  color: #ffffff;
-  background-color: #22735B;
-}
 
-code,
+blockquote,
 pre.code-snippet {
-  color: #73233B;
-  background: #fff;
+  color: #fff;
+  background-color: #333
 }
