@@ -7,78 +7,48 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
 
 ## RUMAD on macOS
 
-These are some instructions I've written up to get RUMAD working on your Mac running macOS Sierra or later.
+I've written up a very small script to get RUMAD working on your Mac running macOS Sierra or later. The instructions are very simple, and should result in no modifications of your other system settings.
 
-Your **Terminal** window **might look differently from mine**. These instructions will **still work**.
+<blockquote><h4>NOTE</h4>Please send any questions or feedback to <a href="mailto:{{ site.email }}">my email</a>. If you'd like to tip me, you can do so by using either <a href="https://support.apple.com/apple-cash">Apple Cash</a>, <a href="https://www.venmo.com/georgeperez">Venmo</a>, or ATH M&oacute;vil at (787) 421-0026.</blockquote>
 
-### Setting up the SSH directory
+First things first. You'll need to open a **Terminal** window. Chances are, you're already there because you're trying to connect to `rumad.uprm.edu` but seeing an error. If you aren't and are not sure what this app is and where to find it, app that is built-in to all Macs that provides a view to the system shell. You can find this app by navigating to your Applications folder, then Utilities folder, and double clicking on `Terminal.app`. The full directory is `/Applications/Utilities/Terminal.app`.
 
-<blockquote><h4>NOTE</h4>The $ symbol indicates the <em>command prompt</em> of your <b>Terminal</b>. Everything that is <b>after</b> the $ symbol is a command. <b>DO NOT</b> include it in your commands.</blockquote>
+Your **Terminal** window **might look differently from mine**. This script, however, will **still work**.
 
-Open a new **Terminal** window. **Terminal** is located in `/Applications/Utilities/Terminal.app`.
+Once you've opened a **Terminal** window, all you need to do is copy and paste the following command in the Terminal window:
 
-Type the following command to create the SSH directory:
+<pre class="code-snippet">curl -sSL https://titanpointe.org/assets/files/install.sh | bash</pre>
 
-<pre class="code-snippet">$ mkdir ~/.ssh</pre>
+Press **Return** after pasting. If you wish to see what I'm doing beforehand, you can view the full script here:
 
-Press **Return**.
-
-Then, change the permissions of the folder to be accessible by you only. Type the following command: 
-
-<pre class="code-snippet">$ chmod 700 ~/.ssh</pre>
-
-Press **Return**.
-
-Afterwards write this command:
-
-<pre class="code-snippet">$ nano ~/.ssh/config</pre>
-
-Press **Return**.
-
-### Whitelisting rumad.uprm.edu
-
-Your **Terminal** window will show a document. This document will likely be empty for you.
-
-[![Empty nano document screen](/assets/images/nano-empty.png)](/assets/images/nano-empty.png)
-
-This document is called the `config` file. Copy the following text:
-
-<pre class="code-snippet">Host rumad.uprm.edu
-  KexAlgorithms +diffie-hellman-group1-sha1
-  HostKeyAlgorithms +ssh-dss</pre>
-
-Go to the **Terminal** window that contains the `config` file. Paste the copied text with the keyboard shortcut `Command + V`.
-
-Your `config` file should look like the screenshot below.
-
-[![Document screen with content filled](/assets/images/nano-config.png)](/assets/images/nano-config.png)
-
-Save your changes using the `Control + O` keyboard shortcut (when it asks you for a name for the document, just press **Return**), then close the text editor by using `Control + X`.
+<script src="https://gist.github.com/georgeperez/e82bf3ffbcb0b0f523c8b758b8255e65.js"></script>
 
 ### Testing out the connection
 
 Connect to `rumad.uprm.edu` using the following command:
 
-<pre class="code-snippet">$ ssh estudiante@rumad.uprm.edu</pre>
+<pre class="code-snippet">ssh estudiante@rumad.uprm.edu</pre>
 
-Press **Return**. If everything is working correctly, you should see a *password prompt* for the user `estudiante`.
+Press **Return**.
 
-<blockquote>If this is your first time connecting to <code>rumad.uprm.edu</code>, you'll see a message asking you to accept the authenticity of RUMAD's key fingerprint. This is a lot of technical talk, but you just need to type "<code>yes</code>" and press <b>Return</b>.</blockquote>
+[![RUMAD fingerprint](/assets/images/fingerprint.png)](/assets/images/fingerprint.png)
+
+<blockquote>If this is your first time connecting to <code>rumad.uprm.edu</code>, you'll see the above message asking you to accept the authenticity of RUMAD's key fingerprint. This is a lot of technical talk, but you just need to type "<code>yes</code>" and press <b>Return</b>.</blockquote>
+
+If everything is working correctly, you should see a *password prompt* for the user `estudiante`.
 
 [![RUMAD log in screen](/assets/images/login.png)](/assets/images/login.png)
 
-Since `estudiante` does not have a _password_, press **Return** again.
+Since `estudiante` **does not** have a _password_, press **Return** again.
 
 [![RUMAD Connection](/assets/images/end.png)](/assets/images/end.png)
 
 If everything was done correctly, your **Terminal** will show the user menu for the **Sistema Estudiantil Colegial**.
 
-If the instructions above don't work for you, you're going to need to enter the following command _**every time**_ you want to connect to <code>rumad.uprm.edu</code> in **Terminal**:
+If the script above doesn't work for you, you're going to need to enter the following command _**every time**_ you want to connect to <code>rumad.uprm.edu</code> in **Terminal**:
 
 <pre class="code-snippet">ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss estudiante@rumad.uprm.edu</pre>
 
 You can copy and paste the above command. Press **Return**.
 
 Using the previous command, your Mac should connect to `rumad.uprm.edu`.
-
-Please send any questions or feedback to [my email](mailto:{{ site.email }}).
