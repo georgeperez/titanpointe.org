@@ -7,9 +7,16 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
 
 ## RUMAD on macOS
 
+<blockquote style="background-color: red"><h4>UPDATE 2019-11-12</h4>The CTI has changed the infrastructure of the RUMAD system and therefore when you try to connect after November 11, 2019 you will likely see a <a href="/assets/images/known_hosts_warning.png">very scary warning (screenshot)</a> and won't let you connect to RUMAD. There's a very simple solution. You need to run the following command:
+
+<pre class="code-snippet">rm -rf ~/.ssh/known_hosts</pre>
+
+That will delete your current <code>known_hosts</code> file and will create a new one when you try to connect to RUMAD. After this, you should get a successful connection. You don't need to run the script below again. If you are still having issues, please email me.
+</blockquote>
+
 I've written up a very small script to get RUMAD working on your Mac running macOS Sierra or later. The instructions are very simple, and should result in no modifications of your other system settings.
 
-<blockquote><h4>NOTE</h4>Please send any questions or feedback to <a href="mailto:{{ site.email }}">my email</a>. If you'd like to tip me, you can do so by using either <a href="https://support.apple.com/apple-cash">Apple Cash</a>, <a href="https://www.venmo.com/georgeperez">Venmo</a>, or ATH M&oacute;vil at (787) 421-0026.</blockquote>
+<blockquote><h4>NOTE</h4>Please send any questions or feedback to <a href="mailto:{{ site.email }}">my email</a>. If you'd like to tip me, you can do so by using either <a href="https://support.apple.com/apple-cash">Apple Cash</a>, <a href="http://cash.app/$georgeperezmarrero">Cash App</a>, <a href="https://www.venmo.com/georgeperez">Venmo</a>, or ATH M&oacute;vil at (787) 421-0026.</blockquote>
 
 First things first. You'll need to open a **Terminal** window. Chances are, you're already there because you're trying to connect to `rumad.uprm.edu` but seeing an error. If you aren't and are not sure what this app is and where to find it, app that is built-in to all Macs that provides a view to the system shell. You can find this app by navigating to your Applications folder, then Utilities folder, and double clicking on `Terminal.app`. The full directory is `/Applications/Utilities/Terminal.app`.
 
