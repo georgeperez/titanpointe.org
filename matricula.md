@@ -14,6 +14,8 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
 That will delete your current <code>known_hosts</code> file and will create a new one when you try to connect to RUMAD. After this, you should get a successful connection. You don't need to run the script below again. If you are still having issues, please email me.
 </blockquote>
 
+<blockquote style="background-color: red"><h4>NOTE</h4>These instructions are for Macs running macOS Sierra (10.12.x) or later <b>ONLY</b>. To verify your current macOS version, choose Apple menu > About This Mac and see which version you're running. If it's 10.11 or below, you <b>DO NOT</b> need to run this script. Do not run this on your El Capitan or earlier Mac or it will breakthings. Your pre-Sierra Mac should connect with no issues to RUMAD. If not, please email me.</blockquote>
+
 I've written up a very small script to get RUMAD working on your Mac running macOS Sierra or later. The instructions are very simple, and should result in no modifications of your other system settings.
 
 <blockquote><h4>NOTE</h4>Please send any questions or feedback to <a href="mailto:{{ site.email }}">my email</a>. If you'd like to tip me, you can do so by using either <a href="https://support.apple.com/apple-cash">Apple Cash</a>, <a href="http://cash.app/$georgeperezmarrero">Cash App</a>, <a href="https://www.venmo.com/georgeperez">Venmo</a>, or ATH M&oacute;vil at (787) 421-0026.</blockquote>
