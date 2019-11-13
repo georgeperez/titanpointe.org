@@ -1,20 +1,15 @@
 ---
 title: RUMAD on macOS
 layout: page
-permalink: /matricula/
+permalink: /old-matricula/
 keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra, high sierra, macos high sierra
 ---
 
 ## RUMAD on macOS
 
-<blockquote style="background-color: red"><h4>UPDATE 2019-11-12</h4>The CTI has changed the infrastructure of the RUMAD system and therefore when you try to connect after November 11, 2019 you will likely see a <a href="/assets/images/known_hosts_warning.png">very scary warning (screenshot)</a> and won't let you connect to RUMAD. There's a very simple solution. You need to run the following command:
+<h3>NO LONGER NEEDED – <a href="/matricula/">CLICK HERE TO READ UPDATE</a></h3>
 
-<pre class="code-snippet">rm -rf ~/.ssh/known_hosts</pre>
-
-That will delete your current <code>known_hosts</code> file and will create a new one when you try to connect to RUMAD. After this, you should get a successful connection. You don't need to run the script below again. If you are still having issues, please email me.
-</blockquote>
-
-<blockquote style="background-color: red"><h4>NOTE</h4>These instructions are for Macs running macOS Sierra (10.12.x) or later <b>ONLY</b>. To verify your current macOS version, choose Apple menu > About This Mac and see which version you're running. If it's 10.11 or below, you <b>DO NOT</b> need to run this script. Do not run this on your El Capitan or earlier Mac or it will break things. Your pre-Sierra Mac should connect with no issues to RUMAD. If not, please email me.</blockquote>
+<blockquote style="background-color: #a4000f"><h4>NOTE</h4>These instructions are for Macs running macOS Sierra (10.12.x) or later <b>ONLY</b>. To verify your current macOS version, choose Apple menu > About This Mac and see which version you're running. If it's 10.11 or below, you <b>DO NOT</b> need to run this script. Do not run this on your El Capitan or earlier Mac or it will break things. Your pre-Sierra Mac should connect with no issues to RUMAD. If not, please email me.</blockquote>
 
 I've written up a very small script to get RUMAD working on your Mac running macOS Sierra or later. The instructions are very simple, and should result in no modifications of your other system settings.
 
@@ -61,3 +56,5 @@ If the script above doesn't work for you, you're going to need to enter the foll
 You can copy and paste the above command. Press **Return**.
 
 Using the previous command, your Mac should connect to `rumad.uprm.edu`.
+
+<br>

@@ -1,0 +1,64 @@
+---
+title: RUMAD on macOS
+layout: page
+permalink: /matricula/
+keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra, high sierra, macos high sierra
+---
+
+<h2>RUMAD on macOS</h2>
+
+<blockquote>
+  <h4>NOTE</h4>
+  Please send any questions or feedback to <a href="mailto:{{ site.email }}">my email</a>. If you'd like to tip me, you can do so by using either <a href="https://support.apple.com/apple-cash">Apple Cash</a>, <a href="http://cash.app/$georgeperezmarrero">Cash App</a>, <a href="https://www.venmo.com/georgeperez">Venmo</a>, or ATH M&oacute;vil at (787) 421-0026.
+</blockquote>
+
+<blockquote style="background-color: rgb(255, 59, 48)">
+  <h4>FULL INSTRUCTIONS NO LONGER NEEDED</h4>
+  <p>This webpage used to host a much larger, detailed page with an automated script to enable connection to the RUMAD (Matricula) system in UPRM. After 3 years, as of November 11, 2019, the script that I wrote is no longer needed because of infrastructure changes the CTI made to the RUMAD system. I repeat, <b>the full instructions including the automated script are no longer needed</b>.</p>
+
+  <p><b><em>Please follow the next update to learn how to fix an issue that you should see starting November 11, 2019 as a result of this change</em></b>.</p>
+
+  <p>If you still wish to see the old webpage and its script, <a href="/old-matricula/">click here</a>.</p>
+</blockquote>
+
+<blockquote style="background-color: rgb(0, 122, 255);">
+  <h4>UPDATE 2019-11-12</h4>
+  <p>After 3 years, the CTI has finally changed part of the infrastructure that makes up the RUMAD system. With this change, the server's key fingerprint (think of it as a computer's thumbprint) was changed as well which leads to strange behavior on Macs who had previously connected to RUMAD.</p>
+
+  <p>Because of the aforementioned, starting November 11, 2019 you will start seeing the following warning when trying to connect: <p><a href="/assets/images/known_hosts_warning.png"><img src="/assets/images/known_hosts_warning.png" alt="RUMAD fingerprint"></a></p>
+
+  <p>Please note that this warning is working as intended but <b>you are not under attack or being spied one</b>. As a consequence of the changed infrastructure, the fingerprint was remade and your Mac has security checks that stop it from communicating with servers that might've been modified to look like an existing server.</p>
+
+  <p>Because the "old server" had a different fingerprint, your Mac is confused as to "who" this "new server" is. To fix this, we need to remove the old fingerprint from your system.</p>
+
+  <p>To do this, please copy the following command and run it in <b>Terminal</b>:</p>
+
+  <pre class="code-snippet">rm -rf ~/.ssh/known_hosts</pre>
+
+  <p>Press <b>Return</b>. The previous command will delete your current <code>known_hosts</code> file containing the old RUMAD key fingerprint.</p>
+
+  <p>Reconnect to <code>rumad.uprm.edu</code> using the following command:</p>
+
+  <pre class="code-snippet">ssh estudiante@rumad.uprm.edu</pre>
+
+  <p>Press <b>Return</b>. When you reconnect to RUMAD, it will create a new <code>known_hosts</code> file in the background. After this you should get a successful connection. If you are still having issues, <a href="mailto:george@perez-marrero.com">please email me</a> with as many screenshots as you can.</p>
+</blockquote>
+<!--
+<blockquote style="background-color: rgb(0, 122, 255);">
+  <h4>ACTUALIZACI&Oacute;N 2019-11-12 - ESPA&Ntilde;OL</h4>
+  <p>Despu&eacute;s de 3 a&ntilde;os, el CTI ha cambiado la infrastructura del sistema RUMAD y a su vez el "fingerprint" del servidor. A partir del 11 de noviembre de 2019, ver&aacute; la siguiente advertencia: <p><a href="/assets/images/known_hosts_warning.png"><img src="/assets/images/known_hosts_warning.png" alt="RUMAD fingerprint"></a></p>
+
+  Tenga en cuenta que este no es el caso y es solo el cambio de infraestructura subyacente y su Mac reconociendo ese cambio correctamente. Esto se debe a que la huella digital ("fingerprint") fue reemplazada por una m&aacute;s nueva. Para solucionar esto, copie el siguiente comando y ejec&uacute;telo en el <b>Terminal</b>:</p>
+
+  <pre class="code-snippet">rm -rf ~/.ssh/known_hosts</pre>
+
+  <p>Oprime <b>Return</b>. El comando anterior borrar&aacute; el documento <code>known_hosts</code> conteniendo el "fingerprint" viejo de RUMAD.</p>
+
+  <p>Vuelva a conectarse a <code>rumad.uprm.edu</code> con el siguiente comando:</p>
+
+  <pre class="code-snippet">ssh estudiante@rumad.uprm.edu</pre>
+
+  <p>Cuando vuelva a conectarse a RUMAD, crear&aacute; un nuevo documento <code>known_hosts</code>. Despu&eacute;s de esto, deber&iacute;a obtener una coneci&oacute;n exitosa. Si a&uacute;n encuentra dificultades, <a href="mailto:george@perez-marrero.com">por favor env&iacute;ame un correo electr&oacute;nico</a>.</p>
+</blockquote> -->
+
+<br>
