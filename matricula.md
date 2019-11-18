@@ -7,7 +7,7 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
 
 ## RUMAD on macOS
 
-<blockquote style="background-color: #a4000f">
+<!-- <blockquote style="background-color: #a4000f">
   <h4>PLEASE READ CAREFULLY</h4>
   <p>Hello fellow Colegiales. Please read this red box and the next blue box completely. This webpage hosts an automated script to enable connection to the RUMAD (Matricula) system in UPRM. <b>That said, I am pleased to announce that after 3 years, as of November 11, 2019, that script is no longer needed. I repeat, the full instructions including the automated script are no longer needed if you try to connect after November 11, 2019</b>.</p>
 
@@ -16,11 +16,9 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
   <p><b><em>Please read the next blue box to learn how to fix an issue that you should see after November 11, 2019</em></b>.</p>
 
   <p>The old instructions, <b>WHICH ARE NO LONGER NEEDED</b>, can be <a href="#old-instructions">acccessed here</a>.</p>
-</blockquote>
+</blockquote> -->
 
-<blockquote id="new-instructions" style="background-color: rgb(0, 122, 255);">
-  <h4>NEW SHORTENED INSTRUCTIONS</h4>
-  <p>After 3 years, the CTI has upgraded the servers that run the RUMAD (Matricula) system. As a consequence of this change, when you try to reconnect after November 11, 2019 you will see the following warning when trying to connect:</p>
+  <p>After 3 years, the CTI has upgraded the servers that run the RUMAD (Matricula) system. As a consequence of this change, when you trying to reconnect after November 11, 2019 you will see the following warning message:</p>
 
   <p><a href="/assets/images/known_hosts_warning.png"><img src="/assets/images/known_hosts_warning.png" alt="RUMAD fingerprint"></a></p>
 
@@ -34,12 +32,15 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
 
   <pre class="code-snippet">ssh estudiante@rumad.uprm.edu</pre>
 
-  <p>Press <b>Return</b>. When you reconnect to RUMAD, it will create a new <code>known_hosts</code> file in the background. After this you should get a successful connection. If you are still having issues, <a href="mailto:{{ site.email}}">please email me</a> with as many screenshots as you can.</p>
-</blockquote>
+  <p>Press <b>Return</b>. You will connect to the RUMAD system successfully. If you are still having issues, <a href="mailto:{{ site.email}}">please email me</a> with as many screenshots as you can.</p>
+
+  <p>I've included a video of the instructions above.</p>
+
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/nc8t0ira7LA?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <blockquote><h4>NOTE</h4>Please send any questions or feedback to <a href="mailto:{{ site.email }}">my email</a>. If you'd like to tip me, you can do so by using either <a href="https://support.apple.com/apple-cash">Apple Cash</a>, <a href="http://cash.app/$georgeperezmarrero">Cash App</a>, <a href="https://www.venmo.com/georgeperez">Venmo</a>, or ATH M&oacute;vil at (787) 421-0026.</blockquote>
 
-<div id="old-instructions"></div>
+<!-- <div id="old-instructions"></div>
 
 <h3 style="color: red; text-align: center"><b>STOP</b></h3>
 
@@ -93,6 +94,6 @@ If the script above doesn't work for you, you're going to need to enter the foll
 
 You can copy and paste the above command. Press **Return**.
 
-Using the previous command, your Mac should connect to `rumad.uprm.edu`.
+Using the previous command, your Mac should connect to `rumad.uprm.edu`. -->
 
 <br>
