@@ -20,7 +20,7 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
 
 <blockquote id="new-instructions" style="background-color: rgb(0, 122, 255);">
   <h4>NEW SHORTENED INSTRUCTIONS</h4>
-  <p>After 3 years, the CTI has servers that run the RUMAD (Matricula) system. As a consequence of this change, when you try to reconnect after November 11, 2019 you will see the following warning when trying to connect:</p>
+  <p>After 3 years, the CTI has upgraded the servers that run the RUMAD (Matricula) system. As a consequence of this change, when you try to reconnect after November 11, 2019 you will see the following warning when trying to connect:</p>
 
   <p><a href="/assets/images/known_hosts_warning.png"><img src="/assets/images/known_hosts_warning.png" alt="RUMAD fingerprint"></a></p>
 
