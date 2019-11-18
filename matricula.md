@@ -38,7 +38,7 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
 
   <p>I've included a video of me following the instructions above. Please put the video quality at above 720p to see clearly.</p>
 
-  <iframe src="https://player.vimeo.com/video/373949252" width="610" height="444" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/373961135" width="640" height="419" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 </blockquote>
 
