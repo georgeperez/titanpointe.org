@@ -13,7 +13,7 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
 
   <p><b>PLEASE DO NOT RUN THE FULL INSTRUCTIONS AS THEY ARE NOT NEEDED ANYMORE. ONLY FOLLOW THE INSTRUCTIONS IN THE NEXT BLUE BOX</b>.</p>
 
-  <p><b><em>Please follow read the next blue box to learn how to fix an issue that you should see after November 11, 2019</em></b>.</p>
+  <p><b><em>Please read the next blue box to learn how to fix an issue that you should see after November 11, 2019</em></b>.</p>
 
   <p>The old instructions, <b>WHICH ARE NO LONGER NEEDED</b>, can be <a href="#old-instructions">acccessed here</a>.</p>
 </blockquote>
