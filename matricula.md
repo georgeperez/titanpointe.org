@@ -26,13 +26,13 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
 
   <pre class="code-snippet">ssh-keygen -R rumad.uprm.edu</pre>
 
-  <p>Press <b>Return</b>. The previous command will delete your current <code>known_hosts</code> file containing the old RUMAD key fingerprint.</p>
+  <p>Press <b>Return</b>. This will regenerate the RUMAD key.</p>
 
-  <p>Reconnect to <code>rumad.uprm.edu</code> using the following command:</p>
+  <p>Once this is done, reconnect to <code>rumad.uprm.edu</code> using the following command (copy and paste into your Terminal window):</p>
 
   <pre class="code-snippet">ssh estudiante@rumad.uprm.edu</pre>
 
-  <p>Press <b>Return</b>. You will connect to the RUMAD system successfully. If you are still having issues, <a href="mailto:{{ site.email}}">please email me</a> with as many screenshots as you can.</p>
+  <p>Press <b>Return</b>. You will connect to the RUMAD system successfully. If you are still having issues, please email me with as many screenshots as you can (you can find my email at the end of this page).</p>
 
   <p>I've included a video of the instructions above.</p>
 
