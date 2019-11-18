@@ -26,7 +26,7 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
 
   <p>To fix this, simply copy and paste the following command in <b>Terminal</b>:</p>
 
-  <pre class="code-snippet">rm -rf ~/.ssh/known_hosts</pre>
+  <pre class="code-snippet">ssh-keygen -R rumad.uprm.edu</pre>
 
   <p>Press <b>Return</b>. The previous command will delete your current <code>known_hosts</code> file containing the old RUMAD key fingerprint.</p>
 
