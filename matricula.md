@@ -35,6 +35,11 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
   <pre class="code-snippet">ssh estudiante@rumad.uprm.edu</pre>
 
   <p>Press <b>Return</b>. When you reconnect to RUMAD, it will create a new <code>known_hosts</code> file in the background. After this you should get a successful connection. If you are still having issues, <a href="mailto:{{ site.email}}">please email me</a> with as many screenshots as you can.</p>
+
+  <p>I've included a video of me following the instructions above. Please put the video quality at above 720p to see clearly.</p>
+
+  <iframe src="https://player.vimeo.com/video/373949252" width="610" height="444" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 </blockquote>
 
 <blockquote><h4>NOTE</h4>Please send any questions or feedback to <a href="mailto:{{ site.email }}">my email</a>. If you'd like to tip me, you can do so by using either <a href="https://support.apple.com/apple-cash">Apple Cash</a>, <a href="http://cash.app/$georgeperezmarrero">Cash App</a>, <a href="https://www.venmo.com/georgeperez">Venmo</a>, or ATH M&oacute;vil at (787) 421-0026.</blockquote>
