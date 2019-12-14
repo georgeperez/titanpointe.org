@@ -7,7 +7,7 @@ Hey, my name is George P&eacute;rez Marrero. I’m a computer science undergrad 
 
 You can find me on [Twitter](https://twitter.com/georgeperez/), [GitHub](https://github.com/georgeperez/) and [LinkedIn](https://www.linkedin.com/in/georgeperezmarrero/). You can also [email me](mailto:{{ site.email }}).
 
-<blockquote style="background-color: rgb(0, 122, 255);">
+<blockquote>
   <h4>LOOKING FOR SOMETHING?</h4>
-  If you're looking for script/instructions that help Macs connect to the RUMAD (Matricula) system in UPRM, <a href="/matricula/">click here</a>.
+  If you're looking for script/instructions that help Macs connect to the RUMAD (Matricula) system in UPRM, <a href="/matricula/">press here</a>.
 </blockquote>
