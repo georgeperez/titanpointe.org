@@ -4,6 +4,7 @@ _drafts/
 .jekyll-metadata
 .ink-cache/
 .vagrant/
+.bundle/
 node_modules/
 
 # Local Netlify folder
