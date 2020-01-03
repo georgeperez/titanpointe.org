@@ -9,6 +9,9 @@ GEM
       zeitwerk (~> 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    barnes (0.0.8)
+      multi_json (~> 1)
+      statsd-ruby (~> 1.1)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -203,6 +206,7 @@ GEM
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     minitest (5.13.0)
+    multi_json (1.14.1)
     multipart-post (2.1.1)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
@@ -228,6 +232,7 @@ GEM
     sawyer (0.8.2)
       addressable (>= 2.3.5)
       faraday (> 0.8, < 2.0)
+    statsd-ruby (1.4.0)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thread_safe (0.3.6)
@@ -242,6 +247,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  barnes
   github-pages
   rake
 
