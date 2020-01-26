@@ -9,5 +9,5 @@ You can find me on [Twitter](https://twitter.com/georgeperez/), [GitHub](https:/
 
 <blockquote>
   <h4>LOOKING FOR SOMETHING?</h4>
-  If you're looking for script/instructions that help Macs connect to the RUMAD (Matricula) system in UPRM, <a href="/matricula/">press here</a>.
+  If you're looking to troubleshoot connection to the RUMAD (Matricula) system in UPRM using a post-macOS Sierra Mac, <a href="/matricula/">press here to learn more</a>.
 </blockquote>
