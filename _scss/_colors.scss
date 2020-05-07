@@ -1,15 +1,29 @@
-// 094067 blue logo 5f6c7b text
-
-body {
-  color: #fffffe;
-  background-color: #094067;
+:root {
+  color-scheme: light dark;
+  --link-visited-color: #000;
+  --headers-color: #000;
+  --banner-color: #000;
+  --blockquote-color: #fffffe;
+  --blockquote-background-color: #333;
+  --blockquote-link-visited-color: #fffffe;
+  --pre-code-snippet-color: #fffffe;
+  --pre-code-snipper-background-color: #333;
 }
 
 a,
 a:active,
 a:visited {
-  color: #fffffe;
+  color: var(--link-visited-color);
   text-decoration: underline;
+}
+
+blockquote {
+  color: var(--blockquote-color);
+  background-color: var(--blockquote-background-color);
+
+  a, a:active, a:visited {
+    color: var(--blockquote-link-visited-color);
+  }
 }
 
 h1,
@@ -18,25 +32,24 @@ h3,
 h4,
 h5,
 h6 {
-  color: #fffffe
+  color: var(--headers-color)
 }
 
 .banner {
   a.logo {
-    color: #fffffe;
-  }
-}
-
-blockquote {
-  color: #fffffe;
-  background-color: #3da9fc;
-
-  a, a:active, a:visited {
-    color: #fffffe;
+    color: var(--banner-color);
   }
 }
 
 pre.code-snippet {
-  color: #fffffe;
-  background-color: #333
+  color: var(--pre-code-snippet-color);
+  background-color: var(--pre-code-snipper-background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --link-visited-color: #fffffe;
+    --headers-color: #fffffe;
+    --banner-color: #fffffe;
+  }
 }

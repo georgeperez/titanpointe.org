@@ -11,11 +11,11 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
 
 <br>
 
-<blockquote><h4>NOTE</h4>Please send questions or feedback <b>ONLY IF YOU FOLLOWED THESE INTRUCTIONS COMPLETELY (BOTH COMMANDS)</b> to <a href="mailto:{{ site.email }}">my email</a>. I will not answer support questions from people that clearly did not run the entirety of the instructions OR didn't watch the video. I will not help with <code>ssh_config</code> problems, as they are not described here. If you'd like to send a tip, you can do so by using either <a href="https://support.apple.com/apple-cash">Apple Cash</a>, <a href="http://cash.app/$georgeperezmarrero">Cash App</a>, <a href="https://www.venmo.com/georgeperez">Venmo</a>, or ATH M&oacute;vil at (787) 421-0026.</blockquote>
+<blockquote>Please send questions or feedback <b>ONLY IF YOU FOLLOWED THESE INTRUCTIONS COMPLETELY (BOTH COMMANDS)</b> to <a href="mailto:{{ site.email }}">my email</a>. I will not answer support questions from people that clearly did not run the entirety of the instructions OR didn't watch the video. I will not help with <code>ssh_config</code> problems, as they are not described here. If you'd like to send a tip, you can do so by using either <a href="https://support.apple.com/apple-cash">Apple Cash</a>, <a href="http://cash.app/$georgeperezmarrero">Cash App</a>, <a href="https://www.venmo.com/georgeperez">Venmo</a>, or ATH M&oacute;vil at (787) 421-0026.</blockquote>
 
 After 3 years since the initial wake of the connection problem on macOS, the CTI (Centro de Tecnolog&iacute;as de Informaci&oacute;n) has upgraded the servers that run the RUMAD (Matricula) system. As a consequence of this change, when you try to reconnect after November 11, 2019 you will see the following warning message:
 
-[![RUMAD fingerprint](/assets/images/known_hosts_warning.png)](/assets/images/known_hosts_warning.png)
+<picture><source srcset="/assets/images/known-hosts-warning-dark.png" media="(prefers-color-scheme: dark)"><img src="/assets/images/known-hosts-warning-light.png"></picture>
 
 To fix this, simply copy and paste the following command in **Terminal**:
 
