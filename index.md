@@ -8,6 +8,5 @@ Hey, my name is George P&eacute;rez Marrero. I’m a computer science senior at 
 You can find me on [Twitter](https://twitter.com/georgeperez/), [GitHub](https://github.com/georgeperez/) and [LinkedIn](https://www.linkedin.com/in/georgeperezmarrero/). You can also [email me](mailto:{{ site.email }}).
 
 <blockquote>
-  <h4>LOOKING FOR SOMETHING?</h4>
-  If you're looking to troubleshoot connection to the RUMAD (Matricula) system in UPRM using a post-macOS Sierra Mac, <a href="/matricula/">press here to learn more</a>.
+  If you're looking to troubleshoot your connection to the RUMAD (Matricula) system used at UPRM on a Mac, <a href="/matricula/">press here to learn more</a>.
 </blockquote>
