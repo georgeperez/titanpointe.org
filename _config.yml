@@ -13,7 +13,8 @@ exclude:
   - Gemfile.lock
   - vendor
   - Rakefile
-include: [".well-known"]
+  - CNAME
+  - static.json
 sass:
     sass_dir: _scss
     style: compressed
