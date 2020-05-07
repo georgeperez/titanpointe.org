@@ -13,7 +13,6 @@ exclude:
   - Gemfile.lock
   - vendor
   - Rakefile
-  - CNAME
   - static.json
 sass:
     sass_dir: _scss
