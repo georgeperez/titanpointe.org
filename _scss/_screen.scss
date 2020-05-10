@@ -30,8 +30,8 @@ canvas,
 img,
 video,
 iframe {
-  border-style: #094067 solid;
-  max-width: 100%
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 body {
@@ -110,18 +110,15 @@ strong {
 }
 
 blockquote {
-  margin: 0 auto;
   padding: 1em;
-  margin-bottom: 1em;
 }
 
-img {
+img,
+picture {
   max-width: 100%;
   height: auto;
-  margin: 0 0 1rem;
+  margin: 0;
   display: block;
-  border-radius: 3px;
-  border: 1px solid transparent;
 }
 
 pre.code-snippet {

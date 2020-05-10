@@ -1,5 +1,7 @@
 :root {
   color-scheme: light dark;
+  --background-color: #fffffe;
+  --text-color: #000;
   --link-visited-color: #000;
   --headers-color: #000;
   --banner-color: #000;
@@ -10,46 +12,97 @@
   --pre-code-snipper-background-color: #333;
 }
 
-a,
-a:active,
-a:visited {
-  color: var(--link-visited-color);
-  text-decoration: underline;
-}
+@media (prefers-color-scheme: light) {
 
-blockquote {
-  color: var(--blockquote-color);
-  background-color: var(--blockquote-background-color);
-
-  a, a:active, a:visited {
-    color: var(--blockquote-link-visited-color);
+  body {
+    color: var(--text-color);
+    background: var(--background-color);
   }
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--headers-color)
-}
-
-.banner {
-  a.logo {
-    color: var(--banner-color);
+  a,
+  a:active,
+  a:visited {
+    color: var(--link-visited-color);
+    text-decoration: underline;
   }
-}
 
-pre.code-snippet {
-  color: var(--pre-code-snippet-color);
-  background-color: var(--pre-code-snipper-background-color);
+  blockquote {
+    color: var(--blockquote-color);
+    background-color: var(--blockquote-background-color);
+
+    a, a:active, a:visited {
+      color: var(--blockquote-link-visited-color);
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--headers-color)
+  }
+
+  .banner {
+    a.logo {
+      color: var(--banner-color);
+    }
+  }
+
+  pre.code-snippet {
+    color: var(--pre-code-snippet-color);
+    background-color: var(--pre-code-snipper-background-color);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --background-color: #1E1E1E;
+    --text-color: #fffffe;
     --link-visited-color: #fffffe;
     --headers-color: #fffffe;
     --banner-color: #fffffe;
+  }
+
+  body {
+    color: var(--text-color);
+    background: var(--background-color);
+  }
+
+  a,
+  a:active,
+  a:visited {
+    color: var(--link-visited-color);
+    text-decoration: underline;
+  }
+
+  blockquote {
+    color: var(--blockquote-color);
+    background-color: var(--blockquote-background-color);
+
+    a, a:active, a:visited {
+      color: var(--blockquote-link-visited-color);
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--headers-color)
+  }
+
+  .banner {
+    a.logo {
+      color: var(--banner-color);
+    }
+  }
+
+  pre.code-snippet {
+    color: var(--pre-code-snippet-color);
+    background-color: var(--pre-code-snipper-background-color);
   }
 }
