@@ -30,7 +30,7 @@ var theta = [0, 0, 0];
 
 //variable para hacer referencia al variable del gpu (vshader)
 //de rotacion, traslacion y escalas
-var thetaLoc; 
+var thetaLoc;
 var trasLoc;
 var scalLoc;
 
@@ -101,23 +101,23 @@ window.onload = function init()
     //
     var program = initShaders( gl, "vertex-shader", "fragment-shader" );
     gl.useProgram( program );
-    
+
     //linking with the vshader variables
     thetaLoc = gl.getUniformLocation(program, "theta");
     trasLoc = gl.getUniformLocation(program, "tras");
     scalLoc = gl.getUniformLocation(program, "scal");
-    
+
     cBuffer = gl.createBuffer();
     gl.bindBuffer( gl.ARRAY_BUFFER, cBuffer );
     gl.bufferData( gl.ARRAY_BUFFER, flatten(colors), gl.STATIC_DRAW );
     cBuffer.itemSize = 4;
     cBuffer.numItems = 36;
-    
+
     vColor = gl.getAttribLocation( program, "vColor" );
     gl.enableVertexAttribArray( vColor );
     gl.vertexAttribPointer( vColor, cBuffer.itemSize, gl.FLOAT, false, 0, 0 );
-    
-    
+
+
     vBuffer = gl.createBuffer();
     gl.bindBuffer( gl.ARRAY_BUFFER, vBuffer );
     gl.bufferData( gl.ARRAY_BUFFER, flatten(cube2), gl.STATIC_DRAW );
@@ -125,7 +125,7 @@ window.onload = function init()
     vPosition = gl.getAttribLocation( program, "vPosition" );
     gl.vertexAttribPointer( vPosition, 4, gl.FLOAT, false, 0, 0 );
     gl.enableVertexAttribArray( vPosition );
-   
+
     var mode = 0;
 
     function currentMode(mode) {
@@ -162,7 +162,7 @@ window.onload = function init()
     function outputScalingArray() {
         return scaling;
     };
-    
+
     //event listeners for buttons
 
     document.getElementById("RotateButton").onclick = function () {
@@ -171,7 +171,7 @@ window.onload = function init()
 
         window.onkeydown = function (event) {
             var key = String.fromCharCode(event.keyCode);
-        
+
             switch (key) {
                 case '1':
                     theta[rxAxis] -= 2.0;
@@ -192,6 +192,7 @@ window.onload = function init()
                     theta[rzAxis] += 2.0;
                     break;
             }
+            document.getElementById("thetaArray").innerHTML = outputThetaArray();
         };
     };
 
@@ -201,7 +202,7 @@ window.onload = function init()
 
         window.onkeydown = function (event) {
             var key = String.fromCharCode(event.keyCode);
-        
+
             switch (key) {
                 case '1':
                     translation[txAxis] -= 0.01;
@@ -222,6 +223,7 @@ window.onload = function init()
                     translation[tzAxis] += 0.01;
                     break;
             }
+            document.getElementById("translationArray").innerHTML = outputTranslationArray();
         };
     };
 
@@ -231,7 +233,7 @@ window.onload = function init()
 
         window.onkeydown = function (event) {
             var key = String.fromCharCode(event.keyCode);
-        
+
             switch (key) {
                 case '1':
                     scaling[sxAxis] -= 0.01;
@@ -252,6 +254,7 @@ window.onload = function init()
                     scaling[szAxis] += 0.01;
                     break;
             }
+            document.getElementById("scalingArray").innerHTML = outputScalingArray();
         };
     };
 
@@ -262,7 +265,7 @@ window.onload = function init()
     document.getElementById("translationArray").innerHTML = outputTranslationArray();
 
     document.getElementById("scalingArray").innerHTML = outputScalingArray();
-    
+
     render();
 }
 
@@ -278,9 +281,9 @@ function render() {
     gl.bindBuffer(gl.ARRAY_BUFFER, vBuffer);
     gl.vertexAttribPointer( vPosition, 4, gl.FLOAT, false, 0, 0 );
     gl.bindBuffer(gl.ARRAY_BUFFER, cBuffer);
-    gl.vertexAttribPointer( vColor, cBuffer.itemSize, gl.FLOAT, false, 0, 0 );    
-    gl.drawArrays( gl.TRIANGLES, 0, NumVertices );  
-    
+    gl.vertexAttribPointer( vColor, cBuffer.itemSize, gl.FLOAT, false, 0, 0 );
+    gl.drawArrays( gl.TRIANGLES, 0, NumVertices );
+
     requestAnimFrame( render );
 }
 
@@ -294,7 +297,7 @@ function colorCube() {
 }
 
 function quad(a, b, c, d) {
- 
+
 
     var vertexColors = [
         [ 0.0, 0.0, 0.0, 1.0 ],  // black
