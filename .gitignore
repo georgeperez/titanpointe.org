@@ -5,6 +5,7 @@ _drafts/
 .ink-cache/
 .vagrant/
 .bundle/
+.env
 node_modules/
 
 # Local Netlify folder
