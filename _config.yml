@@ -15,8 +15,6 @@ exclude:
   - vendor
   - Rakefile
   - static.json
-plugins:
-  - "jekyll-github-metadata"
 sass:
   sass_dir: _scss
   style: compressed
