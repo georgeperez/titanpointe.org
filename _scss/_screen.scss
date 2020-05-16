@@ -43,11 +43,17 @@ body {
 }
 
 .banner,
-.content {
+.content,
+footer {
   max-width: 40em;
   min-width: 15em;
   margin: 0 auto;
   clear: both;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .banner {

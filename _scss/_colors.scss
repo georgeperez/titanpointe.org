@@ -10,6 +10,7 @@
   --blockquote-link-visited-color: #fffffe;
   --pre-code-snippet-color: #fffffe;
   --pre-code-snipper-background-color: #333;
+  --footer-text-color: #ccc;
 }
 
 @media (prefers-color-scheme: light) {
@@ -53,6 +54,10 @@
   pre.code-snippet {
     color: var(--pre-code-snippet-color);
     background-color: var(--pre-code-snipper-background-color);
+  }
+
+  footer {
+    color: var(--footer-text-color);
   }
 }
 
@@ -104,5 +109,9 @@
   pre.code-snippet {
     color: var(--pre-code-snippet-color);
     background-color: var(--pre-code-snipper-background-color);
+  }
+
+  footer {
+    color: var(--footer-text-color);
   }
 }

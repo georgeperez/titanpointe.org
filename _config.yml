@@ -7,6 +7,7 @@ title: titanpointe
 author: George Perez-Marrero
 url: https://titanpointe.org
 email: george@perez-marrero.com
+repository: georgeperez/titanpointe.org
 exclude:
   - README.md
   - Gemfile
@@ -15,5 +16,5 @@ exclude:
   - Rakefile
   - static.json
 sass:
-    sass_dir: _scss
-    style: compressed
+  sass_dir: _scss
+  style: compressed
