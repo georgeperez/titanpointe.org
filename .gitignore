@@ -2,6 +2,7 @@ _site/
 _drafts/
 .sass-cache/
 .jekyll-metadata
+.jekyll-cache/
 .ink-cache/
 .vagrant/
 .bundle/
