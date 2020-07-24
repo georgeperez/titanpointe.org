@@ -7,18 +7,30 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
 
 <h2>RUMAD on macOS</h2>
 
-<video controls autoplay muted>
-  <source src="/assets/videos/access-rumad-on-mac-dark.mp4" type="video/mp4">
-</video>
+<p>As a consequence of a recent upgrade by the Centro de Tecnologías de Informaci&oacute;n (CTI), it is possible that when trying to reconnect to RUMAD (Matricula, colloquially/erronously known as "<a href="https://en.wikipedia.org/wiki/PuTTY">PuTTY</a>") after November 11, 2019 you will see the following warning message:</p>
 
-<blockquote>Please send questions or feedback <b>ONLY IF YOU FOLLOWED THESE INTRUCTIONS COMPLETELY (BOTH COMMANDS)</b> to <a href="mailto:{{ site.email }}">my email</a>. I will not answer support questions from people that clearly did not run the entirety of the instructions OR didn't watch the video. I will not help with <code>ssh_config</code> problems, as they are not described here. If you'd like to send a tip, you can do so by using either <a href="https://support.apple.com/apple-cash">Apple Cash</a>, <a href="http://cash.app/$georgeperezmarrero">Cash App</a>, <a href="https://www.venmo.com/georgeperez">Venmo</a>, or ATH M&oacute;vil at (787) 421-0026.</blockquote>
-
-<p>After 3 years since the initial wake of the connection problem on macOS, the CTI (Centro de Tecnolog&iacute;as de Informaci&oacute;n) has upgraded the servers that run the RUMAD (Matricula) system. As a consequence of this change, when you try to reconnect after November 11, 2019 you will see the following warning message:</p>
-
+<pre class="code-snippet">[~] $ ssh estudiante@rumad.uprm.edu
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@     WARNING: REMOTE HOST IDENFITIFICATION HAS CHANGED!    @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle-attack)!
+It is also possible that a host key has just changed.
+The fingerprint for the RSA key sent by the remote host is
+[...]
+Please contact your system administrator.
+Add correct host key in Users/[...]/.ssh/known_hosts:1
+RSA host key for [...] has changed and you have requested strict checking.
+Host key verification failed.
+[~] $</pre>
 <picture>
   <source srcset="/assets/images/known-hosts-warning-dark.png" media="(prefers-color-scheme: dark)">
   <img src="/assets/images/known-hosts-warning-light.png">
 </picture>
+
+<video controls autoplay muted>
+  <source src="/assets/videos/access-rumad-on-mac-dark.mp4" type="video/mp4">
+</video>
 
 <p>To fix this, simply copy and paste the following command in <b>Terminal</b>:</p>
 
@@ -30,6 +42,6 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
 
 <pre class="code-snippet">ssh estudiante@rumad.uprm.edu</pre>
 
-<p>Press <b>Return</b>. You will connect to the RUMAD system successfully. If you are still having issues, please email me with as many screenshots as you can.</p>
+<p>Press <b>Return</b>. You will connect to the RUMAD system successfully.</p>
 
 <br>
