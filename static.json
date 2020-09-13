@@ -2,5 +2,13 @@
   "clean_urls": true,
   "error_page": "404.html",
   "https_only": true,
-  "root": "_site/"
+  "root": "_site/",
+  "headers": {
+    "/**": {
+      "Content-Security-Policy": "default-src 'self'",
+      "Referrer-Policy": "no-referrer, strict-origin-when-cross-origin",
+      "X-Frame-Options": "DENY",
+      "X-XSS-Protection": "1; mode=block"
+    }
+  }
 }
