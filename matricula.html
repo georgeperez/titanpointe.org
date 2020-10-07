@@ -7,27 +7,23 @@ keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra
 
 <h2>RUMAD on macOS</h2>
 
-<p>As a consequence of a recent upgrade by the Centro de Tecnologías de Informaci&oacute;n (CTI), it is possible that when trying to reconnect to RUMAD (Matricula, colloquially/erronously known as "<a href="https://en.wikipedia.org/wiki/PuTTY">PuTTY</a>") after November 11, 2019 you will see the following warning message:</p>
+<p>A recent change by the CTI may cause connection issues when trying to access RUMAD after November 11, 2019.</p>
+
+<p>You may see the following warning message:</p>
 
 <picture>
   <source srcset="/assets/images/known-hosts-warning-dark.png" media="(prefers-color-scheme: dark)" alt="Screenshot of macOS Terminal with the OpenSSH Known Hosts Warning message showing">
   <img src="/assets/images/known-hosts-warning-light.png">
 </picture>
 
-<video controls autoplay muted>
-  <source src="/assets/videos/access-rumad-on-mac-dark.mp4" type="video/mp4" alt="Video of macOS Terminal with the OpenSSH Known Hosts Warning message showing">
-</video>
-
-<p>To fix this, simply copy and paste the following command in <b>Terminal</b>:</p>
+<p>If you see the warning message above, copy and paste the following text in to <b>Terminal</b>:</p>
 
 <pre class="code-snippet">ssh-keygen -R rumad.uprm.edu</pre>
 
-<p>Press <b>Return</b>. This will regenerate the RUMAD key.</p>
+<p>Press <b>Return</b>. This will regenerate the RUMAD security key.</p>
 
-<p>Once this is done, reconnect to <code>rumad.uprm.edu</code> using the following command (copy and paste into your Terminal window):</p>
+<p>Then, copy and paste the following text into <b>Terminal</b> to reconnect to <code>rumad.uprm.edu</code>:</p>
 
 <pre class="code-snippet">ssh estudiante@rumad.uprm.edu</pre>
 
-<p>Press <b>Return</b>. You will connect to the RUMAD system successfully.</p>
-
-<br>
+<p>Press <b>Return</b>. You will reconnect to the RUMAD system.</p>
