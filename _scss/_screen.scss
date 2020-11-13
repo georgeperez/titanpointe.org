@@ -44,6 +44,7 @@ iframe {
 }
 
 body {
+  font-size: 17px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -173,7 +174,7 @@ code {
 
 @media(max-width: 350px) {
   body {
-    font-size: 14px;
+    font-size: 15px;
   }
   .banner a.logo {
     font-size: 1.3em
