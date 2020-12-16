@@ -10,7 +10,7 @@
   --blockquote-link-visited-color: #fffffe;
   --pre-code-snippet-color: #fffffe;
   --pre-code-snipper-background-color: #333;
-  --footer-text-color: #ccc;
+  --orange: #FF5200;
 }
 
 @media (prefers-color-scheme: light) {
@@ -45,9 +45,18 @@
     color: var(--headers-color)
   }
 
+  ::-moz-selection,
+  ::selection {
+    background-color: var(--orange);
+  }
+
   .banner {
     a.logo {
       color: var(--banner-color);
+    }
+    a:hover {
+      background-color: var(--orange);
+      color: var(--background-color);
     }
   }
 
@@ -57,7 +66,7 @@
   }
 
   footer {
-    color: var(--footer-text-color);
+    color: var(--text-color);
   }
 }
 
@@ -100,9 +109,17 @@
     color: var(--headers-color)
   }
 
+  ::-moz-selection,
+  ::selection {
+    background-color: var(--orange);
+  }
+
   .banner {
     a.logo {
       color: var(--banner-color);
+    }
+    a:hover {
+      color: var(--orange)
     }
   }
 
@@ -112,6 +129,6 @@
   }
 
   footer {
-    color: var(--footer-text-color);
+    color: var(--text-color);
   }
 }
