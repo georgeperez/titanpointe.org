@@ -25,6 +25,9 @@
   a:visited {
     color: var(--link-visited-color);
     text-decoration: underline;
+    &:hover {
+      color: var(--orange);
+    }
   }
 
   blockquote {
@@ -47,7 +50,8 @@
 
   ::-moz-selection,
   ::selection {
-    background-color: var(--orange);
+    color: var(--text-color);
+    background: var(--orange);
   }
 
   .banner {
@@ -55,8 +59,7 @@
       color: var(--banner-color);
     }
     a:hover {
-      background-color: var(--orange);
-      color: var(--background-color);
+      color: var(--orange);
     }
   }
 
@@ -111,7 +114,7 @@
 
   ::-moz-selection,
   ::selection {
-    background-color: var(--orange);
+    background: var(--orange);
   }
 
   .banner {
