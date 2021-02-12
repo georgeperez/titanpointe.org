@@ -48,12 +48,6 @@
     color: var(--headers-color)
   }
 
-  ::-moz-selection,
-  ::selection {
-    color: var(--text-color);
-    background: var(--orange);
-  }
-
   .banner {
     a.logo {
       color: var(--banner-color);
@@ -92,6 +86,9 @@
   a:visited {
     color: var(--link-visited-color);
     text-decoration: underline;
+    &:hover {
+      color: var(--orange);
+    }
   }
 
   blockquote {
@@ -112,10 +109,6 @@
     color: var(--headers-color)
   }
 
-  ::-moz-selection,
-  ::selection {
-    background: var(--orange);
-  }
 
   .banner {
     a.logo {
