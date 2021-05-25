@@ -5,9 +5,9 @@ markdown: kramdown
 highligther: rouge
 title: George Perez Marrero
 author: George Perez Marrero
-url: https://titanpointe.org
+url: https://georgeperez.dev
 email: george@perez-marrero.com
-repository: georgeperez/titanpointe.org
+repository: georgeperez/georgeperez.dev
 exclude:
   - README.md
   - Gemfile
