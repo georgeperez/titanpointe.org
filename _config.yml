@@ -1,12 +1,12 @@
 ---
-description: "Software engineer."
+description: "Software engineer"
 timezone: America/Puerto_Rico
 markdown: kramdown
 highligther: rouge
 title: George Pérez Marrero
 author: George Pérez Marrero
 url: https://georgeperez.dev
-email: george@perez-marrero.com
+email: george@perezmarrero.com
 repository: georgeperez/georgeperez.dev
 exclude:
   - README.md
