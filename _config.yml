@@ -15,6 +15,7 @@ exclude:
   - vendor
   - Rakefile
   - static.json
+  - photos.html
 sass:
   sass_dir: _scss
   style: compressed
