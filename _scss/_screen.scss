@@ -1,7 +1,20 @@
+/* .no-print {
+	display: none
+}
+
+span.print-only {
+	display: inline!important
+}
+
+div.print-only {
+	display: block!important
+} */
+
 header,
 section,
 footer,
 aside,
+nav,
 article,
 figure {
   display: block;
@@ -10,7 +23,11 @@ figure {
 * {
   padding: 0;
   margin: 0;
-  line-height: 1.25;
+  line-height: 1.5;
+}
+
+.print-only {
+  display: none;
 }
 
 blockquote,
@@ -26,25 +43,14 @@ ol {
   padding-left: 2em
 }
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
 canvas,
 img,
-video,
-iframe {
-  max-width: 100%;
-  margin: 0 auto;
+video {
+  border-style: none;
+  max-width: 100%
 }
 
 body {
-  font-size: 17px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -52,35 +58,106 @@ body {
   text-rendering: optimizeLegibility
 }
 
+nav,
+.footer-text,
 .banner,
-.content,
-footer {
-  max-width: 40em;
-  min-width: 15em;
+.content {
+  max-width: 45em;
   margin: 0 auto;
   clear: both;
-}
-
-footer {
-  text-align: center;
-  padding-bottom: 20px;
+  overflow: auto;
 }
 
 .banner {
-  height: 1em;
+  max-width: 41em;
+  min-width: 12em;
+  height: 3em;
+  margin-top: .5em;
   padding: 1em 2em;
-  text-transform: capitalize;
+  vertical-align: top
+}
 
-  a.logo {
-    margin-top: 1.5em;
-    font-size: 1.5em;
-    text-decoration: none;
-    font-weight: 700;
+.banner a.logo {
+  font-size: 2em;
+  text-decoration: none;
+  float: left;
+  font-weight: 700;
+}
+
+nav {
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    height: 2em;
+    font-size: 1.25em;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    li {
+      float: left;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+nav a,
+nav a:link,
+nav a:visited,
+nav a:hover {
+  display: block;
+  text-align: left;
+  line-height: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
+}
+
+footer {
+  padding: 1em 0;
+  margin-bottom: 1em;
+  font-size: 80%;
+  margin: 2em 0;
+  overflow: hidden;
+  text-align: center;
+
+  p {
+    margin: 0.5em
+  }
+}
+
+article {
+  margin-bottom: 0.5em;
+
+  header.post-info {
+
+    font-size: .8em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+
+    a.post-link {
+      text-decoration: none;
+    }
+
+    a.permalink {
+      text-decoration: none;
+    }
+
+    p {
+      margin: 0;
+    }
   }
 }
 
 .content {
-  padding: 0 2.5em;
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
+  max-width: 40em;
+  min-width: 15em;
+  padding: 1.5em 2.5em
 }
 
 p,
@@ -100,24 +177,27 @@ hr {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
   margin-bottom: .5em;
+  margin-top: .5em
+}
+
+h2 {
   margin-top: .5em;
 }
 
 h3 {
   font-size: 1.25em;
   font-weight: 500;
-  margin: 1em 0 1em;
+  margin: 1em 0 1em
 }
 
 h4 {
   font-size: 1em;
-  margin: 0;
+  margin: 0
 }
 
 b,
@@ -125,16 +205,23 @@ strong {
   font-weight: 600;
 }
 
-blockquote {
+blockquote.aside {
+  margin: 1em;
+  border: 1px solid transparent;
   padding: 1em;
 }
 
-img,
-picture {
+img {
   max-width: 100%;
   height: auto;
-  margin: 0;
+  margin: 0 0 1rem;
   display: block;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+a:hover img, a:focus img {
+  opacity: 0.9
 }
 
 pre.code-snippet {
@@ -143,7 +230,6 @@ pre.code-snippet {
   overflow: auto;
   word-wrap: break-word;
   white-space: pre-wrap;
-  margin-bottom: 1em;
 }
 
 pre {
@@ -156,30 +242,62 @@ code {
   overflow: auto;
 }
 
+h2.post-title {
+
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 1em;
+
+  a {
+    font-size: 1.2em;
+    &:active.post-link, &:visited.post-link {
+      text-decoration: none;
+    }
+  }
+}
+
 @media(max-width: 55em) {
-  .banner {
+  .banner,
+  .footer-text {
     margin: 0
   }
 }
 
 @media(max-width: 550px) {
-  .banner {
-    padding: 20px;
+  nav a,
+  nav a:link,
+  nav a:visited,
+  nav a:hover {
+    padding: 0 17px;
+    width: auto
+  }
+  nav li {
+    width: auto
+  }
+  .banner,
+  .footer-text {
+    padding: 17px;
     margin: 0
   }
   .content {
-    padding: 0 20px
+    padding: 0 17px
+  }
+  .post-title {
+    font-size: 1.3em;
   }
 }
 
 @media(max-width: 350px) {
   body {
-    font-size: 15px;
+    font-size: 14px;
   }
   .banner a.logo {
     font-size: 1.3em
   }
   .banner {
     height: 2em
+  }
+  .post-title {
+    font-size: 1.2em;
   }
 }
