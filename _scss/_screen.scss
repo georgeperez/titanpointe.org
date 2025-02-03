@@ -263,7 +263,7 @@ h2.post-title {
   }
 }
 
-@media(max-width: 550px) {
+@media(max-width: 640px) {
   nav a,
   nav a:link,
   nav a:visited,
@@ -284,6 +284,10 @@ h2.post-title {
   }
   .post-title {
     font-size: 1.3em;
+  }
+
+  .container {
+    padding: 0 1rem;
   }
 }
 
