@@ -1,0 +1,39 @@
+<!-- {% if page.language == 'es' %}
+<a class="internal-link" href="{{ site.baseurl }}{{ page.permalink | remove_first: '/es'}}"><b>Read this note in English</b></a>
+{% elsif page.language == 'en' %}
+<a class="internal-link" href="{{ site.baseurl }}/es{{ page.permalink }}"><b>Lee esta nota en español</b></a>
+{% endif %}
+ -->
+ {%- comment -%}
+ Determine language based on file path
+ {%- endcomment -%}
+ {% assign current_language = "en" %}
+ {% if page.path contains "_notes/es/" %}
+   {% assign current_language = "es" %}
+ {% endif %}
+
+ {%- comment -%}
+ Determine alternate URL
+ {%- endcomment -%}
+ {% assign alternate_url = "" %}
+ {% if current_language == "es" %}
+   {% assign alternate_url = page.url | remove_first: '/es' %}
+ {% elsif current_language == "en" %}
+   {% assign alternate_url = "/es" | append: page.url %}
+ {% endif %}
+
+ {%- comment -%}
+ Check for alternate page in site.notes collection
+ {%- endcomment -%}
+ {% assign alternate_page = site.notes | where: "url", alternate_url | first %}
+
+ {%- comment -%}
+ Render the language toggle link if alternate page exists
+ {%- endcomment -%}
+ {% if alternate_page %}
+   {% if current_language == "es" %}
+     <a class="internal-link" href="{{ site.baseurl }}{{ alternate_url }}"><b>Read this note in English</b></a>
+   {% elsif current_language == "en" %}
+     <a class="internal-link" href="{{ site.baseurl }}{{ alternate_url }}"><b>Lee esta nota en español</b></a>
+   {% endif %}
+ {% endif %}

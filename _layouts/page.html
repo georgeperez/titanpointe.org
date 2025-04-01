@@ -1,12 +1,7 @@
-{% include page.html %}
-<body>
-  {% include header.html %}
-  <div class="container">
-  {% include nav.html %}
-  <section class="content">
-    {{ content }}
-  </section>
-</div>
-  {% include footer.html %}
-</body>
-</html>
+---
+layout: default
+---
+
+<content>
+  {{ content }}
+</content>

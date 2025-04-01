@@ -1,9 +1,8 @@
 ---
 title: RUMAD on macOS
 layout: page
+id: matricula
 permalink: /matricula/
-keywords: matricula, colegio, uprm, rum, rumad, mac, macos, sierra, macos sierra, high sierra, macos high sierra
-description: Fix RUMAD (Matricula) connection issues on the Mac
 ---
 
 <h2>RUMAD on macOS</h2>

@@ -1,28 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <title>{{ page.title }}</title>
-  <meta name="description" content="{{ site.description }}" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/main.css" media="screen">
+  <meta charset="UTF-8">
 
-  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
-  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
+
+  <meta property="og:site_name" content="{{ site.title }}">
+
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
   <link href="https://c.im/@georgeperez" rel="me">
   <meta name="fediverse:creator" content="@georgeperez@c.im">
 
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:url" content="{{site.url}}{{ page.url }}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="{{ site.url }}/assets/images/hero.png" />
-  <meta property="og:image:width" content="1024" />
-  <meta property="og:image:height" content="576" />
-  <meta property="og:description" content="{{ site.description }}" />
+  {% if page.excerpt %}
+  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}"/>
+  {% else %}
+  <meta property="og:description" content="{{ site.title | strip_html | strip_newlines | truncate: 160 }}"/>
+  {% endif %}
 
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:creator" content="@georgeperez" />
-  <meta name="twitter:title" content="{{ page.title }}" />
-  <meta name="twitter:description" content="{{ site.description }}" />
-  <meta name="twitter:image" content="{{ site.url }}/assets/images/hero.png" />
+  {% if page.title %}
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="article">
+  {% else %}
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:type" content="website">
+  {% endif %}
+
+  {% if page.date %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="article:author" content="{{ site.url }}/">
+  {% endif %}
+
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+
+  {% if page.image %}
+  <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+  {% endif %}
+
+  <title>
+    {% if page.id == "home" %}
+      {{ site.title }}
+    {% else %}
+      {{ page.title }} &ndash; {{ site.title }}
+    {% endif %}
+  </title>
 </head>

@@ -1,0 +1,15 @@
+{% assign public_notes = site.notes | where_exp: "note", "note.language != 'es'" %}
+{% if public_notes.size > 0 %}
+  <strong>Recent notes</strong>
+{% endif %}
+
+<ul>
+  {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
+  {% for note in recent_notes %}
+    {% unless note.path contains "_notes/es/" %}
+      <li>
+        {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+      </li>
+    {% endunless %}
+  {% endfor %}
+</ul>
