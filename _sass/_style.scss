@@ -1,7 +1,8 @@
+@use "sass:color";
 $color-primary: hsl(0, 0%, 10%);
 $color-subtext: hsl(0, 0%, 30%);
 $color-border: hsl(0, 0%, 85%);
-$color-box-background: mix($color-primary, white, 4%);
+$color-box-background: color.mix($color-primary, white, 4%);
 $border-radius: 4px;
 $font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
@@ -115,11 +116,6 @@ a {
   }
 }
 
-*:focus {
-  background: #ffe8bc !important;
-  color: black !important;
-}
-
 nav {
   margin: 1em 0 3em;
 }
@@ -168,15 +164,15 @@ code {
   }
 
   time {
-    color: var(--flexoki-500);
+    color: var(--flexoki-400);
   }
 
   footer {
-    color: var(--flexoki-500);
+    color: var(--flexoki-400);
   }
 
   blockquote {
-    background: var(--flexoki-900);
+    background: var(--flexoki-700);
   }
 
   hr {
@@ -186,25 +182,28 @@ code {
   a {
     text-decoration: none;
     border-bottom: 1px solid var(--flexoki-600);
-    color: var(--flexoki-paper);
+    color: var(--flexoki-50);
   }
   a:hover {
     color: var(--flexoki-black) !important;
     background: var(--flexoki-paper);
   }
   a:after {
+    color: var(--flexoki-200);
     content: "↗";
-    color: var(--flexoki-paper);
+
   }
+
+  a:hover:after {
+    color: var(--flexoki-950);
+    content: "↗";
+
+  }
+
   a.internal-link:after,
   a.footnote:after,
   a.reversefootnote:after {
     content: "";
-  }
-
-  *:focus {
-    background: var(--flexoki-yellow-100) !important;
-    color: var(--flexoki-black) !important;
   }
 
   .backlink-box {
