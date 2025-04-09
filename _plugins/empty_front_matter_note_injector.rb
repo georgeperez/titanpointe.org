@@ -8,7 +8,7 @@ JEKYLL
 
 
 Jekyll::Hooks.register :site, :after_init do |site|
-  Dir.glob(site.collections['notes'].relative_directory + '/**/*.md').each do |filename|
+  Dir.glob(site.collections['posts'].relative_directory + '/**/*.md').each do |filename|
     raw_post_content = File.read(filename)
     unless raw_post_content.start_with?('---')
       raw_post_content.prepend(EMPTY_FRONT_MATTER)
