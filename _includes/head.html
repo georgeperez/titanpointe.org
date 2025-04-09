@@ -9,12 +9,13 @@
 
   <meta property="og:site_name" content="{{ site.title }}">
 
-  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+  <link rel="alternate" title="{{ site.title }}" type="application/json" href="{{ "/feed.json" | absolute_url }}" />
+
+  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
+
+  <link rel="stylesheet" href="https://use.typekit.net/fek3gut.css">
 
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
-
-  <link rel="preconnect" href="https://rsms.me/">
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
   <link href="https://c.im/@georgeperez" rel="me">
   <meta name="fediverse:creator" content="@georgeperez@c.im">

@@ -1,7 +1,3 @@
 <div>
     <a class="internal-link" href="{{ site.baseurl }}/"><b>{{ site.title }}</b></a>
-    {% assign public_notes = site.notes | where_exp: "note", "note.language != 'es'" %}
-    {% if public_notes.size > 0 %}
-      <a class="internal-link" href="{{ site.baseurl }}/notes"><b>Notes</b></a>
-    {% endif%}
 </div>

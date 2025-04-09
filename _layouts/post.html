@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article>
+  <div>
+    <h1>{{ page.title }}</h1><time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% if page.type != 'pages' %}
+      {{ page.last_modified_at }} &bull; {% include reading-time.html %}
+      {% endif %}
+    </time>
+    {% include lang.html %}
+  </div>
+  <div class="notes-entry-container">
+    <content>
+      {{ content }}
+    </content>
+  </div>
+</article>

@@ -1,6 +1,7 @@
 title:               George Pérez Marrero
+description:         Not the comic book artist.
 include:             ['_pages']
-exclude:             ['_includes/notes_graph.json']
+exclude:             ['_includes/posts_graph.json']
 # You may need to change the base URL depending on your deploy configuration.
 baseurl:             ''
 
@@ -11,11 +12,6 @@ use_html_extension:  false
 # Set to `true` to open non-internal links in new tabs, or
 # set to `false` to open non-internal links in current tab.
 open_external_links_in_new_tab: true
-
-# Set to `true` to replace tweet URLs with Twitter embeds.
-# Note that doing so will negatively the reader's privacy
-# as their browser will communicate with Twitter's servers.
-embed_tweets: false
 
 permalink:           pretty
 relative_permalinks: false
@@ -31,7 +27,7 @@ kramdown:
   footnote_backlink: '&#8617;&#65038;'
 
 collections:
-  notes:
+  posts:
     output: true
     permalink: /:slug
 
@@ -41,6 +37,6 @@ defaults:
     values:
       layout: "default"
   - scope:
-      path: "_notes/**/*.md"
+      path: "_posts/**/*.md"
     values:
-      layout: "note"
+      layout: "post"

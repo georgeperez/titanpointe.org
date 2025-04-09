@@ -1,0 +1,41 @@
+body {
+  color: var(--uchu-yin-9);
+  background-color: var(--uchu-gray-1);
+}
+
+time {
+  color: var(--uchu-gray-8);
+}
+
+footer {
+  color: var(--uchu-gray-8);
+}
+
+blockquote {
+  background: var(--uchu-gray-2);
+}
+
+hr {
+  background: var(--uchu-gray-2);
+}
+
+a {
+  color: var(--uchu-blue-6);
+  &:hover {
+    color: var(--uchu-blue-7) !important;
+  }
+}
+
+nav {
+  a {
+    color: var(--uchu-yin);
+
+    &:hover {
+      color: var(--uchu-blue-6) !important;
+    }
+  }
+}
+
+code {
+  background: var(--uchu-gray-9);
+}
