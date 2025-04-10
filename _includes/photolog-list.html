@@ -1,0 +1,14 @@
+{% assign public_photologs = site.photologs %}
+{% if public_photologs.size > 0 %}
+  <strong>Recent photos</strong>
+{% endif %}
+
+<ul class="blog-list">
+  {% for photolog in site.photologs %}
+    {% unless photolog.language contains "es" %}
+      <li>
+        <span class="datetime">{{ photolog.last_modified_at | date: "%F" }}</span> &ndash; <a class="internal-link" href="{{ photolog.url }}">{{ photolog.title }}</a>
+      </li>
+    {% endunless %}
+  {% endfor %}
+</ul>

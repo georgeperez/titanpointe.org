@@ -18,6 +18,7 @@ relative_permalinks: false
 
 plugins:
   - jekyll-last-modified-at
+  - jekyll-archives
 
 sass:
   sass_dir:          _sass
@@ -30,6 +31,10 @@ collections:
   posts:
     output: true
     permalink: /:slug
+  photologs:
+    output: true
+    permalink: /photolog/:slug
+
 
 defaults:
   - scope:
@@ -40,3 +45,7 @@ defaults:
       path: "_posts/**/*.md"
     values:
       layout: "post"
+  - scope:
+      path: "_photologs/**/*.md"
+    values:
+      layout: "photolog"

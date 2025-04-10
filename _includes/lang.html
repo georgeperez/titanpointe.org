@@ -1,21 +1,21 @@
- {% assign current_language = "en" %}
- {% if page.path contains "_posts/es/" %}
-   {% assign current_language = "es" %}
- {% endif %}
+{% assign current_language = "en" %}
+{% if page.path contains "_posts/es/" | "_drafts/es/" %}
+  {% assign current_language = "es" %}
+{% endif %}
 
- {% assign alternate_url = "" %}
- {% if current_language == "es" %}
-   {% assign alternate_url = page.url | remove_first: '/es' %}
- {% elsif current_language == "en" %}
-   {% assign alternate_url = "/es" | append: page.url %}
- {% endif %}
+{% assign alternate_url = "" %}
+{% if current_language == "es" %}
+  {% assign alternate_url = page.url | remove_first: '/es' %}
+{% elsif current_language == "en" %}
+  {% assign alternate_url = "/es" | append: page.url %}
+{% endif %}
 
- {% assign alternate_page = site.posts | where: "url", alternate_url | first %}
+{% assign alternate_page = site.posts | where: "url", alternate_url | first %}
 
- {% if alternate_page %}
-   {% if current_language == "es" %}
-     <a class="internal-link" href="{{ site.baseurl }}{{ alternate_url }}"><b>Read this post in English</b></a>
-   {% elsif current_language == "en" %}
-     <a class="internal-link" href="{{ site.baseurl }}{{ alternate_url }}"><b>Lee esta nota en español</b></a>
-   {% endif %}
- {% endif %}
+{% if alternate_page %}
+  {% if current_language == "es" %}
+    <blockquote><a class="internal-link" href="{{ site.baseurl }}{{ alternate_url }}"><b>Read this post in English</b></a></blockquote>
+  {% elsif current_language == "en" %}
+    <blockquote><a class="internal-link" href="{{ site.baseurl }}{{ alternate_url }}"><b>Lee este escrito en español</b></a></blockquote>
+  {% endif %}
+{% endif %}

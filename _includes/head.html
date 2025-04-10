@@ -1,22 +1,18 @@
 <head>
   <meta charset="UTF-8">
-
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
-
   <meta property="og:site_name" content="{{ site.title }}">
 
   <link rel="alternate" title="{{ site.title }}" type="application/json" href="{{ "/feed.json" | absolute_url }}" />
-
   <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
 
   <link rel="stylesheet" href="https://use.typekit.net/fek3gut.css">
-
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
   <link href="https://c.im/@georgeperez" rel="me">
   <meta name="fediverse:creator" content="@georgeperez@c.im">
 
