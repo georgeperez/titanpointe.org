@@ -38,4 +38,4 @@ Please stop reading these outlets. They’re normalizing every crime that the Un
 I’m tired, but not giving up. I’ll keep trying to share the truth until my heart gives out. 
 
 [^1]: IOF stands for Israel Occupation Forces.
-[^2]: Usonian is a term I will be using to refer to “Americans”. If you’ve never heard of it, go read Frank Lloyd Wright’s thoughts when he coined the term.
+[^2]: Usonian is a term I will be using to refer to “Americans”.
