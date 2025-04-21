@@ -28,12 +28,9 @@ kramdown:
   footnote_backlink: '&#8617;&#65038;'
 
 collections:
-  posts:
-    output: true
-    permalink: /:slug
   photologs:
     output: true
-    permalink: /photolog/:slug
+    permalink: /photolog/:year/:month/:day/
 
 
 defaults:

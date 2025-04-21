@@ -30,6 +30,11 @@
   }
 
   code {
-    background: var(--uchu-gray-2);
+    background: var(--uchu-gray-9);
+  }
+
+  .code-snippet {
+    background-color: var(--uchu-blue-9);
+    color: var(--uchu-yang)
   }
 }

@@ -7,7 +7,7 @@ permalink: /matricula/
 
 <h2>RUMAD on macOS</h2>
 
-<p>A recent change by the CTI may cause connection issues when trying to access RUMAD after November 11, 2019.</p>
+<p>A change by the CTI office may cause connection issues when trying to access RUMAD after November 11, 2019.</p>
 
 <p>You may see the following warning message:</p>
 

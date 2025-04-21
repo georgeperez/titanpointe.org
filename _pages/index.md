@@ -23,5 +23,3 @@ This website is something I use to test out different things from time to time. 
 - [uchū](https://uchu.style/)
 
 Find me on: [Mastodon](https://c.im/@georgeperez/) &bull; [Bluesky](https://bsky.app/profile/georgeperez.dev) &bull; [Instagram](https://instagram.com/georgeperez/) &bull; [Letterboxd](https://letterboxd.com/georgeperez/)
-
-<blockquote class='notice'>If you're looking for an obscure page I did a few years back about how to connect to RUMAD on macOS, <a class="internal-link" href="/matricula">press here</a>.</blockquote>
