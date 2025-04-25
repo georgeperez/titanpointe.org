@@ -30,7 +30,7 @@ kramdown:
 collections:
   photologs:
     output: true
-    permalink: /photolog/:year/:month/:day/
+    permalink: /photolog/:slug
 
 
 defaults:
