@@ -1,6 +1,6 @@
 title:               George Pérez Marrero
 description:         Not the comic book artist.
-include:             ['_pages']
+include:             ['_pages', '_headers']
 exclude:             ['_includes/posts_graph.json']
 # You may need to change the base URL depending on your deploy configuration.
 baseurl:             ''
