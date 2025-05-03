@@ -1,0 +1,8 @@
+{% assign post_location = page.location | default: 'Puerto Rico' %} {% assign
+location_data = site.data.locations[post_location] %} {% assign prefix = '' %}
+{% if location_data %} {% assign prefix = location_data.prefix %} {% else %} {%
+for item in site.data.locations %} {% if item[post_location] %} {% assign prefix
+= item[post_location].prefix %} {% break %} {% endif %} {% if item.abbreviation
+== post_location or item.abbreviation_alt == post_location %} {% assign prefix =
+item.prefix %} {% break %} {% endif %} {% endfor %} {% endif %} Written in {{
+prefix }}{{ post_location }}

@@ -2,7 +2,7 @@
 title: RUMAD on macOS
 layout: page
 id: matricula
-permalink: /matricula/
+permalink: /matricula
 ---
 
 <h2>RUMAD on macOS</h2>
