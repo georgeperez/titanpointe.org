@@ -5,8 +5,12 @@
 	font-weight: 300 700;
 } */
 
-$font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
-$mono-font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+$font-family:
+  Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source-sans-pro,
+  system-ui, sans-serif;
+$mono-font-family:
+  ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+  "DejaVu Sans Mono", monospace;
 
 body {
   box-sizing: content-box;
@@ -17,7 +21,9 @@ body {
   overflow-x: hidden;
   font-size: 1rem;
   max-width: 63em;
-  font-variation-settings: "wght" 400, "wdth" 100;
+  font-variation-settings:
+    "wght" 400,
+    "wdth" 100;
 
   @media (min-width: 820px) {
     font-size: 1.2rem;
@@ -36,12 +42,17 @@ body {
   @media (max-width: 440px) {
     font-size: 1.3rem;
     line-height: 1.5;
-    font-variation-settings: "wght" 400, "wdth" 100;
+    font-variation-settings:
+      "wght" 400,
+      "wdth" 100;
   }
 }
 
-b, strong {
-  font-variation-settings: "wght" 700, "wdth" 100;
+b,
+strong {
+  font-variation-settings:
+    "wght" 700,
+    "wdth" 100;
 }
 
 time {
@@ -89,10 +100,14 @@ h6 {
   line-height: 1.2;
   margin-bottom: 0;
   padding-bottom: 0;
-  font-variation-settings: "wght" 500, "wdth" 50;
+  font-variation-settings:
+    "wght" 500,
+    "wdth" 50;
 }
 
-a:not(#next):not(#prev):not(#close):not(.internal-link):not(.footnote):not(.reversefootnote):not([href^="#"]):not([href^="/"]) {
+a:not(#next):not(#prev):not(#close):not(.internal-link):not(.footnote):not(
+    .reversefootnote
+  ):not([href^="#"]):not([href^="/"]) {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2.5' stroke='gray' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25' /%3E%3C/svg%3E%0A");
   background-position: right 67%;
   background-repeat: no-repeat;
@@ -108,11 +123,11 @@ a {
     font-size: 1.1em;
 
     &:before {
-      content: "["
+      content: "[";
     }
 
     &::after {
-      content: "]"
+      content: "]";
     }
   }
 }
@@ -136,8 +151,7 @@ nav {
 
 .notes-entry-container {
   display: grid;
-  grid-template-areas:
-    "content";
+  grid-template-areas: "content";
 
   @media (min-width: 700px) {
     grid-template-columns: 1fr;
@@ -146,7 +160,9 @@ nav {
   @media (max-width: 440px) {
     font-size: 1.1rem;
     line-height: 1.5;
-    font-variation-settings: "wght" 400, "wdth" 100;
+    font-variation-settings:
+      "wght" 400,
+      "wdth" 100;
   }
 }
 
