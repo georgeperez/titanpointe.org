@@ -15,4 +15,4 @@ Hey, I'm a software engineer, photographer, cinephile, minimalist, and a fan of 
 
 Currently working on data warehousing solutions in healthcare management.
 
-Find me on: [Mastodon](https://c.im/@georgeperez/) &bull; [Bluesky](https://bsky.app/profile/titanpointe.org) &bull; [Instagram](https://instagram.com/georgeperez/) &bull; [Letterboxd](https://letterboxd.com/georgeperez/)
+Find me on: [Mastodon](https://c.im/@georgeperez/) &bull; [Bluesky](https://bsky.app/profile/george.perezmarrero.com) &bull; [Instagram](https://instagram.com/georgeperez/) &bull; [Letterboxd](https://letterboxd.com/georgeperez/)
