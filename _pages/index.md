@@ -11,7 +11,7 @@ permalink: /
 
 **Who am I?**
 
-Hey, I'm a software engineer, photographer, cinephile, minimalist, and a fan of Formula 1 (Papaya).
+Hey, I'm a software engineer, photographer, cinephile, minimalist, and a fan of Formula 1 (McLaren fanboy since 2007).
 
 Currently working on data warehousing solutions in healthcare management.
 
